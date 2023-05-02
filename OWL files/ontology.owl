@@ -19,6 +19,12 @@
         <Class IRI="#ComputerCase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Desktop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#External"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FullTower"/>
     </Declaration>
     <Declaration>
@@ -31,10 +37,25 @@
         <Class IRI="#HardDrive"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Internal"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MidTower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PowerSupplyUnit"/>
@@ -78,6 +99,14 @@
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Desktop"/>
+        <Class IRI="#PC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#External"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FullTower"/>
         <Class IRI="#ComputerCase"/>
     </SubClassOf>
@@ -94,8 +123,20 @@
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Internal"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#PC"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MidTower"/>
         <Class IRI="#ComputerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motherboard"/>
+        <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PowerSupplyUnit"/>
