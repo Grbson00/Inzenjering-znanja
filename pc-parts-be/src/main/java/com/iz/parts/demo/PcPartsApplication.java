@@ -11,12 +11,10 @@ import java.io.File;
 
 @SpringBootApplication
 public class PcPartsApplication {
-
+	public static OWLOntology activeOntology;
 	public static void main(String[] args) {
-		System.out.print("Test");
 		SpringApplication.run(PcPartsApplication.class, args);
-		LoadOntology(new File("data/ontology.owl"));
-		System.out.print("Done");
+		activeOntology =  LoadOntology(new File("data/ontology.owl"));
 	}
 
 	public static OWLOntology LoadOntology(File file) {
@@ -24,7 +22,7 @@ public class PcPartsApplication {
 		OWLOntology ontology = null;
 		try {
 			ontology = manager.loadOntologyFromOntologyDocument(file);
-			System.out.print(ontology);
+//			System.out.print(ontology);
 		} catch (OWLOntologyCreationException e) {
 			throw new RuntimeException(e);
 		}
