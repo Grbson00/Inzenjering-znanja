@@ -1,14 +1,13 @@
-package com.iz.parts.demo;
+package com.example.iz.parts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PcPartsApplication {
-
+//@ComponentScan(basePackages = "com.example.iz.parts.controller")
+public class PcPartsBeApplication {
 	public static void main(String[] args) {
-		System.out.print("Test");
-		SpringApplication.run(PcPartsApplication.class, args);
+		SpringApplication.run(PcPartsBeApplication.class, args);
 	}
 
 }
