@@ -43,16 +43,40 @@
         <Class IRI="#Hardware"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Headphones"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Internal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyboard"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Laptop"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Linux_32bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linux_64bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MacOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microphone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MidTower"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OperatingSystem"/>
@@ -73,10 +97,79 @@
         <Class IRI="#SoundCard"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Speakers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebCam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_32bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows_64bit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionAUX"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionBluetooth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionDP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionHDMI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionUSB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionUSBC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionVGA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPU"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasComputerCase"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCooler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGPU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHDD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMicrophone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMotherboard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPowerSupply"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRAM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSDD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpeakers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWebCam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CPUManufacturer"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#computerCaseName"/>
@@ -103,13 +196,40 @@
         <DataProperty IRI="#gpuType"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#keyboardLayout"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#keyboardSize"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#manufacturer"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#memorySize"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#mouseResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfButtons"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#numberOfFans"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#screenDiagonal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sensorType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#soundPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#soundType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#typeOfPlugin"/>
@@ -149,6 +269,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_Monitor_S2421HN"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
@@ -220,20 +343,52 @@
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Headphones"/>
+        <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Internal"/>
         <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keyboard"/>
+        <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Laptop"/>
         <Class IRI="#PC"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Linux_32bit"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linux_64bit"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MacOS"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microphone"/>
+        <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MidTower"/>
         <Class IRI="#ComputerCase"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Motherboard"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PowerSupplyUnit"/>
@@ -250,6 +405,22 @@
     <SubClassOf>
         <Class IRI="#SoundCard"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speakers"/>
+        <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebCam"/>
+        <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_32bit"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows_64bit"/>
+        <Class IRI="#OperatingSystem"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#CentralProcessingUnit"/>
@@ -315,6 +486,10 @@
     <ClassAssertion>
         <Class IRI="#Cooler"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#Dell_Monitor_S2421HN"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
@@ -766,21 +941,225 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionAUX"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionBluetooth"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionDP"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionHDMI"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionUSB"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionUSBC"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectionVGA"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCPU"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComputerCase"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCooler"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGPU"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHDD"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPowerSupply"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRAM"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSDD"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionAUX"/>
+        <Class IRI="#Headphones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionAUX"/>
+        <Class IRI="#Microphone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionAUX"/>
+        <Class IRI="#Speakers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionBluetooth"/>
+        <Class IRI="#Headphones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionBluetooth"/>
+        <Class IRI="#Keyboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionBluetooth"/>
+        <Class IRI="#Mouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionBluetooth"/>
+        <Class IRI="#Speakers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionDP"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionHDMI"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSB"/>
+        <Class IRI="#Headphones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSB"/>
+        <Class IRI="#Keyboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSB"/>
+        <Class IRI="#Mouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSB"/>
+        <Class IRI="#WebCam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSBC"/>
+        <Class IRI="#Headphones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSBC"/>
+        <Class IRI="#Keyboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSBC"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSBC"/>
+        <Class IRI="#Mouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionUSBC"/>
+        <Class IRI="#WebCam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionVGA"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPU"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#ComputerCase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <Class IRI="#Desktop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCooler"/>
         <Class IRI="#CentralProcessingUnit"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGPU"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHDD"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicrophone"/>
+        <Class IRI="#Headphones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicrophone"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicrophone"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMicrophone"/>
+        <Class IRI="#WebCam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPowerSupply"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRAM"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSDD"/>
+        <Class IRI="#PC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpeakers"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpeakers"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWebCam"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWebCam"/>
+        <Class IRI="#Monitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPU"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#CentralProcessingUnit"/>
@@ -810,8 +1189,48 @@
         <Class IRI="#SoundCard"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <Class IRI="#ComputerCase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCooler"/>
         <Class IRI="#Cooler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGPU"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHDD"/>
+        <Class IRI="#HardDiskDrive"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMicrophone"/>
+        <Class IRI="#Microphone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPowerSupply"/>
+        <Class IRI="#PowerSupplyUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRAM"/>
+        <Class IRI="#RandomAccessMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSDD"/>
+        <Class IRI="#SolidStateDrive"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpeakers"/>
+        <Class IRI="#Speakers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWebCam"/>
+        <Class IRI="#WebCam"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#computerCaseName"/>
@@ -846,6 +1265,14 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#keyboardLayout"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#keyboardSize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#manufacturer"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -854,7 +1281,35 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#mouseResolution"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numberOfButtons"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#numberOfFans"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#resolution"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#screenDiagonal"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sensorType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#soundPower"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#soundType"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -894,6 +1349,14 @@
         <Class IRI="#GraphicsProcessingUnit"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#keyboardLayout"/>
+        <Class IRI="#Keyboard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#keyboardSize"/>
+        <Class IRI="#Keyboard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#manufacturer"/>
         <Class IRI="#CentralProcessingUnit"/>
     </DataPropertyDomain>
@@ -942,8 +1405,40 @@
         <Class IRI="#RandomAccessMemory"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#mouseResolution"/>
+        <Class IRI="#Mouse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfButtons"/>
+        <Class IRI="#Mouse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#numberOfFans"/>
         <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#resolution"/>
+        <Class IRI="#Monitor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#screenDiagonal"/>
+        <Class IRI="#Monitor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sensorType"/>
+        <Class IRI="#Mouse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#soundPower"/>
+        <Class IRI="#Headphones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#soundPower"/>
+        <Class IRI="#Speakers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#soundType"/>
+        <Class IRI="#Headphones"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -990,6 +1485,18 @@
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#keyboardLayout"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#keyboardSize"/>
+        <DataOneOf>
+            <Literal>60%</Literal>
+            <Literal>TKL</Literal>
+            <Literal>full size</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#manufacturer"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -998,8 +1505,44 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#mouseResolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfButtons"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#numberOfFans"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#resolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#screenDiagonal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sensorType"/>
+        <DataOneOf>
+            <Literal>laser</Literal>
+            <Literal>optic</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#soundPower"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#soundType"/>
+        <DataOneOf>
+            <Literal>mono</Literal>
+            <Literal>spatia audio</Literal>
+            <Literal>stereo</Literal>
+            <Literal>virtual surround</Literal>
+        </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
