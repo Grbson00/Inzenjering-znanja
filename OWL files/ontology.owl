@@ -19,6 +19,9 @@
         <Class IRI="#ComputerCase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Cooler"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Desktop"/>
     </Declaration>
     <Declaration>
@@ -70,25 +73,115 @@
         <Class IRI="#SoundCard"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+        <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#CPUManufacturer"/>
+        <ObjectProperty IRI="#hasCooler"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ComputerCaseName"/>
+        <DataProperty IRI="#computerCaseName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ComputerCaseSize"/>
+        <DataProperty IRI="#computerCaseSize"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#MemorySize"/>
+        <DataProperty IRI="#cpuAttachedToMotherboard"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#NumberOfFans"/>
+        <DataProperty IRI="#cpuCache"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#TypeOfPlugin"/>
+        <DataProperty IRI="#cpuCoreNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuThreadNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gpuType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#manufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memorySize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfFans"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#typeOfPlugin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#CentralProcessingUnit"/>
@@ -96,6 +189,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ComputerCase"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooler"/>
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
@@ -171,64 +268,681 @@
         <Class IRI="#HardDiskDrive"/>
         <Class IRI="#SolidStateDrive"/>
     </DisjointClasses>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#CPUManufacturer"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ComputerCaseName"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ComputerCaseSize"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#MemorySize"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#NumberOfFans"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#TypeOfPlugin"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+    <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#CPUManufacturer"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
-    </DataPropertyDomain>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cooler"/>
+        <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolidStateDrive"/>
+        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCooler"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+        <Literal>integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+        <Literal>integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+        <Literal>integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+        <Literal>Kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <Literal>Nvidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memorySize"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCooler"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#ComputerCase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCooler"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#HardDrive"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#PowerSupplyUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#RandomAccessMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#SoundCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCooler"/>
+        <Class IRI="#Cooler"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#computerCaseName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#computerCaseSize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuAttachedToMotherboard"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuCache"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuSpeed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gpuType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#manufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#memorySize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numberOfFans"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#typeOfPlugin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#ComputerCaseName"/>
+        <DataProperty IRI="#computerCaseName"/>
         <Class IRI="#ComputerCase"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#ComputerCaseSize"/>
+        <DataProperty IRI="#computerCaseSize"/>
         <Class IRI="#ComputerCase"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#MemorySize"/>
+        <DataProperty IRI="#cpuAttachedToMotherboard"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuCache"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuSpeed"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gpuType"/>
         <Class IRI="#GraphicsProcessingUnit"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#MemorySize"/>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#Cooler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
         <Class IRI="#HardDrive"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#MemorySize"/>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#Motherboard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#PowerSupplyUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
         <Class IRI="#RandomAccessMemory"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#NumberOfFans"/>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#SoundCard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memorySize"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memorySize"/>
+        <Class IRI="#HardDrive"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memorySize"/>
+        <Class IRI="#RandomAccessMemory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfFans"/>
         <Class IRI="#ComputerCase"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -236,7 +950,15 @@
         <Class IRI="#SoundCard"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+        <DataProperty IRI="#computerCaseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#computerCaseSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuAttachedToMotherboard"/>
         <DataOneOf>
             <Literal>BallGridArray</Literal>
             <Literal>LandGridArray</Literal>
@@ -245,23 +967,38 @@
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#CPUManufacturer"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#ComputerCaseName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#ComputerCaseSize"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#MemorySize"/>
+        <DataProperty IRI="#cpuCache"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#NumberOfFans"/>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuSpeed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gpuType"/>
+        <DataOneOf>
+            <Literal>integrated</Literal>
+            <Literal>not integrated</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#manufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memorySize"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfFans"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
