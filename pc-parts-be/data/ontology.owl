@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CentralProcessingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desktop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#External"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullTower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardDiskDrive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardDrive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MidTower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerSupplyUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RandomAccessMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidStateDrive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoundCard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CPUManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ComputerCaseName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ComputerCaseSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MemorySize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberOfFans"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TypeOfPlugin"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CentralProcessingUnit"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerCase"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desktop"/>
+        <Class IRI="#PC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#External"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullTower"/>
+        <Class IRI="#ComputerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardDiskDrive"/>
+        <Class IRI="#HardDrive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardDrive"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internal"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#PC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidTower"/>
+        <Class IRI="#ComputerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motherboard"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerSupplyUnit"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RandomAccessMemory"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidStateDrive"/>
+        <Class IRI="#HardDrive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoundCard"/>
+        <Class IRI="#Internal"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CentralProcessingUnit"/>
+        <Class IRI="#ComputerCase"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <Class IRI="#HardDrive"/>
+        <Class IRI="#PowerSupplyUnit"/>
+        <Class IRI="#RandomAccessMemory"/>
+        <Class IRI="#SoundCard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FullTower"/>
+        <Class IRI="#MidTower"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HardDiskDrive"/>
+        <Class IRI="#SolidStateDrive"/>
+    </DisjointClasses>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CPUManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ComputerCaseName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ComputerCaseSize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MemorySize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NumberOfFans"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TypeOfPlugin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CPUManufacturer"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ComputerCaseName"/>
+        <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ComputerCaseSize"/>
+        <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySize"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySize"/>
+        <Class IRI="#HardDrive"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MemorySize"/>
+        <Class IRI="#RandomAccessMemory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberOfFans"/>
+        <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#SoundCard"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CPUAttachedToMotherboard"/>
+        <DataOneOf>
+            <Literal>BallGridArray</Literal>
+            <Literal>LandGridArray</Literal>
+            <Literal>PinGridArray</Literal>
+            <Literal>ZeroInsertionForce</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CPUManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ComputerCaseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ComputerCaseSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MemorySize"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberOfFans"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataOneOf>
+            <Literal>PCIExpress</Literal>
+            <Literal>PCISlot</Literal>
+            <Literal>USB</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
