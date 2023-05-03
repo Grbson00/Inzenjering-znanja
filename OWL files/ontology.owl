@@ -73,25 +73,6 @@
         <Class IRI="#SoundCard"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#CPUManufacturer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ComputerCaseName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ComputerCaseSize"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#MemorySize"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#NumberOfFans"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#TypeOfPlugin"/>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
@@ -287,64 +268,6 @@
         <Class IRI="#HardDiskDrive"/>
         <Class IRI="#SolidStateDrive"/>
     </DisjointClasses>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#CPUManufacturer"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ComputerCaseName"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ComputerCaseSize"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#MemorySize"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#NumberOfFans"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#TypeOfPlugin"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
-        <Class IRI="#CentralProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#CPUManufacturer"/>
-        <Class IRI="#CentralProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#ComputerCaseName"/>
-        <Class IRI="#ComputerCase"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#ComputerCaseSize"/>
-        <Class IRI="#ComputerCase"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#MemorySize"/>
-        <Class IRI="#GraphicsProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#MemorySize"/>
-        <Class IRI="#HardDrive"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#MemorySize"/>
-        <Class IRI="#RandomAccessMemory"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#NumberOfFans"/>
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
         <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
@@ -1027,7 +950,6 @@
         <Class IRI="#SoundCard"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#CPUAttachedToMotherboard"/>
         <DataProperty IRI="#computerCaseName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1045,23 +967,6 @@
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#CPUManufacturer"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#ComputerCaseName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#ComputerCaseSize"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#MemorySize"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#NumberOfFans"/>
         <DataProperty IRI="#cpuCache"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
