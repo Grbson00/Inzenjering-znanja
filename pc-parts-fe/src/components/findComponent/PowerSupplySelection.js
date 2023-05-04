@@ -1,8 +1,8 @@
 import { Button, Container } from "@mui/material";
 import { Form } from 'react-final-form';
 import REGEX from "../../regex";
-import GPUForm from "./GPUForm";
 import PowerSupplyForm from "./PowerSupplyForm";
+import axios from "axios";
 
 const numberRegex = new RegExp(REGEX.NUMBER)
 
@@ -15,8 +15,15 @@ const PowerSupplySelection = () => {
     manufacturer
     */
 
-
     const onSubmit = (data) => {
+        axios.post('http://localhost:8080/api/search/power', data)
+            .catch(e => {
+                console.error(e)
+            })
+            .then((response) => {
+                console.log(response);
+            })
+        console.log(data);
         console.log(data);
     }
     const validate = (values) => {

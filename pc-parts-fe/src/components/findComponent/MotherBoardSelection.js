@@ -1,13 +1,21 @@
 import { Button, Container } from "@mui/material";
-import CPUForm from "./CPUForm"
 import { Form } from 'react-final-form';
 import REGEX from "../../regex";
 import MotherBoardForm from "./MotherBoardForm";
+import axios from "axios";
 
 const numberRegex = new RegExp(REGEX.NUMBER)
 
 const MotherBoardSelection = () => {
     const onSubmit = (data) => {
+        axios.post('http://localhost:8080/api/search/motherboard', data)
+        .catch(e => {
+            console.error(e)
+        })
+        .then((response) => {
+            console.log(response);
+        })
+    console.log(data);
         console.log(data);
     }
     const validate = (values) => {

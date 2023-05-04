@@ -2,11 +2,19 @@ import { Button, Container } from "@mui/material";
 import CPUForm from "./CPUForm"
 import { Form } from 'react-final-form';
 import REGEX from "../../regex";
+import axios from "axios";
 
 const numberRegex = new RegExp(REGEX.NUMBER)
 
 const CPUSelection = () => {
     const onSubmit = (data) => {
+        axios.post('http://localhost:8080/api/search/cpu', data)
+            .catch(e => {
+                console.error(e)
+            })
+            .then((response) => {
+                console.log(response);
+            })
         console.log(data);
     }
     const validate = (values) => {

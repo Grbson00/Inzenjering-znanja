@@ -2,6 +2,7 @@ import { Button, Container } from "@mui/material";
 import { Form } from 'react-final-form';
 import REGEX from "../../regex";
 import GPUForm from "./GPUForm";
+import axios from "axios";
 
 const numberRegex = new RegExp(REGEX.NUMBER)
 
@@ -15,6 +16,14 @@ const GPUSelection = () => {
     */
 
     const onSubmit = (data) => {
+        axios.post('http://localhost:8080/api/search/gpu', data)
+        .catch(e => {
+            console.error(e)
+        })
+        .then((response) => {
+            console.log(response);
+        })
+    console.log(data);
         console.log(data);
     }
     const validate = (values) => {
