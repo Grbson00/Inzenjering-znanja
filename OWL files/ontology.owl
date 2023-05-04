@@ -328,7 +328,34 @@
         <NamedIndividual IRI="#LG_UltraWide_38WN95C"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Linux_Debian_64bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Linux_Ubuntu_32bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MacOS_Monterey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MacOS_Ventura"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows10_32bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows10_64bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows11_32bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows11_64bit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
@@ -575,8 +602,44 @@
         <NamedIndividual IRI="#LG_UltraWide_38WN95C"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Linux_64bit"/>
+        <NamedIndividual IRI="#Linux_Debian_64bit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Linux_32bit"/>
+        <NamedIndividual IRI="#Linux_Ubuntu_32bit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Linux_64bit"/>
+        <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MacOS"/>
+        <NamedIndividual IRI="#MacOS_Monterey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MacOS"/>
+        <NamedIndividual IRI="#MacOS_Ventura"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows_32bit"/>
+        <NamedIndividual IRI="#Windows10_32bit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows_64bit"/>
+        <NamedIndividual IRI="#Windows10_64bit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows_32bit"/>
+        <NamedIndividual IRI="#Windows11_32bit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows_64bit"/>
+        <NamedIndividual IRI="#Windows11_64bit"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
