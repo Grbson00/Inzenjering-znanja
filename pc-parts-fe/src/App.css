@@ -1,0 +1,5 @@
+html {
+    background-image: url(../public/bg1.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+}
