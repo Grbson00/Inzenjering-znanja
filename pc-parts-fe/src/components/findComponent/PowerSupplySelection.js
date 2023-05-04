@@ -1,9 +1,55 @@
+import { Button, Container } from "@mui/material";
+import { Form } from 'react-final-form';
+import REGEX from "../../regex";
+import GPUForm from "./GPUForm";
+import PowerSupplyForm from "./PowerSupplyForm";
+
+const numberRegex = new RegExp(REGEX.NUMBER)
+
 const PowerSupplySelection = () => {
-    return ( 
+
+    /*
+    power
+    efficiency - shouldn't search by this
+    connector - shouldn't search by this
+    manufacturer
+    */
+
+
+    const onSubmit = (data) => {
+        console.log(data);
+    }
+    const validate = (values) => {
+        let returnObject = {}
+        if (!values.manufacturer) {
+            returnObject.manufacturer = 'This field is required!'
+        }
+        if (!numberRegex.test(values.wattage)) {
+            returnObject.wattage = 'Numerical characters only!'
+        }
+
+        return returnObject
+    }
+
+    return (
         <>
-            POWER SUPPLY INFO
+            <Form
+                onSubmit={onSubmit}
+                validate={validate}
+                render={({ handleSubmit, values }) => (
+                    <form onSubmit={handleSubmit} noValidate>
+                        <PowerSupplyForm />
+                        <Container sx={{ display: 'grid', placeItems: 'center' }}>
+                            <Button variant="outlined" color="primary" type='submit'>
+                                Search
+                            </Button>
+                        </Container>
+                    </form>)}
+            >
+            </Form>
+
         </>
-     );
+    );
 }
- 
+
 export default PowerSupplySelection;

@@ -10,7 +10,7 @@ import theme from "./theme";
 
 function App() {
   return (
-    // <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Layout>
             <Routes>
@@ -20,7 +20,7 @@ function App() {
             </Routes>
           </Layout>
         </BrowserRouter>
-    // </ThemeProvider>
+     </ThemeProvider>
   );
 }
 
