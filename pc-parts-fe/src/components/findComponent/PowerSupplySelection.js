@@ -1,4 +1,9 @@
 const PowerSupplySelection = () => {
+    /*
+    power
+    connector?
+    manufacturer
+    */
     return ( 
         <>
             POWER SUPPLY INFO

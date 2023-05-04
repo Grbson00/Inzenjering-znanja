@@ -1,4 +1,8 @@
 const MotherBoardSelection = () => {
+    /* 
+
+
+    */
     return ( 
         <>
             MOTHERBOARD INFO
