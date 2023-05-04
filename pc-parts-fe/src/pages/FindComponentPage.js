@@ -2,7 +2,7 @@ import { Container, Stack, Typography } from "@mui/material";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import { useState } from "react";
 import GPUSelection from "../components/findComponent/GPUSelection";
 import CPUSelection from "../components/findComponent/CPUSelection";
@@ -29,7 +29,7 @@ const FindComponentPage = () => {
             case 'PowerSupply':
                 return 'url("/power.jpg")';
             default:
-                return '#fff';
+                return 'url("/gpu.jpg")';
         }
     };
 
@@ -47,7 +47,7 @@ const FindComponentPage = () => {
     return (
         <>
             <Stack direction={'row'} spacing={4}>
-                <Typography variant="subtitle1" color="initial" sx={{width: '30%', marginTop: '1rem'}}>
+                <Typography variant="subtitle1" color="initial" sx={{ width: '30%', marginTop: '1rem' }}>
                     What are you looking for?
                 </Typography>
                 <FormControl sx={{ width: '50%' }}>
