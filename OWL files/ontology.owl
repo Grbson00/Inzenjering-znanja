@@ -13,25 +13,88 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#A520"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AGP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AM4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AM5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMDChipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ATX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudioJack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B550"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B760"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPUSocket"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CentralProcessingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chipset"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ComputerCase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Connectors"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Cooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DIMM-DDR3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DIMM-DDR4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DIMM-DDR5"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Desktop"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DisplayConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendedATX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#External"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormFactor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FullTower"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GraphicsProcessingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#H770"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HardDiskDrive"/>
@@ -46,10 +109,31 @@
         <Class IRI="#Headphones"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#IDE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelChipset"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Internal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LGA1150"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LGA1151"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LGA1155"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LGA1200"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Laptop"/>
@@ -61,7 +145,13 @@
         <Class IRI="#Linux_64bit"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#M.2"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MacOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MicroATX"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Microphone"/>
@@ -70,10 +160,16 @@
         <Class IRI="#MidTower"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MiniATX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Monitor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotherboardComponents"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mouse"/>
@@ -85,10 +181,34 @@
         <Class IRI="#PC"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PCIe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeripheralConnectors"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PowerSupplyUnit"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RAMSocket"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RandomAccessMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SATA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO-DIMM-DDR3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO-DIMM-DDR4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO-DIMM-DDR5"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SolidStateDrive"/>
@@ -100,6 +220,21 @@
         <Class IRI="#Speakers"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TR4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USB2.x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USB3.x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#W790"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#WebCam"/>
     </Declaration>
     <Declaration>
@@ -107,6 +242,24 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Windows_64bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#X470"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#X570"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Z790"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sTRX4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sXe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PS/2"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#connectionAUX"/>
@@ -307,24 +460,104 @@
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#A520"/>
+        <Class IRI="#AMDChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AGP"/>
+        <Class IRI="#Connectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AM4"/>
+        <Class IRI="#AMD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AM5"/>
+        <Class IRI="#AMD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMD"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMDChipset"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apple"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudioJack"/>
+        <Class IRI="#PeripheralConnectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B550"/>
+        <Class IRI="#AMDChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B760"/>
+        <Class IRI="#IntelChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPUSocket"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CentralProcessingUnit"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chipset"/>
+        <Class IRI="#MotherboardComponents"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ComputerCase"/>
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Connectors"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cooler"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DIMM-DDR3"/>
+        <Class IRI="#RAMSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DIMM-DDR4"/>
+        <Class IRI="#RAMSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DIMM-DDR5"/>
+        <Class IRI="#RAMSocket"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Desktop"/>
         <Class IRI="#PC"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DisplayConnector"/>
+        <Class IRI="#PeripheralConnectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendedATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#External"/>
         <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormFactor"/>
+        <Class IRI="#MotherboardComponents"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FullTower"/>
@@ -333,6 +566,10 @@
     <SubClassOf>
         <Class IRI="#GraphicsProcessingUnit"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#H770"/>
+        <Class IRI="#IntelChipset"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HardDiskDrive"/>
@@ -347,12 +584,40 @@
         <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IDE"/>
+        <Class IRI="#Connectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intel"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelChipset"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Internal"/>
         <Class IRI="#Hardware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Keyboard"/>
         <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LGA1150"/>
+        <Class IRI="#Intel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LGA1151"/>
+        <Class IRI="#Intel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LGA1155"/>
+        <Class IRI="#Intel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LGA1200"/>
+        <Class IRI="#Intel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Laptop"/>
@@ -367,8 +632,16 @@
         <Class IRI="#OperatingSystem"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#M.2"/>
+        <Class IRI="#Connectors"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MacOS"/>
         <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MicroATX"/>
+        <Class IRI="#FormFactor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microphone"/>
@@ -377,6 +650,10 @@
     <SubClassOf>
         <Class IRI="#MidTower"/>
         <Class IRI="#ComputerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiniATX"/>
+        <Class IRI="#FormFactor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Monitor"/>
@@ -391,12 +668,44 @@
         <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PCI"/>
+        <Class IRI="#Connectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PCIe"/>
+        <Class IRI="#Connectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeripheralConnectors"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PowerSupplyUnit"/>
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RAMSocket"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RandomAccessMemory"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SATA"/>
+        <Class IRI="#Connectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO-DIMM-DDR3"/>
+        <Class IRI="#RAMSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO-DIMM-DDR4"/>
+        <Class IRI="#RAMSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO-DIMM-DDR5"/>
+        <Class IRI="#RAMSocket"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SolidStateDrive"/>
@@ -411,6 +720,26 @@
         <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TR4"/>
+        <Class IRI="#AMD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USB"/>
+        <Class IRI="#PeripheralConnectors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USB2.x"/>
+        <Class IRI="#USB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USB3.x"/>
+        <Class IRI="#USB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#W790"/>
+        <Class IRI="#IntelChipset"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WebCam"/>
         <Class IRI="#External"/>
     </SubClassOf>
@@ -421,6 +750,30 @@
     <SubClassOf>
         <Class IRI="#Windows_64bit"/>
         <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#X470"/>
+        <Class IRI="#AMDChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#X570"/>
+        <Class IRI="#AMDChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Z790"/>
+        <Class IRI="#IntelChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sTRX4"/>
+        <Class IRI="#AMD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sXe"/>
+        <Class IRI="#Apple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PS/2"/>
+        <Class IRI="#PeripheralConnectors"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#CentralProcessingUnit"/>
