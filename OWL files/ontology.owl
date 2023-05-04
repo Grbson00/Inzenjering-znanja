@@ -280,7 +280,16 @@
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Acer_Monitor_27Prolite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acer_Monitor_CV24YT"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dell_Monitor_S2421HN"/>
@@ -311,6 +320,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LG_UltraFine_27EP950"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LG_UltraWide_38WN95C"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
@@ -496,8 +511,20 @@
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#Acer_Monitor_27Prolite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#Acer_Monitor_CV24YT"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Cooler"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Monitor"/>
@@ -538,6 +565,14 @@
     <ClassAssertion>
         <Class IRI="#SolidStateDrive"/>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#LG_UltraFine_27EP950"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#LG_UltraWide_38WN95C"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
@@ -758,6 +793,46 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#resolution"/>
+        <NamedIndividual IRI="#Acer_Monitor_27Prolite"/>
+        <Literal>1920x1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#screenDiagonal"/>
+        <NamedIndividual IRI="#Acer_Monitor_27Prolite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resolution"/>
+        <NamedIndividual IRI="#Acer_Monitor_CV24YT"/>
+        <Literal>3000x1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#screenDiagonal"/>
+        <NamedIndividual IRI="#Acer_Monitor_CV24YT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resolution"/>
+        <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
+        <Literal>1920x1080</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#screenDiagonal"/>
+        <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resolution"/>
+        <NamedIndividual IRI="#Dell_Monitor_S2421HN"/>
+        <Literal>1920x1080</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#screenDiagonal"/>
+        <NamedIndividual IRI="#Dell_Monitor_S2421HN"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
         <Literal>not integrated</Literal>
@@ -921,6 +996,26 @@
         <DataProperty IRI="#memorySize"/>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resolution"/>
+        <NamedIndividual IRI="#LG_UltraFine_27EP950"/>
+        <Literal>3840x2160</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#screenDiagonal"/>
+        <NamedIndividual IRI="#LG_UltraFine_27EP950"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resolution"/>
+        <NamedIndividual IRI="#LG_UltraWide_38WN95C"/>
+        <Literal>1900x1700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#screenDiagonal"/>
+        <NamedIndividual IRI="#LG_UltraWide_38WN95C"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -1582,7 +1677,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#screenDiagonal"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#sensorType"/>
