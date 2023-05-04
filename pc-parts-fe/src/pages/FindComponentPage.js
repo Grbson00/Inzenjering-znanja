@@ -16,10 +16,38 @@ const FindComponentPage = () => {
         setElement(event.target.value)
     }
 
+    const pickImage = () => {
+        switch (element) {
+            case 'GPU':
+                return 'url("/gpu.jpg")';
+            case 'CPU':
+                return 'url("/cpu.jpg")';
+            case 'Motherboard':
+                return 'url("/motherboard.webp")';
+            case 'RAM':
+                return 'url("/RAM.webp")';
+            case 'PowerSupply':
+                return 'url("/power.jpg")';
+            default:
+                return '#fff';
+        }
+    };
+
+    const styles = {
+        imageContainer: {
+            width: '40%',
+            height: '150px',
+            backgroundImage: pickImage(),
+            // backgroundImage: 'url("/gpu.jpg")',
+            backgroundSize: '100% 100%',
+            backgroundRepeat: 'no-repeat'
+        }
+    }
+
     return (
         <>
             <Stack direction={'row'} spacing={4}>
-                <Typography variant="subtitle1" color="initial">
+                <Typography variant="subtitle1" color="initial" sx={{width: '30%', marginTop: '1rem'}}>
                     What are you looking for?
                 </Typography>
                 <FormControl sx={{ width: '50%' }}>
@@ -38,8 +66,9 @@ const FindComponentPage = () => {
                         <MenuItem value={'PowerSupply'}>Power Supply</MenuItem>
                     </Select>
                 </FormControl>
+                <Container sx={styles.imageContainer} />
             </Stack>
-            <Container sx={{marginTop: '5rem'}}>
+            <Container sx={{ marginTop: '5rem' }}>
                 {
                     element === 'GPU' && <GPUSelection />
                 }
