@@ -24,6 +24,7 @@ public class DevController {
 
     @GetMapping("/test")
     public ResponseEntity<String> Test() {
+        service.FindCpu();
         return ResponseEntity.status(HttpStatus.OK).body("Test");
     }
 
@@ -43,4 +44,6 @@ public class DevController {
         }
         return ResponseEntity.status(HttpStatus.OK).body("Check System.Out!");
     }
+
+
 }

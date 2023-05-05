@@ -4,4 +4,5 @@ import java.io.File;
 
 public interface OntologyService {
     void LoadOntology(File file);
+    void FindCpu();
 }
