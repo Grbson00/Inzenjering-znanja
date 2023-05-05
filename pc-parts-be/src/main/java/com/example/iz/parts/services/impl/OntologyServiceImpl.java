@@ -1,5 +1,6 @@
 package com.example.iz.parts.services.impl;
 
+import com.example.iz.parts.dto.search.CPUSearchDTO;
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
@@ -11,6 +12,8 @@ import org.springframework.stereotype.Service;
 
 import javax.management.Query;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.sql.ResultSet;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -31,7 +34,6 @@ public class OntologyServiceImpl implements OntologyService {
 
     public void LoadOntology(File file) {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        OWLOntology newOntology;
         try {
             ontology = manager.loadOntologyFromOntologyDocument(file);
 //            System.out.print(ontology);
@@ -40,31 +42,40 @@ public class OntologyServiceImpl implements OntologyService {
         }
     }
 
-    public void FindCpu() {
+    public List<String> FindCpu(CPUSearchDTO dto) {
+        List<String> retList = new ArrayList<String>();
+
         // Get the data properties to query
         OWLDataProperty cpuCoreNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuCoreNumber"));
         OWLDataProperty cpuThreadNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuThreadNumber"));
         OWLDataProperty cpuCache = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuCache"));
+        OWLDataProperty cpuSpeed = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuClockSpeed"));
 
         OWLClass cpuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#CentralProcessingUnit");
 
         OWLDataRange coresRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(4)),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(8)));
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCoreNumberFrom())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCoreNumberTo())));
 
         OWLDataRange threadsRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(4)),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(8)));
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getThreadNumberFrom())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getThreadNumberTo())));
 
         OWLDataRange cacheRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(4)),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(8)));
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCacheMemoryFrom())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCacheMemoryTo())));
 
+        OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getFromSpeed())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getToSpeed())));
+
+        //TODO: match manufacturer string and return speed once speed is added to ontology
         OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
                 cpuClass,
                 dataFactory.getOWLDataSomeValuesFrom(cpuCoreNumber, coresRange),
                 dataFactory.getOWLDataSomeValuesFrom(cpuThreadNumber, threadsRange),
                 dataFactory.getOWLDataSomeValuesFrom(cpuCache, cacheRange)
+//                dataFactory.getOWLDataSomeValuesFrom(cpuSpeed, speedRange)
         );
 
         Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
@@ -72,8 +83,10 @@ public class OntologyServiceImpl implements OntologyService {
         // Print the individuals
         for (OWLNamedIndividual individual : individuals) {
             System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
         }
 
+        return retList;
     }
 }
 
