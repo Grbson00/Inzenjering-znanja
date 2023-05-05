@@ -18,7 +18,7 @@ const CPUForm = () => {
                     CPU information:
                 </Typography>
                 <Divider variant='fullWidth' sx={{ width: '100%' }} />
-                <Grid item xs={12} sm={3} sx={{ marginTop: '1rem' }}>
+                {/* <Grid item xs={12} sm={3} sx={{ marginTop: '1rem' }}>
                     <Select
                         formControlProps={{ margin: 'none' }}
                         name='manufacturer'
@@ -30,7 +30,7 @@ const CPUForm = () => {
                         <MenuItem value={'AMD'}>AMD</MenuItem>
                     </Select>
                 </Grid> 
-                <Grid item xs={0} sm={9} />
+                <Grid item xs={0} sm={9} /> */}
                 <Grid item xs={12} sm={3}>
                     <TextField
                         autoComplete='off'

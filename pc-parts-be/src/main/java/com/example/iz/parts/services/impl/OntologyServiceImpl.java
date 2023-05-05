@@ -36,7 +36,7 @@ public class OntologyServiceImpl implements OntologyService {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         try {
             ontology = manager.loadOntologyFromOntologyDocument(file);
-//            System.out.print(ontology);
+            System.out.print(ontology);
         } catch (OWLOntologyCreationException e) {
             throw new RuntimeException(e);
         }

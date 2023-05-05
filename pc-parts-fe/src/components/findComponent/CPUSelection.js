@@ -23,9 +23,9 @@ const CPUSelection = () => {
     }
     const validate = (values) => {
         let returnObject = {}
-        if (!values.manufacturer) {
-            returnObject.manufacturer = 'This field is required!'
-        }
+        // if (!values.manufacturer) {
+        //     returnObject.manufacturer = 'This field is required!'
+        // }
         if (parseInt(values.fromSpeed) > parseInt(values.toSpeed)) {
             returnObject.fromSpeed = "Invalid value!"
             returnObject.toSpeed = "Invalid value!"
