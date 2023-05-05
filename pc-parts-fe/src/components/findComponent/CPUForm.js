@@ -26,10 +26,8 @@ const CPUForm = () => {
                         required
                         fullWidth
                     >
-                        <MenuItem value={2}>Intel</MenuItem>
-                        <MenuItem value={4}>AMD</MenuItem>
-                        <MenuItem value={8}>Apple</MenuItem>
-                        <MenuItem value={16}>Fujitsu</MenuItem>
+                        <MenuItem value={'Intel'}>Intel</MenuItem>
+                        <MenuItem value={'AMD'}>AMD</MenuItem>
                     </Select>
                 </Grid> 
                 <Grid item xs={0} sm={9} />
@@ -54,44 +52,69 @@ const CPUForm = () => {
                     />
                 </Grid>
                 <Grid item xs={0} sm={6} />
-                <Grid item xs={12} sm={3} sx={{ marginTop: '1rem' }}>
-                    <Select
-                        formControlProps={{ margin: 'none' }}
-                        name='coreNumber'
-                        label='Core Number'
-                        required
+                <Grid item xs={12} sm={3}>
+                    <TextField
+                        autoComplete='off'
                         fullWidth
-                    >
-                        <MenuItem value={2}>2</MenuItem>
-                        <MenuItem value={4}>4</MenuItem>
-                        <MenuItem value={8}>8</MenuItem>
-                        <MenuItem value={16}>16</MenuItem>
-                    </Select>
-                </Grid>
-                <Grid item xs={12} sm={3} sx={{ marginTop: '1rem' }}>
-                    <Select
-                        formControlProps={{ margin: 'none' }}
-                        name='threadNumber'
-                        label='Threads per core'
                         required
-                        fullWidth
-                    >
-                        <MenuItem value={4}>4</MenuItem>
-                        <MenuItem value={8}>8</MenuItem>
-                        <MenuItem value={16}>16</MenuItem>
-                        <MenuItem value={32}>32</MenuItem>
-                    </Select>
+                        margin="normal"
+                        name="coreNumberFrom"
+                        label="Core number from"
+
+                    />
                 </Grid>
-                <Grid item xs={0} sm={6} />
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={3}>
                     <TextField
                         fullWidth
                         required
                         margin="normal"
-                        name="cacheMemory"
-                        label="Cache memory from (GB)"
+                        name="coreNumberTo"
+                        label="Core number to"
                     />
                 </Grid>
+                <Grid item xs={0} sm={6} />
+                <Grid item xs={12} sm={3}>
+                    <TextField
+                        autoComplete='off'
+                        fullWidth
+                        required
+                        margin="normal"
+                        name="threadNumberFrom"
+                        label="Thread number from"
+
+                    />
+                </Grid>
+                <Grid item xs={12} sm={3}>
+                    <TextField
+                        fullWidth
+                        required
+                        margin="normal"
+                        name="threadNumberTo"
+                        label="Thread number to"
+                    />
+                </Grid>
+                <Grid item xs={0} sm={6} />
+                <Grid item xs={12} sm={3}>
+                    <TextField
+                        autoComplete='off'
+                        fullWidth
+                        required
+                        margin="normal"
+                        name="cacheMemoryFrom"
+                        label="Cache memory from (GB)"
+
+                    />
+                </Grid>
+                <Grid item xs={12} sm={3}>
+                    <TextField
+                        fullWidth
+                        required
+                        margin="normal"
+                        name="cacheMemoryTo"
+                        label="Cache memory to (GB)"
+                    />
+                </Grid>
+                <Grid item xs={0} sm={6} />
             </Grid>
         </>
     );
