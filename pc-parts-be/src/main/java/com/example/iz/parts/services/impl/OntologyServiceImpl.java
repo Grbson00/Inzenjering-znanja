@@ -69,7 +69,7 @@ public class OntologyServiceImpl implements OntologyService {
                 dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getFromSpeed())),
                 dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getToSpeed())));
 
-        //TODO: match manufacturer string and return speed once speed is added to ontology
+        //TODO: match manufacturer string and return speed
         OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
                 cpuClass,
                 dataFactory.getOWLDataSomeValuesFrom(cpuCoreNumber, coresRange),

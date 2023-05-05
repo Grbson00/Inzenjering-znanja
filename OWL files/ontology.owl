@@ -16,6 +16,12 @@
         <Class IRI="#AGP"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AM4Chipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AM5Chipset"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AMDCPUSocket"/>
     </Declaration>
     <Declaration>
@@ -170,6 +176,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Windows_64bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#400/500S"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#600/700S"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#connectionAUX"/>
@@ -343,16 +355,49 @@
         <DataProperty IRI="#wattage"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AGP1.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AGP2.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AGP3.0"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AM4_CPU_Socket"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AM5_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AMD_A320_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_A520_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_A620_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_B350_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_B450_chipset"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AMD_B550_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_B650E_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_B650_chipset"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -409,6 +454,21 @@
         <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AMD_X370_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_X470_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_X570_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_X670E_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_X670_chipset"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
     </Declaration>
     <Declaration>
@@ -439,7 +499,19 @@
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR4"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR5"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
@@ -449,6 +521,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExtendedATX"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3060_Gaming_OC"/>
@@ -470,6 +545,18 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_B460_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_B560_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_B660_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_B760_chipset"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -511,10 +598,49 @@
         <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Intel_H410_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_H510_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_H770_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Q670_chipset"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Intel_W480_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_W580_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Z690_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Z790_chipset"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LGA1150_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LGA1151_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LGA1155_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LGA1200_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LGA2066_CPU_Socket"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LG_UltraFine_27EP950"/>
@@ -532,6 +658,21 @@
         <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#M.2NVMe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M.2_2242"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M.2_2280"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M.2_KeyB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#M.2_KeyM"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
     </Declaration>
     <Declaration>
@@ -547,16 +688,61 @@
         <NamedIndividual IRI="#MacOS_Ventura"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Micro-ATX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mini-ITX"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PCIe4.0"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PCIe_1.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCIe_2.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCIe_3.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCIe_4.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCIe_5.0"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SATA_2.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SATA_3.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SATA_3.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SO-DIMM-DDR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SO-DIMM-DDR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SO-DIMM-DDR4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SO-DIMM-DDR5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TR4_CPU_Socket"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Windows10_32bit"/>
@@ -586,11 +772,22 @@
         <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#sTRX4_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060_12GB_15_Gbps_GDRR6_192-Bit_HDMI/DP_PCIe_4_Torx_Triple_Fan_Ampere_OC_Graphics_Card"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AGP"/>
         <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AM4Chipset"/>
+        <Class IRI="#AMDChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AM5Chipset"/>
+        <Class IRI="#AMDChipset"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AMDCPUSocket"/>
@@ -784,12 +981,24 @@
         <Class IRI="#Windows_64bit"/>
         <Class IRI="#OperatingSystem"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#400/500S"/>
+        <Class IRI="#IntelChipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#600/700S"/>
+        <Class IRI="#IntelChipset"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AGP"/>
         <Class IRI="#M.2"/>
         <Class IRI="#PCI"/>
         <Class IRI="#PCIe"/>
         <Class IRI="#SATA"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AM4Chipset"/>
+        <Class IRI="#AM5Chipset"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#AMDCPUSocket"/>
@@ -813,6 +1022,10 @@
         <Class IRI="#RAMSlotType"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Connector"/>
+        <Class IRI="#600/700S"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#DIMM"/>
         <Class IRI="#SO-DIMM"/>
     </DisjointClasses>
@@ -825,6 +1038,18 @@
         <Class IRI="#SolidStateDrive"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#AGP"/>
+        <NamedIndividual IRI="#AGP1.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AGP"/>
+        <NamedIndividual IRI="#AGP2.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AGP"/>
+        <NamedIndividual IRI="#AGP3.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
     </ClassAssertion>
@@ -833,12 +1058,44 @@
         <NamedIndividual IRI="#AM4_CPU_Socket"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#AMDCPUSocket"/>
+        <NamedIndividual IRI="#AM5_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
         <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AMDChipset"/>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_A320_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_A520_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM5Chipset"/>
+        <NamedIndividual IRI="#AMD_A620_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_B350_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_B450_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
         <NamedIndividual IRI="#AMD_B550_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM5Chipset"/>
+        <NamedIndividual IRI="#AMD_B650E_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM5Chipset"/>
+        <NamedIndividual IRI="#AMD_B650_chipset"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
@@ -913,6 +1170,26 @@
         <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_X370_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_X470_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM4Chipset"/>
+        <NamedIndividual IRI="#AMD_X570_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM5Chipset"/>
+        <NamedIndividual IRI="#AMD_X670E_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AM5Chipset"/>
+        <NamedIndividual IRI="#AMD_X670_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
     </ClassAssertion>
@@ -954,7 +1231,23 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DIMM"/>
+        <NamedIndividual IRI="#DIMM-DDR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DIMM"/>
+        <NamedIndividual IRI="#DIMM-DDR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DIMM"/>
+        <NamedIndividual IRI="#DIMM-DDR4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DIMM"/>
         <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DIMM"/>
+        <NamedIndividual IRI="#DIMM-DDR5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Monitor"/>
@@ -967,6 +1260,10 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExtendedATX"/>
+        <NamedIndividual IRI="#ExtendedATX"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
@@ -995,6 +1292,22 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#400/500S"/>
+        <NamedIndividual IRI="#Intel_B460_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#400/500S"/>
+        <NamedIndividual IRI="#Intel_B560_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#600/700S"/>
+        <NamedIndividual IRI="#Intel_B660_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#600/700S"/>
+        <NamedIndividual IRI="#Intel_B760_chipset"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
@@ -1049,12 +1362,64 @@
         <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#400/500S"/>
+        <NamedIndividual IRI="#Intel_H410_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#400/500S"/>
+        <NamedIndividual IRI="#Intel_H510_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#600/700S"/>
+        <NamedIndividual IRI="#Intel_H770_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#600/700S"/>
+        <NamedIndividual IRI="#Intel_Q670_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#400/500S"/>
+        <NamedIndividual IRI="#Intel_W480_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#400/500S"/>
+        <NamedIndividual IRI="#Intel_W580_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#600/700S"/>
+        <NamedIndividual IRI="#Intel_Z690_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#600/700S"/>
+        <NamedIndividual IRI="#Intel_Z790_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SolidStateDrive"/>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntelCPUSocket"/>
+        <NamedIndividual IRI="#LGA1150_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntelCPUSocket"/>
+        <NamedIndividual IRI="#LGA1151_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntelCPUSocket"/>
+        <NamedIndividual IRI="#LGA1155_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntelCPUSocket"/>
+        <NamedIndividual IRI="#LGA1200_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntelCPUSocket"/>
+        <NamedIndividual IRI="#LGA2066_CPU_Socket"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Monitor"/>
@@ -1077,6 +1442,26 @@
         <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#M.2"/>
+        <NamedIndividual IRI="#M.2NVMe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#M.2"/>
+        <NamedIndividual IRI="#M.2_2242"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#M.2"/>
+        <NamedIndividual IRI="#M.2_2280"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#M.2"/>
+        <NamedIndividual IRI="#M.2_KeyB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#M.2"/>
+        <NamedIndividual IRI="#M.2_KeyM"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
     </ClassAssertion>
@@ -1097,6 +1482,14 @@
         <NamedIndividual IRI="#MacOS_Ventura"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Micro-ATX"/>
+        <NamedIndividual IRI="#Micro-ATX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mini-ITX"/>
+        <NamedIndividual IRI="#Mini-ITX"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
     </ClassAssertion>
@@ -1105,12 +1498,64 @@
         <NamedIndividual IRI="#PCIe4.0"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe_1.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe_2.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe_3.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe_4.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe_5.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SATA"/>
+        <NamedIndividual IRI="#SATA_2.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SATA"/>
+        <NamedIndividual IRI="#SATA_3.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SATA"/>
+        <NamedIndividual IRI="#SATA_3.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SO-DIMM"/>
+        <NamedIndividual IRI="#SO-DIMM-DDR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SO-DIMM"/>
+        <NamedIndividual IRI="#SO-DIMM-DDR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SO-DIMM"/>
+        <NamedIndividual IRI="#SO-DIMM-DDR4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SO-DIMM"/>
+        <NamedIndividual IRI="#SO-DIMM-DDR5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AMDCPUSocket"/>
+        <NamedIndividual IRI="#TR4_CPU_Socket"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Windows_32bit"/>
@@ -1147,6 +1592,10 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AMDCPUSocket"/>
+        <NamedIndividual IRI="#sTRX4_CPU_Socket"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
@@ -1219,8 +1668,43 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_A320_chipset"/>
+        <Literal>A320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_A520_chipset"/>
+        <Literal>A520</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_A620_chipset"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_B350_chipset"/>
+        <Literal>B350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_B450_chipset"/>
+        <Literal>B450</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
         <NamedIndividual IRI="#AMD_B550_chipset"/>
         <Literal>B550</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_B650E_chipset"/>
+        <Literal>B650E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_B650_chipset"/>
+        <Literal>B650</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -1603,6 +2087,31 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_X370_chipset"/>
+        <Literal>X370</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_X470_chipset"/>
+        <Literal>X470</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_X570_chipset"/>
+        <Literal>X570</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_X670E_chipset"/>
+        <Literal>X670E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_X670_chipset"/>
+        <Literal>X670</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
         <Literal>AMD</Literal>
@@ -1806,6 +2315,26 @@
         <DataProperty IRI="#gpuMemory"/>
         <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_B460_chipset"/>
+        <Literal>B460</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_B560_chipset"/>
+        <Literal>B560</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_B660_chipset"/>
+        <Literal>B660</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_B760_chipset"/>
+        <Literal>B760</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -2073,6 +2602,26 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_H410_chipset"/>
+        <Literal>H410</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_H510_chipset"/>
+        <Literal>H510</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_H770_chipset"/>
+        <Literal>H770</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_Q670_chipset"/>
+        <Literal>Q670</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>Intel</Literal>
@@ -2081,6 +2630,26 @@
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_W480_chipset"/>
+        <Literal>W480</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_W580_chipset"/>
+        <Literal>W580</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_Z690_chipset"/>
+        <Literal>Z690</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_Z790_chipset"/>
+        <Literal>Z790</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#resolution"/>
