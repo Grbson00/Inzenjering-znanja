@@ -343,6 +343,9 @@
         <DataProperty IRI="#wattage"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AM4_CPU_Socket"/>
     </Declaration>
     <Declaration>
@@ -370,6 +373,42 @@
         <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
     </Declaration>
     <Declaration>
@@ -380,6 +419,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_Gaming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_OC_Edition_Gaming"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ATX"/>
@@ -406,6 +451,12 @@
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3060_Gaming_OC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3070_Gaming_OC"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
     </Declaration>
     <Declaration>
@@ -413,6 +464,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gigabyte_GV-N1030D4-2GL_GeForce_GT_1030_Low_Profile_D4_2G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -425,6 +482,33 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i5-12600K_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i7-12700KF_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i7-12700K_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i9-12900K_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
@@ -448,6 +532,15 @@
         <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_4070"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MacOS_Monterey"/>
     </Declaration>
     <Declaration>
@@ -458,6 +551,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PCIe4.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Windows10_32bit"/>
@@ -472,7 +571,22 @@
         <NamedIndividual IRI="#Windows11_64bit"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#XFX_Speedster_SWFT309_AMD_Radeon_RX_6700_XT_CORE_Gaming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZOTAC_Gaming_GeForce_RTX_3060_Twin_Edge_OC"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maxsun_AMD_Radeon_RX_580_8GB_2048SP_GDDR5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060_12GB_15_Gbps_GDRR6_192-Bit_HDMI/DP_PCIe_4_Torx_Triple_Fan_Ampere_OC_Graphics_Card"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AGP"/>
@@ -711,6 +825,10 @@
         <Class IRI="#SolidStateDrive"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AMDCPUSocket"/>
         <NamedIndividual IRI="#AM4_CPU_Socket"/>
     </ClassAssertion>
@@ -747,6 +865,54 @@
         <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
     </ClassAssertion>
@@ -761,6 +927,14 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_Gaming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_OC_Edition_Gaming"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ATX"/>
@@ -796,6 +970,14 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3060_Gaming_OC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3070_Gaming_OC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -805,6 +987,14 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#Gigabyte_GV-N1030D4-2GL_GeForce_GT_1030_Low_Profile_D4_2G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
@@ -821,6 +1011,42 @@
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12600K_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700KF_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700K_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i9-12900K_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentralProcessingUnit"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
@@ -851,6 +1077,18 @@
         <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_4070"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#MacOS"/>
         <NamedIndividual IRI="#MacOS_Monterey"/>
     </ClassAssertion>
@@ -865,6 +1103,14 @@
     <ClassAssertion>
         <Class IRI="#PCIe"/>
         <NamedIndividual IRI="#PCIe4.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Windows_32bit"/>
@@ -884,7 +1130,27 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#XFX_Speedster_SWFT309_AMD_Radeon_RX_6700_XT_CORE_Gaming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#ZOTAC_Gaming_GeForce_RTX_3060_Twin_Edge_OC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#maxsun_AMD_Radeon_RX_580_8GB_2048SP_GDDR5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraphicsProcessingUnit"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060_12GB_15_Gbps_GDRR6_192-Bit_HDMI/DP_PCIe_4_Torx_Triple_Fan_Ampere_OC_Graphics_Card"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPUSocket"/>
@@ -916,6 +1182,21 @@
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1286</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#AISURIX_Radeon_RX_580"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuSocketName"/>
         <NamedIndividual IRI="#AM4_CPU_Socket"/>
@@ -1022,6 +1303,306 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5500_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_5600_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700G_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_5800X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7700X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_7_7800X3D_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_5900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">76</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#AMD_Ryzen_9_7900X_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
         <Literal>AMD</Literal>
@@ -1059,6 +1640,41 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_Gaming"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_OC_Edition_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2760</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_OC_Edition_Gaming"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_OC_Edition_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_NVIDIA_GeForce_RTX™_4070_Ti_OC_Edition_Gaming"/>
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -1112,6 +1728,36 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3060_Gaming_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1837</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3060_Gaming_OC"/>
+        <Literal>Nvidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3060_Gaming_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3070_Gaming_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1815</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3070_Gaming_OC"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#GIGABYTE_GeForce_RTX_3070_Gaming_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
         <Literal>NVidia</Literal>
@@ -1130,6 +1776,36 @@
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#Gigabyte_GV-N1030D4-2GL_GeForce_GT_1030_Low_Profile_D4_2G"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1417</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#Gigabyte_GV-N1030D4-2GL_GeForce_GT_1030_Low_Profile_D4_2G"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#Gigabyte_GV-N1030D4-2GL_GeForce_GT_1030_Low_Profile_D4_2G"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1887</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#Gigabyte_GeForce_RTX_4070_Ti_Gaming_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -1192,6 +1868,211 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i5-12600K_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13400_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i5-13600K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700KF_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i7-12700K_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i9-12900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i9-12900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i9-12900K_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i9-12900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900KF_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCache"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuCoreNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
+        <Literal>Intel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuThreadNumber"/>
+        <NamedIndividual IRI="#Intel_Core_i9-13900K_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>Intel</Literal>
@@ -1222,9 +2103,124 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1290</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#MSI_Computer_Video_Graphic_Cards_GeForce_GTX_1050_TI_GAMING_X_4G"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1710</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_4070"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_4070"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2310</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2310</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#PNY_GeForce_RTX_4070_Ti_12GB_XLR8_Gaming_Verto_Epic-X"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#XFX_Speedster_SWFT309_AMD_Radeon_RX_6700_XT_CORE_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2321</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#XFX_Speedster_SWFT309_AMD_Radeon_RX_6700_XT_CORE_Gaming"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#XFX_Speedster_SWFT309_AMD_Radeon_RX_6700_XT_CORE_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuType"/>
+        <NamedIndividual IRI="#XFX_Speedster_SWFT309_AMD_Radeon_RX_6700_XT_CORE_Gaming"/>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ZOTAC_Gaming_GeForce_RTX_3060_Twin_Edge_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1807</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#ZOTAC_Gaming_GeForce_RTX_3060_Twin_Edge_OC"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ZOTAC_Gaming_GeForce_RTX_3060_Twin_Edge_OC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
@@ -1235,6 +2231,51 @@
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#maxsun_AMD_Radeon_RX_580_8GB_2048SP_GDDR5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1168</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#maxsun_AMD_Radeon_RX_580_8GB_2048SP_GDDR5"/>
+        <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#maxsun_AMD_Radeon_RX_580_8GB_2048SP_GDDR5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1468</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
+        <Literal>Nvidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#maxsun_GEFORCE_GT_1030_2GB_GDDR5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060_12GB_15_Gbps_GDRR6_192-Bit_HDMI/DP_PCIe_4_Torx_Triple_Fan_Ampere_OC_Graphics_Card"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1710</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060_12GB_15_Gbps_GDRR6_192-Bit_HDMI/DP_PCIe_4_Torx_Triple_Fan_Ampere_OC_Graphics_Card"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#MSI_Gaming_GeForce_RTX_3060_12GB_15_Gbps_GDRR6_192-Bit_HDMI/DP_PCIe_4_Torx_Triple_Fan_Ampere_OC_Graphics_Card"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#connectionAUX"/>
