@@ -33,9 +33,9 @@ public class SearchController {
         return ResponseEntity.status(HttpStatus.OK).body(null);
     }
     @PostMapping("/cpu")
-    public ResponseEntity<List<CPU>> FindCPU(@NonNull @RequestBody final CPUSearchDTO dto) {
+    public ResponseEntity<List<String>> FindCPU(@NonNull @RequestBody final CPUSearchDTO dto) {
         System.out.println(dto);
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindCpu(dto));
     }
     @PostMapping("/motherboard")
     public ResponseEntity<List<MotherBoard>> FindMotherBoard(@NonNull @RequestBody final MotherBoardSearchDTO dto) {

@@ -1,8 +1,11 @@
 package com.example.iz.parts.services;
 
+import com.example.iz.parts.dto.search.CPUSearchDTO;
+
 import java.io.File;
+import java.util.List;
 
 public interface OntologyService {
     void LoadOntology(File file);
-    void FindCpu();
+    List<String> FindCpu(CPUSearchDTO dto);
 }

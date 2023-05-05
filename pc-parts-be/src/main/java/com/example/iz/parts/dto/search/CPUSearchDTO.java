@@ -7,9 +7,48 @@ public class CPUSearchDTO {
     private String manufacturer;
     private Integer fromSpeed;
     private Integer toSpeed;
-    private Integer cacheMemory;
-    private Integer coreNumber;
-    private Integer threadNumber;
+    private Integer cacheMemoryFrom;
+    private Integer cacheMemoryTo;
+    private Integer coreNumberFrom;
+    private Integer coreNumberTo;
+    private Integer threadNumberFrom;
+    private Integer threadNumberTo;
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public Integer getFromSpeed() {
+        return fromSpeed;
+    }
+
+    public Integer getToSpeed() {
+        return toSpeed;
+    }
+
+    public Integer getCacheMemoryFrom() {
+        return cacheMemoryFrom;
+    }
+
+    public Integer getCacheMemoryTo() {
+        return cacheMemoryTo;
+    }
+
+    public Integer getCoreNumberFrom() {
+        return coreNumberFrom;
+    }
+
+    public Integer getCoreNumberTo() {
+        return coreNumberTo;
+    }
+
+    public Integer getThreadNumberFrom() {
+        return threadNumberFrom;
+    }
+
+    public Integer getThreadNumberTo() {
+        return threadNumberTo;
+    }
 
     @Override
     public String toString() {
@@ -17,9 +56,12 @@ public class CPUSearchDTO {
                 "manufacturer='" + manufacturer + '\'' +
                 ", fromSpeed=" + fromSpeed +
                 ", toSpeed=" + toSpeed +
-                ", cacheMemory=" + cacheMemory +
-                ", coreNumber=" + coreNumber +
-                ", threadNumber=" + threadNumber +
+                ", cacheMemoryFrom=" + cacheMemoryFrom +
+                ", cacheMemoryTo=" + cacheMemoryTo +
+                ", coreNumberFrom=" + coreNumberFrom +
+                ", coreNumberTo=" + coreNumberTo +
+                ", threadNumberFrom=" + threadNumberFrom +
+                ", threadNumberTo=" + threadNumberTo +
                 '}';
     }
 }
