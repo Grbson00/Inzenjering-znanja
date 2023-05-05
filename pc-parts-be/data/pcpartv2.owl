@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/grbson/ontologies/2023/4/pcpartv2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/grbson/ontologies/2023/4/pcpartv2">
+    <Prefix name="" IRI="http://www.semanticweb.org/grbson/de/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AGP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMDCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMDChipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ATX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DIMM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extended-ATX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelChipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#M.2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Micro-ATX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mini-ITX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotherboardComponents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PCIe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAMSlotType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SATA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO-DIMM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChipset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConnector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormFactor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRAMType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#chipsetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuSocketName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AGP"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMDCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMDChipset"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPUSocket"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chipset"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Connector"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DIMM"/>
+        <Class IRI="#RAMSlotType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extended-ATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormFactor"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelChipset"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#M.2"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Micro-ATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mini-ITX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motherboard"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PCI"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PCIe"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RAMSlotType"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SATA"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO-DIMM"/>
+        <Class IRI="#RAMSlotType"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AGP"/>
+        <Class IRI="#M.2"/>
+        <Class IRI="#PCI"/>
+        <Class IRI="#PCIe"/>
+        <Class IRI="#SATA"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AMDCPUSocket"/>
+        <Class IRI="#IntelCPUSocket"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AMDChipset"/>
+        <Class IRI="#IntelChipset"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ATX"/>
+        <Class IRI="#Extended-ATX"/>
+        <Class IRI="#Micro-ATX"/>
+        <Class IRI="#Mini-ITX"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CPUSocket"/>
+        <Class IRI="#Chipset"/>
+        <Class IRI="#Connector"/>
+        <Class IRI="#FormFactor"/>
+        <Class IRI="#RAMSlotType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DIMM"/>
+        <Class IRI="#SO-DIMM"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#MotherboardComponents"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AMDCPUSocket"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AMDChipset"/>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ATX"/>
+        <NamedIndividual IRI="#ATX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DIMM"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChipset"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnector"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#ATX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSocketName"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+        <Literal>AM4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
+        <Literal>B550</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Chipset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="#Connector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <Class IRI="#FormFactor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#RAMSlotType"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#chipsetName"/>
+        <Class IRI="#Chipset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuSocketName"/>
+        <Class IRI="#CPUSocket"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#chipsetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuSocketName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

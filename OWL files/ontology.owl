@@ -286,13 +286,25 @@
         <ObjectProperty IRI="#hasCPU"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChipset"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasComputerCase"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasConnector"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCooler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormFactor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasGPU"/>
@@ -313,6 +325,9 @@
         <ObjectProperty IRI="#hasRAM"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasRAMType"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasSDD"/>
     </Declaration>
     <Declaration>
@@ -323,6 +338,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#CPUManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#chipsetName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#computerCaseName"/>
@@ -368,6 +386,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#numberOfFans"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peripheralConnectorName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#resolution"/>
@@ -1442,6 +1463,14 @@
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#ComputerCase"/>
     </ObjectPropertyDomain>
@@ -1450,8 +1479,16 @@
         <Class IRI="#Desktop"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCooler"/>
         <Class IRI="#CentralProcessingUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <Class IRI="#Motherboard"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGPU"/>
@@ -1490,6 +1527,10 @@
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSDD"/>
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
@@ -1512,6 +1553,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCPU"/>
         <Class IRI="#CentralProcessingUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Chipset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1546,8 +1595,16 @@
         <Class IRI="#ComputerCase"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="#Connectors"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCooler"/>
         <Class IRI="#Cooler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <Class IRI="#FormFactor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasGPU"/>
@@ -1574,6 +1631,10 @@
         <Class IRI="#RandomAccessMemory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#RAMSocket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSDD"/>
         <Class IRI="#SolidStateDrive"/>
     </ObjectPropertyRange>
@@ -1585,6 +1646,10 @@
         <ObjectProperty IRI="#hasWebCam"/>
         <Class IRI="#WebCam"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#chipsetName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#computerCaseName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -1670,6 +1735,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
+        <DataProperty IRI="#chipsetName"/>
+        <Class IRI="#Chipset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#computerCaseName"/>
         <Class IRI="#ComputerCase"/>
     </DataPropertyDomain>
@@ -1797,6 +1866,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
         <Class IRI="#SoundCard"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#chipsetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#computerCaseName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
