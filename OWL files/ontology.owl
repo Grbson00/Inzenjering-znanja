@@ -477,15 +477,6 @@
         <Class IRI="#OperatingSystem"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#CentralProcessingUnit"/>
-        <Class IRI="#ComputerCase"/>
-        <Class IRI="#GraphicsProcessingUnit"/>
-        <Class IRI="#HardDrive"/>
-        <Class IRI="#PowerSupplyUnit"/>
-        <Class IRI="#RandomAccessMemory"/>
-        <Class IRI="#SoundCard"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#FullTower"/>
         <Class IRI="#MidTower"/>
     </DisjointClasses>
@@ -1646,13 +1637,9 @@
         <DataProperty IRI="#wattage"/>
         <Class IRI="#PowerSupplyUnit"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#SoundCard"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#clockSpeed"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#computerCaseName"/>
@@ -1660,7 +1647,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#computerCaseSize"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#connectorType"/>
@@ -1765,14 +1752,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#wattage"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <DataOneOf>
-            <Literal>PCIExpress</Literal>
-            <Literal>PCISlot</Literal>
-            <Literal>USB</Literal>
-        </DataOneOf>
     </DataPropertyRange>
 </Ontology>
 
