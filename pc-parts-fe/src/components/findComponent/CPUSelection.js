@@ -1,19 +1,23 @@
-import { Button, Container } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import CPUForm from "./CPUForm"
 import { Form } from 'react-final-form';
 import REGEX from "../../regex";
 import axios from "axios";
+import { useState } from "react";
+import SimpleCard from "../common/SimpleCard";
 
 const numberRegex = new RegExp(REGEX.NUMBER)
 
 const CPUSelection = () => {
+    const [cpuArr, setCpuArr] = useState([]);
     const onSubmit = (data) => {
         axios.post('http://localhost:8080/api/search/cpu', data)
             .catch(e => {
                 console.error(e)
             })
             .then((response) => {
-                console.log(response);
+                console.log(response.data);
+                setCpuArr(response.data)
             })
         console.log(data);
     }
@@ -22,15 +26,9 @@ const CPUSelection = () => {
         if (!values.manufacturer) {
             returnObject.manufacturer = 'This field is required!'
         }
-        if (!values.coreNumber) {
-            returnObject.coreNumber = 'This field is required!'
-        }
-        if (!values.threadNumber) {
-            returnObject.threadNumber = 'This field is required!'
-        }
         if (parseInt(values.fromSpeed) > parseInt(values.toSpeed)) {
-            returnObject.fromSpeed = "From speed can't be faster than to speed"
-            returnObject.toSpeed = "From speed can't be faster than to speed"
+            returnObject.fromSpeed = "Invalid value!"
+            returnObject.toSpeed = "Invalid value!"
         }
         if (!numberRegex.test(values.fromSpeed)) {
             returnObject.fromSpeed = 'Numerical characters only!'
@@ -38,8 +36,35 @@ const CPUSelection = () => {
         if (!numberRegex.test(values.toSpeed)) {
             returnObject.toSpeed = 'Numerical characters only!'
         }
-        if (!numberRegex.test(values.cacheMemory)) {
-            returnObject.cacheMemory = 'Numerical characters only!'
+        if (parseInt(values.coreNumberFrom) > parseInt(values.coreNumberTo)) {
+            returnObject.coreNumberFrom = "Invalid value!"
+            returnObject.coreNumberTo = "Invalid value!"
+        }
+        if (!numberRegex.test(values.coreNumberFrom)) {
+            returnObject.coreNumberFrom = 'Numerical characters only!'
+        }
+        if (!numberRegex.test(values.coreNumberTo)) {
+            returnObject.coreNumberTo = 'Numerical characters only!'
+        }
+        if (parseInt(values.threadNumberFrom) > parseInt(values.threadNumberTo)) {
+            returnObject.threadNumberFrom = "Invalid value!"
+            returnObject.threadNumberTo = "Invalid value!"
+        }
+        if (!numberRegex.test(values.threadNumberFrom)) {
+            returnObject.threadNumberFrom = 'Numerical characters only!'
+        }
+        if (!numberRegex.test(values.threadNumberTo)) {
+            returnObject.threadNumberTo = 'Numerical characters only!'
+        }
+        if (parseInt(values.cacheMemoryFrom) > parseInt(values.cacheMemoryTo)) {
+            returnObject.cacheMemoryFrom = "Invalid value!"
+            returnObject.cacheMemoryTo = "Invalid value!"
+        }
+        if (!numberRegex.test(values.cacheMemoryFrom)) {
+            returnObject.cacheMemoryFrom = 'Numerical characters only!'
+        }
+        if (!numberRegex.test(values.cacheMemoryTo)) {
+            returnObject.cacheMemoryTo = 'Numerical characters only!'
         }
 
         return returnObject
@@ -61,7 +86,18 @@ const CPUSelection = () => {
                     </form>)}
             >
             </Form>
-
+            {
+                cpuArr && <Typography mt={6} variant="h5" color="initial">Your results:</Typography>
+            }
+            <Grid container spacing={2} mt={4}>
+                {
+                    cpuArr && cpuArr.map((cpu) => {
+                        return (<Grid item xs={4}>
+                            <SimpleCard key={cpu} content={cpu} />
+                        </Grid>)
+                    })
+                }
+            </Grid>
         </>
     );
 }
