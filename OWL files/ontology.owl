@@ -13,19 +13,49 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#AGP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMDCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMDChipset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ATX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPUSocket"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CentralProcessingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chipset"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ComputerCase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Connector"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Cooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DIMM"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Desktop"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ExtendedATX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#External"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormFactor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FullTower"/>
@@ -46,6 +76,12 @@
         <Class IRI="#Headphones"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#IntelCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelChipset"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Internal"/>
     </Declaration>
     <Declaration>
@@ -61,7 +97,13 @@
         <Class IRI="#Linux_64bit"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#M.2"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MacOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Micro-ATX"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Microphone"/>
@@ -70,10 +112,16 @@
         <Class IRI="#MidTower"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Mini-ITX"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Monitor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotherboardComponents"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mouse"/>
@@ -85,10 +133,25 @@
         <Class IRI="#PC"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PCIe"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PowerSupplyUnit"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RAMSlotType"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RandomAccessMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SATA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO-DIMM"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SolidStateDrive"/>
@@ -133,13 +196,25 @@
         <ObjectProperty IRI="#hasCPU"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChipset"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasComputerCase"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasConnector"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCooler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormFactor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasGPU"/>
@@ -160,6 +235,9 @@
         <ObjectProperty IRI="#hasRAM"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasRAMType"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasSDD"/>
     </Declaration>
     <Declaration>
@@ -169,10 +247,7 @@
         <ObjectProperty IRI="#hasWebCam"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#CPUManufacturer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#clockSpeed"/>
+        <DataProperty IRI="#chipsetName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#computerCaseName"/>
@@ -190,7 +265,16 @@
         <DataProperty IRI="#cpuCache"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#cpuClockSpeed"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#cpuCoreNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuSocketName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#cpuThreadNumber"/>
@@ -199,19 +283,28 @@
         <DataProperty IRI="#formFactor"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#gpuClockSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gpuManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gpuMemory"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#gpuType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hardDriveManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hardDriveMemory"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#keyboardLayout"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#keyboardSize"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#manufacturer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#memorySize"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#mouseResolution"/>
@@ -221,6 +314,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#numberOfFans"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ramMemory"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ramMemoryTechnology"/>
@@ -247,7 +343,13 @@
         <DataProperty IRI="#wattage"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -280,6 +382,9 @@
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ATX"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Acer_Monitor_27Prolite"/>
     </Declaration>
     <Declaration>
@@ -287,6 +392,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
@@ -299,6 +407,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
@@ -346,6 +457,9 @@
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Windows10_32bit"/>
     </Declaration>
     <Declaration>
@@ -361,24 +475,64 @@
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#AGP"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMDCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMDChipset"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPUSocket"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CentralProcessingUnit"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chipset"/>
+        <Class IRI="#MotherboardComponents"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ComputerCase"/>
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Connector"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cooler"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DIMM"/>
+        <Class IRI="#RAMSlotType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Desktop"/>
         <Class IRI="#PC"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ExtendedATX"/>
+        <Class IRI="#FormFactor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#External"/>
         <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormFactor"/>
+        <Class IRI="#MotherboardComponents"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FullTower"/>
@@ -401,6 +555,14 @@
         <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IntelCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelChipset"/>
+        <Class IRI="#Chipset"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Internal"/>
         <Class IRI="#Hardware"/>
     </SubClassOf>
@@ -421,8 +583,16 @@
         <Class IRI="#OperatingSystem"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#M.2"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MacOS"/>
         <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Micro-ATX"/>
+        <Class IRI="#FormFactor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microphone"/>
@@ -431,6 +601,10 @@
     <SubClassOf>
         <Class IRI="#MidTower"/>
         <Class IRI="#ComputerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mini-ITX"/>
+        <Class IRI="#FormFactor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Monitor"/>
@@ -445,12 +619,32 @@
         <Class IRI="#External"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PCI"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PCIe"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PowerSupplyUnit"/>
         <Class IRI="#Internal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RAMSlotType"/>
+        <Class IRI="#MotherboardComponents"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RandomAccessMemory"/>
         <Class IRI="#Internal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SATA"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO-DIMM"/>
+        <Class IRI="#RAMSlotType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SolidStateDrive"/>
@@ -477,6 +671,38 @@
         <Class IRI="#OperatingSystem"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#AGP"/>
+        <Class IRI="#M.2"/>
+        <Class IRI="#PCI"/>
+        <Class IRI="#PCIe"/>
+        <Class IRI="#SATA"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AMDCPUSocket"/>
+        <Class IRI="#IntelCPUSocket"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AMDChipset"/>
+        <Class IRI="#IntelChipset"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ATX"/>
+        <Class IRI="#ExtendedATX"/>
+        <Class IRI="#Micro-ATX"/>
+        <Class IRI="#Mini-ITX"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CPUSocket"/>
+        <Class IRI="#Chipset"/>
+        <Class IRI="#Connector"/>
+        <Class IRI="#FormFactor"/>
+        <Class IRI="#RAMSlotType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DIMM"/>
+        <Class IRI="#SO-DIMM"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#FullTower"/>
         <Class IRI="#MidTower"/>
     </DisjointClasses>
@@ -485,8 +711,16 @@
         <Class IRI="#SolidStateDrive"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#AMDCPUSocket"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
         <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AMDChipset"/>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
@@ -529,6 +763,10 @@
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ATX"/>
+        <NamedIndividual IRI="#ATX"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Monitor"/>
         <NamedIndividual IRI="#Acer_Monitor_27Prolite"/>
     </ClassAssertion>
@@ -539,6 +777,10 @@
     <ClassAssertion>
         <Class IRI="#Cooler"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DIMM"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Monitor"/>
@@ -555,6 +797,10 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
@@ -617,6 +863,10 @@
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Windows_32bit"/>
         <NamedIndividual IRI="#Windows10_32bit"/>
     </ClassAssertion>
@@ -637,14 +887,39 @@
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChipset"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnector"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#ATX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCooler"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+        <DataProperty IRI="#cpuSocketName"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+        <Literal>AM4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -662,14 +937,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
-        <Literal>AMD</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.35</Literal>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#AMD_B550_chipset"/>
+        <Literal>B550</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -687,8 +957,8 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
         <Literal>AMD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -697,24 +967,14 @@
         <Literal>integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
         <Literal>AMD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
         <Literal>integrated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
-        <Literal>AMD</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -730,16 +990,6 @@
         <DataProperty IRI="#cpuThreadNumber"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
-        <Literal>AMD</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -755,16 +1005,6 @@
         <DataProperty IRI="#cpuThreadNumber"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
-        <Literal>AMD</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -782,24 +1022,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
-        <Literal>AMD</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#gpuType"/>
-        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
-        <Literal>not integrated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
+        <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
         <Literal>AMD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
+        <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+        <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <Literal>Nvidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -807,14 +1042,9 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
         <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -822,29 +1052,14 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
         <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
         <Literal>not integrated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
-        <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#resolution"/>
@@ -887,19 +1102,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
         <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -907,34 +1122,14 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
         <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
         <Literal>not integrated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
-        <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -952,16 +1147,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
-        <Literal>Intel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
@@ -975,16 +1160,6 @@
         <DataProperty IRI="#cpuThreadNumber"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
-        <Literal>Intel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -1002,16 +1177,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
-        <Literal>Intel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#clockSpeed"/>
-        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
@@ -1027,29 +1192,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>Intel</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>integrated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
-        <Literal>Intel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
-        <Literal>Kingston</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#resolution"/>
@@ -1077,29 +1227,14 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
-        <Literal>Nvidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <Literal>NVidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
         <Literal>not integrated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#manufacturer"/>
-        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
-        <Literal>NVidia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#memorySize"/>
-        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#connectionAUX"/>
@@ -1134,6 +1269,14 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChipset"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1142,7 +1285,15 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasConnector"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCooler"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFormFactor"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1163,6 +1314,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasRAM"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRAMType"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1250,6 +1405,14 @@
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#ComputerCase"/>
     </ObjectPropertyDomain>
@@ -1258,8 +1421,16 @@
         <Class IRI="#Desktop"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCooler"/>
         <Class IRI="#CentralProcessingUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <Class IRI="#Motherboard"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGPU"/>
@@ -1298,6 +1469,10 @@
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSDD"/>
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
@@ -1322,6 +1497,14 @@
         <Class IRI="#CentralProcessingUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChipset"/>
+        <Class IRI="#Chipset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#CentralProcessingUnit"/>
     </ObjectPropertyRange>
@@ -1332,10 +1515,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#HardDrive"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasComponent"/>
-        <Class IRI="#Motherboard"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1354,8 +1533,16 @@
         <Class IRI="#ComputerCase"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="#Connector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCooler"/>
         <Class IRI="#Cooler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <Class IRI="#FormFactor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasGPU"/>
@@ -1370,16 +1557,16 @@
         <Class IRI="#Microphone"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasMotherboard"/>
-        <Class IRI="#Motherboard"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPowerSupply"/>
         <Class IRI="#PowerSupplyUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRAM"/>
         <Class IRI="#RandomAccessMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#RAMSlotType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSDD"/>
@@ -1394,7 +1581,7 @@
         <Class IRI="#WebCam"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="#clockSpeed"/>
+        <DataProperty IRI="#chipsetName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1418,7 +1605,19 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#cpuCoreNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cpuSocketName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1430,7 +1629,27 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gpuMemory"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#gpuType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hardDriveManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hardDriveMemory"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1439,14 +1658,6 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#keyboardSize"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#manufacturer"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#memorySize"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1459,6 +1670,10 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#numberOfFans"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ramMemory"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1494,12 +1709,8 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#clockSpeed"/>
-        <Class IRI="#CentralProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#clockSpeed"/>
-        <Class IRI="#GraphicsProcessingUnit"/>
+        <DataProperty IRI="#chipsetName"/>
+        <Class IRI="#Chipset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#computerCaseName"/>
@@ -1522,8 +1733,20 @@
         <Class IRI="#CentralProcessingUnit"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#cpuCoreNumber"/>
         <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <Class IRI="#CentralProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuSocketName"/>
+        <Class IRI="#CPUSocket"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#cpuThreadNumber"/>
@@ -1534,8 +1757,28 @@
         <Class IRI="#PowerSupplyUnit"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gpuMemory"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#gpuType"/>
         <Class IRI="#GraphicsProcessingUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hardDriveManufacturer"/>
+        <Class IRI="#HardDrive"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hardDriveMemory"/>
+        <Class IRI="#HardDrive"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#keyboardLayout"/>
@@ -1544,54 +1787,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#keyboardSize"/>
         <Class IRI="#Keyboard"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#CentralProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#ComputerCase"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#Cooler"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#GraphicsProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#HardDrive"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#Motherboard"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#PowerSupplyUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#RandomAccessMemory"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#manufacturer"/>
-        <Class IRI="#SoundCard"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#memorySize"/>
-        <Class IRI="#GraphicsProcessingUnit"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#memorySize"/>
-        <Class IRI="#HardDrive"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#memorySize"/>
-        <Class IRI="#RandomAccessMemory"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#mouseResolution"/>
@@ -1604,6 +1799,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#numberOfFans"/>
         <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ramMemory"/>
+        <Class IRI="#RandomAccessMemory"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ramMemoryTechnology"/>
@@ -1638,8 +1837,8 @@
         <Class IRI="#PowerSupplyUnit"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#clockSpeed"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
+        <DataProperty IRI="#chipsetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#computerCaseName"/>
@@ -1667,8 +1866,20 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#cpuCoreNumber"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuSocketName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#cpuThreadNumber"/>
@@ -1679,11 +1890,31 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gpuManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gpuMemory"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#gpuType"/>
         <DataOneOf>
             <Literal>integrated</Literal>
             <Literal>not integrated</Literal>
         </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hardDriveManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hardDriveMemory"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#keyboardLayout"/>
@@ -1698,14 +1929,6 @@
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#manufacturer"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#memorySize"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#mouseResolution"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1715,6 +1938,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#numberOfFans"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ramMemory"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
