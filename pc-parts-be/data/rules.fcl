@@ -1,0 +1,98 @@
+FUNCTION_BLOCK tipper
+
+// Define input variables
+VAR_INPUT
+    cpuSpeed : REAL;
+    coreNum : REAL;
+    threadNum : REAL;
+    storageSize : REAL;
+    gpuSize : REAL;
+    ramSize : REAL;
+END_VAR
+
+// Define output variable
+VAR_OUTPUT
+    output : REAL;
+END_VAR
+
+// Fuzzify input variable 'cpuSpeed'
+FUZZIFY cpuSpeed
+    TERM verySlow := (0, 1) (1, 1) (1.8, 0) ; 
+    TERM slow := (1.5, 0) (1.8, 1) (2.2, 1) (2.6, 0);
+    TERM medium := (2.3, 0) (2.7, 1) (3.3, 1) (3.6, 0);
+    TERM fast := (3.3, 0) (3.6, 1) (4.2, 1) (4.6, 0);
+    TERM veryFast := (4.2, 0) (6, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'coreNum'
+FUZZIFY coreNum
+    TERM veryLow := (0, 1) (1.5, 1) (2.5, 0) ; 
+    TERM low := (2, 0) (3, 1) (4, 1) (4.5, 0);
+    TERM medium := (3.5, 0) (4.5, 1) (8, 1) (8.5, 0);
+    TERM high := (7, 0) (8.5, 1) (16, 1) (17, 0);
+    TERM veryHigh := (15, 0) (24, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'threadNum'
+FUZZIFY threadNum
+    TERM veryLow := (0, 1) (1.5, 1) (2.5, 0) ; 
+    TERM low := (2, 0) (3, 1) (4, 1) (4.5, 0);
+    TERM medium := (3.5, 0) (4.5, 1) (8, 1) (8.5, 0);
+    TERM high := (7, 0) (8.5, 1) (16, 1) (17, 0);
+    TERM veryHigh := (15, 0) (24, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'ramSize'
+FUZZIFY ramSize
+    TERM verySmall := (0, 1) (3, 1) (5, 0) ; 
+    TERM small := (3.5, 0) (4, 1) (7, 1) (9, 0);
+    TERM medium := (7, 0) (8, 1) (15, 1) (17, 0);
+    TERM large := (15, 0) (16, 1) (31, 1) (33, 0);
+    TERM veryLarge := (32, 0) (40, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'storageSize'
+FUZZIFY storageSize
+    TERM verySmall := (0, 1) (120, 1) (150, 0) ; 
+    TERM small := (120, 0) (160, 1) (250, 1) (280, 0);
+    TERM medium := (230, 0) (250, 1) (500, 1) (530, 0);
+    TERM large := (500, 0) (520, 1) (1000, 1) (1050, 0);
+    TERM veryLarge := (1000, 0) (3000, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'gpuSize'
+FUZZIFY gpuSize
+    TERM verySmall := (0, 1) (1.5, 1) (2.5, 0) ; 
+    TERM small := (2, 0) (3, 1) (4, 1) (4.5, 0);
+    TERM medium := (3.5, 0) (4.5, 1) (8, 1) (8.5, 0);
+    TERM large := (7, 0) (8.5, 1) (12, 1) (13, 0);
+    TERM veryLarge := (11, 0) (24, 1);
+END_FUZZIFY
+
+
+// Defzzzify output variable 'output'
+DEFUZZIFY output
+    TERM cheap := (0,0) (5,1) (10,0);
+    TERM average := (10,0) (15,1) (20,0);
+    TERM generous := (20,0) (25,1) (30,0);
+    // Use 'Center Of Gravity' defuzzification method
+    METHOD : COG;
+    // Default value is 0 (if no rule activates defuzzifier)
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+RULEBLOCK No1
+    // Use 'min' for 'and' (also implicit use 'max'
+    // for 'or' to fulfill DeMorgan's Law)
+    AND : MIN;
+    // Use 'min' activation method
+    ACT : MIN;
+    // Use 'max' accumulation method
+    ACCU : MAX;
+
+    RULE 1 : IF cpuSpeed IS fast
+                THEN output IS cheap;
+
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
