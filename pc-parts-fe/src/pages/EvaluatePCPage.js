@@ -21,49 +21,30 @@ const EvaluatePCPage = () => {
     }
     const validate = (values) => {
         let returnObject = {}
-        // if (!values.manufacturer) {
-        //     returnObject.manufacturer = 'This field is required!'
-        // }
-        // if (parseInt(values.fromSpeed) > parseInt(values.toSpeed)) {
-        //     returnObject.fromSpeed = "Invalid value!"
-        //     returnObject.toSpeed = "Invalid value!"
-        // }
-        // if (!numberRegex.test(values.fromSpeed)) {
-        //     returnObject.fromSpeed = 'Numerical characters only!'
-        // }
-        // if (!numberRegex.test(values.toSpeed)) {
-        //     returnObject.toSpeed = 'Numerical characters only!'
-        // }
-        // if (parseInt(values.coreNumberFrom) > parseInt(values.coreNumberTo)) {
-        //     returnObject.coreNumberFrom = "Invalid value!"
-        //     returnObject.coreNumberTo = "Invalid value!"
-        // }
-        // if (!numberRegex.test(values.coreNumberFrom)) {
-        //     returnObject.coreNumberFrom = 'Numerical characters only!'
-        // }
-        // if (!numberRegex.test(values.coreNumberTo)) {
-        //     returnObject.coreNumberTo = 'Numerical characters only!'
-        // }
-        // if (parseInt(values.threadNumberFrom) > parseInt(values.threadNumberTo)) {
-        //     returnObject.threadNumberFrom = "Invalid value!"
-        //     returnObject.threadNumberTo = "Invalid value!"
-        // }
-        // if (!numberRegex.test(values.threadNumberFrom)) {
-        //     returnObject.threadNumberFrom = 'Numerical characters only!'
-        // }
-        // if (!numberRegex.test(values.threadNumberTo)) {
-        //     returnObject.threadNumberTo = 'Numerical characters only!'
-        // }
-        // if (parseInt(values.cacheMemoryFrom) > parseInt(values.cacheMemoryTo)) {
-        //     returnObject.cacheMemoryFrom = "Invalid value!"
-        //     returnObject.cacheMemoryTo = "Invalid value!"
-        // }
-        // if (!numberRegex.test(values.cacheMemoryFrom)) {
-        //     returnObject.cacheMemoryFrom = 'Numerical characters only!'
-        // }
-        // if (!numberRegex.test(values.cacheMemoryTo)) {
-        //     returnObject.cacheMemoryTo = 'Numerical characters only!'
-        // }
+        if (!values.cpuSpeed) {
+            returnObject.cpuSpeed = 'This field is required!'
+        }
+        if (!values.threadNum) {
+            returnObject.threadNum = 'This field is required!'
+        }
+        if (!values.coreNum) {
+            returnObject.coreNum = 'This field is required!'
+        }
+        if (!values.storageSize) {
+            returnObject.storageSize = 'This field is required!'
+        }
+        if (!values.storageType) {
+            returnObject.storageType = 'This field is required!'
+        }
+        if (!values.gpuMemory) {
+            returnObject.gpuMemory = 'This field is required!'
+        }
+        if (!values.gpuType) {
+            returnObject.gpuType = 'This field is required!'
+        }
+        if (!values.ramSize) {
+            returnObject.ramSize = 'This field is required!'
+        }
 
         return returnObject
     }
