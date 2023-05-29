@@ -12,8 +12,15 @@ END_VAR
 
 // Define output variable
 VAR_OUTPUT
-    output : REAL;
+    development : REAL;
+    gaming : REAL;
+    crypto : REAL;
+    home : REAL;
+    work : REAL;
+    hosting : REAL;
 END_VAR
+
+//*******************************************FUZZYFY
 
 // Fuzzify input variable 'cpuSpeed'
 FUZZIFY cpuSpeed
@@ -69,22 +76,92 @@ FUZZIFY gpuSize
     TERM veryLarge := (11, 0) (24, 1);
 END_FUZZIFY
 
-// Defzzzify output variable 'output'
-DEFUZZIFY output
-    TERM cheap := (0,0) (5,1) (10,0);
-    TERM average := (10,0) (15,1) (20,0);
-    TERM generous := (20,0) (25,1) (30,0);
+
+//******************************************** DEFUZZYFY
+
+
+// Defzzzify output variable 'development'
+DEFUZZIFY development
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
     METHOD : COG;
     DEFAULT := 0;
 END_DEFUZZIFY
+
+// Defzzzify output variable 'gaming'
+DEFUZZIFY gaming
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'crypto'
+DEFUZZIFY crypto
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'home'
+DEFUZZIFY home
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'work'
+DEFUZZIFY work
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'hosting'
+DEFUZZIFY hosting
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+//************************************************RULES
 
 RULEBLOCK No1
     AND : MIN;
     ACT : MIN;
     ACCU : MAX;
 
-    RULE 1 : IF cpuSpeed IS fast THEN output IS cheap;
-// TODO: add a lot of rules
+// Possibly incorrect did not have time to test
+
+    RULE 1 : IF cpuSpeed IS slow OR cpuSpeed IS verySlow THEN home IS veryHigh;
+    RULE 3 : IF threadNum IS low OR threadNum IS veryLow THEN home IS veryHigh;
+    RULE 2 : IF coreNum IS low OR coreNum IS veryLow THEN home IS veryHigh;
+    RULE 4 : IF ramSize IS small OR ramSize IS verySmall THEN home IS veryHigh;
+    RULE 5 : IF storageSize IS medium OR storageSize IS small THEN home IS medium;
+    RULE 6 : IF gpuSize IS small OR gpuSize IS verySmall THEN home IS medium;
+
 END_RULEBLOCK
 
 END_FUNCTION_BLOCK
