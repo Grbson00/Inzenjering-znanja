@@ -43,4 +43,18 @@ public class EvaluateDTO {
         return hdd;
     }
 
+    @Override
+    public String toString() {
+        return "EvaluateDTO{" +
+                "cpuSpeed=" + cpuSpeed +
+                ", coreNum=" + coreNum +
+                ", threadNum=" + threadNum +
+                ", storageSize=" + storageSize +
+                ", gpuSize=" + gpuSize +
+                ", ramSize=" + ramSize +
+                ", integrated=" + integrated +
+                ", hdd=" + hdd +
+                '}';
+    }
+
 }

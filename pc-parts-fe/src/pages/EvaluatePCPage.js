@@ -1,23 +1,28 @@
 import { Box, Button, Container } from "@mui/material";
 import { Form } from 'react-final-form';
-import REGEX from "../regex";
 import axios from "axios";
-import { useState } from "react";
 import EvaluateForm from "../components/evalaute/EvaluateForm";
-
-const numberRegex = new RegExp(REGEX.NUMBER)
 
 const EvaluatePCPage = () => {
     const onSubmit = (data) => {
-        // axios.post('http://localhost:8080/api/search/cpu', data)
-        //     .catch(e => {
-        //         console.error(e)
-        //     })
-        //     .then((response) => {
-        //         console.log(response.data);
-        //         setCpuArr(response.data)
-        //     })
-        console.log(data);
+        const newData = {
+            cpuSpeed: parseFloat(data.cpuSpeed),
+            threadNum: parseInt(data.threadNum),
+            coreNum: parseInt(data.coreNum),
+            storageSize: parseInt(data.storageSize),
+            gpuSize: parseInt(data.gpuMemory),
+            ramSize: parseInt(data.ramSize),
+            integrated: JSON.parse(data.gpuType),
+            hdd: JSON.parse(data.storageType),
+        }
+
+        axios.post('http://localhost:8080/api/evaluate/', newData)
+            .catch(e => {
+                console.error(e)
+            })
+            .then((response) => {
+                console.log(response.data);
+            })
     }
     const validate = (values) => {
         let returnObject = {}

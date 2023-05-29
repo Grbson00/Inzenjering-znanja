@@ -62,8 +62,8 @@ const EvaluateForm = () => {
                         name="storageType"
                         required={true}
                         data={[
-                            { label: 'HDD', value: 'hdd' },
-                            { label: 'SSD', value: 'ssd' }
+                            { label: 'HDD', value: true },
+                            { label: 'SSD', value: false }
                         ]}
                     />
                 </Grid>
@@ -83,8 +83,8 @@ const EvaluateForm = () => {
                         name="gpuType"
                         required={true}
                         data={[
-                            { label: 'Integrated', value: 'integrated' },
-                            { label: 'Dedicated', value: 'dedicated' }
+                            { label: 'Integrated', value: true },
+                            { label: 'Dedicated', value: false }
                         ]}
                     />
                 </Grid>
