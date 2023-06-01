@@ -13,7 +13,9 @@ import java.io.File;
 //@ComponentScan(basePackages = "com.example.iz.parts.controller")
 public class PcPartsBeApplication {
 	public static void main(String[] args) {
+
 		SpringApplication.run(PcPartsBeApplication.class, args);
+		System.setProperty("java.awt.headless", "false");
 	}
 
 }

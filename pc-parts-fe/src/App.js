@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import RecommendUpgradePage from "./pages/RecommendUpgradePage";
 import Layout from "./components/common/Layout";
 import theme from "./theme";
+import EvaluatePCPage from "./pages/EvaluatePCPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                   <Route path={'/'} element={<HomePage />} />
                   <Route path={'/find'} element={<FindComponentPage />} />
                   <Route path={'/upgrade'} element={<RecommendUpgradePage />} />
+                  <Route path={'/evaluate'} element={<EvaluatePCPage />} />
             </Routes>
           </Layout>
         </BrowserRouter>

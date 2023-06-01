@@ -18,8 +18,8 @@ const HomePage = () => {
                     </Button>
                 </Grid>
                 <Grid item xs={12} md={6} sx={{display: 'grid', placeItems: 'center'}}>
-                    <Button variant="contained" fullWidth color="primary" sx={{height: '6rem', fontSize: '1rem'}}>
-                        Coming soon...
+                    <Button element={'a'} href='/evaluate' variant="contained" fullWidth color="primary" sx={{height: '6rem', fontSize: '1rem'}}>
+                        Evaluate PC purpose
                     </Button>
                 </Grid>
                 <Grid item xs={12} md={6} sx={{display: 'grid', placeItems: 'center'}}>

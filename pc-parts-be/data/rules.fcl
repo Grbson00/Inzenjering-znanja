@@ -1,0 +1,374 @@
+FUNCTION_BLOCK tipper
+
+// Define input variables
+VAR_INPUT
+    cpuSpeed : REAL;
+    coreNum : REAL;
+    threadNum : REAL;
+    storageSize : REAL;
+    gpuSize : REAL;
+    ramSize : REAL;
+END_VAR
+
+// Define output variable
+VAR_OUTPUT
+    development : REAL;
+    gaming : REAL;
+    crypto : REAL;
+    home : REAL;
+    work : REAL;
+    hosting : REAL;
+END_VAR
+
+//*******************************************FUZZYFY
+
+// Fuzzify input variable 'cpuSpeed'
+FUZZIFY cpuSpeed
+    TERM verySlow := (0, 1) (1, 1) (1.8, 0) ; 
+    TERM slow := (1.5, 0) (1.8, 1) (2.2, 1) (2.6, 0);
+    TERM medium := (2.3, 0) (2.7, 1) (3.3, 1) (3.6, 0);
+    TERM fast := (3.3, 0) (3.6, 1) (4.2, 1) (4.6, 0);
+    TERM veryFast := (4.2, 0) (6, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'coreNum'
+FUZZIFY coreNum
+    TERM veryLow := (0, 1) (1.5, 1) (2.5, 0) ; 
+    TERM low := (2, 0) (3, 1) (4, 1) (4.5, 0);
+    TERM medium := (3.5, 0) (4.5, 1) (8, 1) (8.5, 0);
+    TERM high := (7, 0) (8.5, 1) (16, 1) (17, 0);
+    TERM veryHigh := (15, 0) (24, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'threadNum'
+FUZZIFY threadNum
+    TERM veryLow := (0, 1) (1.5, 1) (2.5, 0) ; 
+    TERM low := (2, 0) (3, 1) (4, 1) (4.5, 0);
+    TERM medium := (3.5, 0) (4.5, 1) (8, 1) (8.5, 0);
+    TERM high := (7, 0) (8.5, 1) (16, 1) (17, 0);
+    TERM veryHigh := (15, 0) (24, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'ramSize'
+FUZZIFY ramSize
+    TERM verySmall := (0, 1) (3, 1) (5, 0) ; 
+    TERM small := (3.5, 0) (4, 1) (7, 1) (9, 0);
+    TERM medium := (7, 0) (8, 1) (15, 1) (17, 0);
+    TERM large := (15, 0) (16, 1) (31, 1) (33, 0);
+    TERM veryLarge := (32, 0) (40, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'storageSize'
+FUZZIFY storageSize
+    TERM verySmall := (0, 1) (120, 1) (150, 0) ; 
+    TERM small := (120, 0) (160, 1) (250, 1) (280, 0);
+    TERM medium := (230, 0) (250, 1) (500, 1) (530, 0);
+    TERM large := (500, 0) (520, 1) (1000, 1) (1050, 0);
+    TERM veryLarge := (1000, 0) (3000, 1);
+END_FUZZIFY
+
+// Fuzzify input variable 'gpuSize'
+FUZZIFY gpuSize
+    TERM verySmall := (0, 1) (1.5, 1) (2.5, 0) ; 
+    TERM small := (2, 0) (3, 1) (4, 1) (4.5, 0);
+    TERM medium := (3.5, 0) (4.5, 1) (8, 1) (8.5, 0);
+    TERM large := (7, 0) (8.5, 1) (12, 1) (13, 0);
+    TERM veryLarge := (11, 0) (24, 1);
+END_FUZZIFY
+
+
+//******************************************** DEFUZZYFY
+
+
+// Defzzzify output variable 'development'
+DEFUZZIFY development
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'gaming'
+DEFUZZIFY gaming
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'crypto'
+DEFUZZIFY crypto
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'home'
+DEFUZZIFY home
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'work'
+DEFUZZIFY work
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+// Defzzzify output variable 'hosting'
+DEFUZZIFY hosting
+    TERM veryLow := (0, 1) (15, 1) (25, 0);
+    TERM low := (15, 0) (25, 1) (35, 1) (45, 0);
+    TERM moderate := (35, 0) (45, 1) (55, 1) (65, 0);
+    TERM high := (55, 0) (65, 1) (75, 1) (85, 0);
+    TERM veryHigh := (75, 0) (85, 1) (100, 1);
+    METHOD : COG;
+    DEFAULT := 0;
+END_DEFUZZIFY
+
+//************************************************RULES
+
+RULEBLOCK No1
+    AND : MIN;
+    ACT : MIN;
+    ACCU : MAX;
+
+//cpuSpeed
+    RULE 1 : IF cpuSpeed IS verySlow THEN development IS veryLow;
+    RULE 2 : IF cpuSpeed IS verySlow THEN gaming IS veryLow;
+    RULE 3 : IF cpuSpeed IS verySlow THEN crypto IS veryLow;
+    RULE 4 : IF cpuSpeed IS verySlow THEN home IS veryHigh;
+    RULE 5 : IF cpuSpeed IS verySlow THEN work IS moderate;
+    RULE 6 : IF cpuSpeed IS verySlow THEN hosting IS veryLow;
+    
+    RULE 7 : IF cpuSpeed IS slow THEN development IS low;
+    RULE 8 : IF cpuSpeed IS slow THEN gaming IS veryLow;
+    RULE 9 : IF cpuSpeed IS slow THEN crypto IS low;
+    RULE 10 : IF cpuSpeed IS slow THEN home IS veryHigh;
+    RULE 11 : IF cpuSpeed IS slow THEN work IS veryHigh;
+    RULE 12 : IF cpuSpeed IS slow THEN hosting IS veryLow;
+    
+    RULE 13 : IF cpuSpeed IS medium THEN development IS veryHigh;
+    RULE 14 : IF cpuSpeed IS medium THEN gaming IS moderate;
+    RULE 15 : IF cpuSpeed IS medium THEN crypto IS veryHigh;
+    RULE 16 : IF cpuSpeed IS medium THEN home IS moderate;
+    RULE 17 : IF cpuSpeed IS medium THEN work IS high;
+    RULE 18 : IF cpuSpeed IS medium THEN hosting IS moderate;
+    
+    RULE 19 : IF cpuSpeed IS fast THEN development IS high;
+    RULE 20 : IF cpuSpeed IS fast THEN gaming IS veryHigh;
+    RULE 21 : IF cpuSpeed IS fast THEN crypto IS high;
+    RULE 22 : IF cpuSpeed IS fast THEN home IS low;
+    RULE 23 : IF cpuSpeed IS fast THEN work IS low;
+    RULE 24 : IF cpuSpeed IS fast THEN hosting IS veryHigh;
+    
+    RULE 25 : IF cpuSpeed IS veryFast THEN development IS moderate;
+    RULE 26 : IF cpuSpeed IS veryFast THEN gaming IS high;
+    RULE 27 : IF cpuSpeed IS veryFast THEN crypto IS moderate;
+    RULE 28 : IF cpuSpeed IS veryFast THEN home IS veryLow;
+    RULE 29 : IF cpuSpeed IS veryFast THEN work IS veryLow;
+    RULE 30 : IF cpuSpeed IS veryFast THEN hosting IS high;
+
+//coreNum
+    RULE 31: IF coreNum IS veryLow THEN development is veryLow;
+    RULE 32: IF coreNum IS veryLow THEN gaming is veryLow;
+    RULE 33: IF coreNum IS veryLow THEN crypto is moderate;
+    RULE 34: IF coreNum IS veryLow THEN home is veryHigh;
+    RULE 35: IF coreNum IS veryLow THEN work is low;
+    RULE 36: IF coreNum IS veryLow THEN hosting is veryLow;
+
+    RULE 37: IF coreNum IS low THEN development is moderate;
+    RULE 38: IF coreNum IS low THEN gaming is low;
+    RULE 39: IF coreNum IS low THEN crypto is veryHigh;
+    RULE 40: IF coreNum IS low THEN home is veryHigh;
+    RULE 41: IF coreNum IS low THEN work is moderate;
+    RULE 42: IF coreNum IS low THEN hosting is veryLow;
+
+    RULE 43: IF coreNum IS medium THEN development is veryHigh;
+    RULE 44: IF coreNum IS medium THEN gaming is high;
+    RULE 45: IF coreNum IS medium THEN crypto is high;
+    RULE 46: IF coreNum IS medium THEN home is low;
+    RULE 47: IF coreNum IS medium THEN work is veryHigh;
+    RULE 48: IF coreNum IS medium THEN hosting is low;
+
+    RULE 49: IF coreNum IS high THEN development is high;
+    RULE 50: IF coreNum IS high THEN gaming is veryHigh;
+    RULE 51: IF coreNum IS high THEN crypto is low;
+    RULE 52: IF coreNum IS high THEN home is veryLow;
+    RULE 53: IF coreNum IS high THEN work is high;
+    RULE 54: IF coreNum IS high THEN hosting is veryHigh;
+
+    RULE 55: IF coreNum IS veryHigh THEN development is low;
+    RULE 56: IF coreNum IS veryHigh THEN gaming is moderate;
+    RULE 57: IF coreNum IS veryHigh THEN crypto is veryLow;
+    RULE 58: IF coreNum IS veryHigh THEN home is veryLow;
+    RULE 59: IF coreNum IS veryHigh THEN work is low;
+    RULE 60: IF coreNum IS veryHigh THEN hosting is veryHigh;
+
+//threadNum
+    RULE 61: IF threadNum IS veryLow THEN development is veryLow;
+    RULE 62: IF threadNum IS veryLow THEN gaming is veryLow;
+    RULE 63: IF threadNum IS veryLow THEN crypto is low;
+    RULE 64: IF threadNum IS veryLow THEN home is veryHigh;
+    RULE 65: IF threadNum IS veryLow THEN work is low;
+    RULE 66: IF threadNum IS veryLow THEN hosting is veryLow;
+
+    RULE 67: IF threadNum IS low THEN development is veryLow;
+    RULE 68: IF threadNum IS low THEN gaming is veryLow;
+    RULE 69: IF threadNum IS low THEN crypto is moderate;
+    RULE 70: IF threadNum IS low THEN home is veryHigh;
+    RULE 71: IF threadNum IS low THEN work is moderate;
+    RULE 72: IF threadNum IS low THEN hosting is veryLow;
+
+    RULE 73: IF threadNum IS medium THEN development is moderate;
+    RULE 74: IF threadNum IS medium THEN gaming is moderate;
+    RULE 75: IF threadNum IS medium THEN crypto is veryHigh;
+    RULE 76: IF threadNum IS medium THEN home is low;
+    RULE 77: IF threadNum IS medium THEN work is veryHigh;
+    RULE 78: IF threadNum IS medium THEN hosting is veryLow;
+
+    RULE 79: IF threadNum IS high THEN development is veryHigh;
+    RULE 80: IF threadNum IS high THEN gaming is veryHigh;
+    RULE 81: IF threadNum IS high THEN crypto is moderate;
+    RULE 82: IF threadNum IS high THEN home is veryLow;
+    RULE 83: IF threadNum IS high THEN work is moderate;
+    RULE 84: IF threadNum IS high THEN hosting is high;
+
+    RULE 85: IF threadNum IS veryHigh THEN development is moderate;
+    RULE 86: IF threadNum IS veryHigh THEN gaming is moderate;
+    RULE 87: IF threadNum IS veryHigh THEN crypto is veryLow;
+    RULE 88: IF threadNum IS veryHigh THEN home is veryLow;
+    RULE 89: IF threadNum IS veryHigh THEN work is low;
+    RULE 90: IF threadNum IS veryHigh THEN hosting is veryHigh;
+
+//ramSize
+    RULE 91: IF ramSize IS verySmall THEN development is veryLow;
+    RULE 92: IF ramSize IS verySmall THEN gaming is veryLow;
+    RULE 93: IF ramSize IS verySmall THEN crypto is low;
+    RULE 94: IF ramSize IS verySmall THEN home is veryHigh;
+    RULE 95: IF ramSize IS verySmall THEN work is low;
+    RULE 96: IF ramSize IS verySmall THEN hosting is veryLow;
+
+    RULE 97: IF ramSize IS small THEN development is moderate;
+    RULE 98: IF ramSize IS small THEN gaming is low;
+    RULE 99: IF ramSize IS small THEN crypto is moderate;
+    RULE 100: IF ramSize IS small THEN home is veryHigh;
+    RULE 101: IF ramSize IS small THEN work is moderate;
+    RULE 102: IF ramSize IS small THEN hosting is veryLow;
+
+    RULE 103: IF ramSize IS medium THEN development is veryHigh;
+    RULE 104: IF ramSize IS medium THEN gaming is moderate;
+    RULE 105: IF ramSize IS medium THEN crypto is veryHigh;
+    RULE 106: IF ramSize IS medium THEN home is low;
+    RULE 107: IF ramSize IS medium THEN work is veryHigh;
+    RULE 108: IF ramSize IS medium THEN hosting is low;
+
+    RULE 109: IF ramSize IS large THEN development is high;
+    RULE 110: IF ramSize IS large THEN gaming is veryHigh;
+    RULE 111: IF ramSize IS large THEN crypto is moderate;
+    RULE 112: IF ramSize IS large THEN home is veryLow;
+    RULE 113: IF ramSize IS large THEN work is moderate;
+    RULE 114: IF ramSize IS large THEN hosting is veryHigh;
+
+    RULE 115: IF ramSize IS veryLarge THEN development is moderate;
+    RULE 116: IF ramSize IS veryLarge THEN gaming is high;
+    RULE 117: IF ramSize IS veryLarge THEN crypto is low;
+    RULE 118: IF ramSize IS veryLarge THEN home is veryLow;
+    RULE 119: IF ramSize IS veryLarge THEN work is veryLow;
+    RULE 120: IF ramSize IS veryLarge THEN hosting is veryHigh;
+
+//storageSize
+    RULE 121: IF storageSize IS verySmall THEN development is veryLow;
+    RULE 122: IF storageSize IS verySmall THEN gaming is veryLow;
+    RULE 123: IF storageSize IS verySmall THEN crypto is high;
+    RULE 124: IF storageSize IS verySmall THEN home is moderate;
+    RULE 125: IF storageSize IS verySmall THEN work is high;
+    RULE 126: IF storageSize IS verySmall THEN hosting is veryLow;
+
+    RULE 127: IF storageSize IS small THEN development is veryLow;
+    RULE 128: IF storageSize IS small THEN gaming is veryLow;
+    RULE 129: IF storageSize IS small THEN crypto is veryHigh;
+    RULE 130: IF storageSize IS small THEN home is high;
+    RULE 131: IF storageSize IS small THEN work is veryHigh;
+    RULE 132: IF storageSize IS small THEN hosting is low;
+
+    RULE 133: IF storageSize IS medium THEN development is moderate;
+    RULE 134: IF storageSize IS medium THEN gaming is low;
+    RULE 135: IF storageSize IS medium THEN crypto is high;
+    RULE 136: IF storageSize IS medium THEN home is veryHigh;
+    RULE 137: IF storageSize IS medium THEN work is high;
+    RULE 138: IF storageSize IS medium THEN hosting is veryHigh;
+
+    RULE 139: IF storageSize IS large THEN development is veryHigh;
+    RULE 140: IF storageSize IS large THEN gaming is high;
+    RULE 141: IF storageSize IS large THEN crypto is low;
+    RULE 142: IF storageSize IS large THEN home is moderate;
+    RULE 143: IF storageSize IS large THEN work is low;
+    RULE 144: IF storageSize IS large THEN hosting is high;
+
+    RULE 145: IF storageSize IS veryLarge THEN development is high;
+    RULE 146: IF storageSize IS veryLarge THEN gaming is veryHigh;
+    RULE 147: IF storageSize IS veryLarge THEN crypto is veryLow;
+    RULE 148: IF storageSize IS veryLarge THEN home is low;
+    RULE 149: IF storageSize IS veryLarge THEN work is veryLow;
+    RULE 150: IF storageSize IS veryLarge THEN hosting is moderate;
+
+//gpuSize
+    RULE 151: IF gpuSize IS verySmall THEN development is low;
+    RULE 152: IF gpuSize IS verySmall THEN gaming is veryLow;
+    RULE 153: IF gpuSize IS verySmall THEN crypto is veryLow;
+    RULE 154: IF gpuSize IS verySmall THEN home is veryHigh;
+    RULE 155: IF gpuSize IS verySmall THEN work is high;
+    RULE 156: IF gpuSize IS verySmall THEN hosting is moderate;
+
+    RULE 157: IF gpuSize IS small THEN development is veryHigh;
+    RULE 158: IF gpuSize IS small THEN gaming is veryLow;
+    RULE 159: IF gpuSize IS small THEN crypto is veryLow;
+    RULE 160: IF gpuSize IS small THEN home is high;
+    RULE 161: IF gpuSize IS small THEN work is veryHigh;
+    RULE 162: IF gpuSize IS small THEN hosting is veryHigh;
+
+    RULE 163: IF gpuSize IS medium THEN development is high;
+    RULE 164: IF gpuSize IS medium THEN gaming is high;
+    RULE 165: IF gpuSize IS medium THEN crypto is low;
+    RULE 166: IF gpuSize IS medium THEN home is low;
+    RULE 167: IF gpuSize IS medium THEN work is low;
+    RULE 168: IF gpuSize IS medium THEN hosting is moderate;
+
+    RULE 169: IF gpuSize IS large THEN development is low;
+    RULE 170: IF gpuSize IS large THEN gaming is veryHigh;
+    RULE 171: IF gpuSize IS large THEN crypto is veryHigh;
+    RULE 172: IF gpuSize IS large THEN home is veryLow;
+    RULE 173: IF gpuSize IS large THEN work is veryLow;
+    RULE 174: IF gpuSize IS large THEN hosting is veryLow;
+
+    RULE 175: IF gpuSize IS veryLarge THEN development is veryLow;
+    RULE 176: IF gpuSize IS veryLarge THEN gaming is veryHigh;
+    RULE 177: IF gpuSize IS veryLarge THEN crypto is veryHigh;
+    RULE 178: IF gpuSize IS veryLarge THEN home is veryLow;
+    RULE 179: IF gpuSize IS veryLarge THEN work is veryLow;
+    RULE 180: IF gpuSize IS veryLarge THEN hosting is veryLow;
+
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
