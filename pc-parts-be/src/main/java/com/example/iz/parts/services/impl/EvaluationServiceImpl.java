@@ -75,6 +75,11 @@ public class EvaluationServiceImpl implements EvaluationService {
         System.out.println("***********************");
 
         System.out.println("Home PC: " + fis.getVariable("home").getValue());
+        System.out.println("Work PC: " + fis.getVariable("work").getValue());
+        System.out.println("Gaming PC: " + fis.getVariable("gaming").getValue());
+        System.out.println("Crypto PC: " + fis.getVariable("crypto").getValue());
+        System.out.println("Hosting PC: " + fis.getVariable("hosting").getValue());
+        System.out.println("Development PC: " + fis.getVariable("development").getValue());
 
     }
 
