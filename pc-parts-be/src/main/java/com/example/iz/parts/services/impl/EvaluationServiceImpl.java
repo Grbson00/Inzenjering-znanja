@@ -6,17 +6,18 @@ import net.sourceforge.jFuzzyLogic.FIS;
 import net.sourceforge.jFuzzyLogic.plot.JFuzzyChart;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public class EvaluationServiceImpl implements EvaluationService {
     private String fileName = "data/rules.fcl";
 
-    public void Evaluate(EvaluateDTO dto) {
+    public ArrayList<Double> Evaluate(EvaluateDTO dto) {
         FIS fis = FIS.load(fileName);
         if( fis == null ) {
             System.err.println("Can't load file: '" + fileName + "'");
-            return;
+            return null;
         }
-//        JFuzzyChart.get().chart(fis);
         fis.setVariable("cpuSpeed", dto.getCpuSpeed());
         fis.setVariable("coreNum", dto.getCoreNum());
         fis.setVariable("threadNum", dto.getThreadNum());
@@ -26,61 +27,23 @@ public class EvaluationServiceImpl implements EvaluationService {
 
         fis.evaluate();
 
-//        System.out.println("CPU speed vl: " + fis.getVariable("cpuSpeed").getMembership("verySlow"));
-//        System.out.println("CPU speed l: " + fis.getVariable("cpuSpeed").getMembership("slow"));
-//        System.out.println("CPU speed m: " + fis.getVariable("cpuSpeed").getMembership("medium"));
-//        System.out.println("CPU speed h: " + fis.getVariable("cpuSpeed").getMembership("fast"));
-//        System.out.println("CPU speed vh: " + fis.getVariable("cpuSpeed").getMembership("veryFast"));
-//
 //        System.out.println("***********************");
-//
-//        System.out.println("Core num: " + fis.getVariable("coreNum").getMembership("veryLow"));
-//        System.out.println("Core num: " + fis.getVariable("coreNum").getMembership("low"));
-//        System.out.println("Core num: " + fis.getVariable("coreNum").getMembership("medium"));
-//        System.out.println("Core num: " + fis.getVariable("coreNum").getMembership("high"));
-//        System.out.println("Core num: " + fis.getVariable("coreNum").getMembership("veryHigh"));
-//
-//        System.out.println("***********************");
-//
-//        System.out.println("Thread num: " + fis.getVariable("threadNum").getMembership("veryLow"));
-//        System.out.println("Thread num: " + fis.getVariable("threadNum").getMembership("low"));
-//        System.out.println("Thread num: " + fis.getVariable("threadNum").getMembership("medium"));
-//        System.out.println("Thread num: " + fis.getVariable("threadNum").getMembership("high"));
-//        System.out.println("Thread num: " + fis.getVariable("threadNum").getMembership("veryHigh"));
-//
-//        System.out.println("***********************");
-//
-//        System.out.println("Storage size: " + fis.getVariable("storageSize").getMembership("verySmall"));
-//        System.out.println("Storage size: " + fis.getVariable("storageSize").getMembership("small"));
-//        System.out.println("Storage size: " + fis.getVariable("storageSize").getMembership("medium"));
-//        System.out.println("Storage size: " + fis.getVariable("storageSize").getMembership("large"));
-//        System.out.println("Storage size: " + fis.getVariable("storageSize").getMembership("veryLarge"));
-//
-//        System.out.println("***********************");
-//
-//        System.out.println("RAM size: " + fis.getVariable("ramSize").getMembership("verySmall"));
-//        System.out.println("RAM size: " + fis.getVariable("ramSize").getMembership("small"));
-//        System.out.println("RAM size: " + fis.getVariable("ramSize").getMembership("medium"));
-//        System.out.println("RAM size: " + fis.getVariable("ramSize").getMembership("large"));
-//        System.out.println("RAM size: " + fis.getVariable("ramSize").getMembership("veryLarge"));
-//
-//        System.out.println("***********************");
-//
-//        System.out.println("GPU size: " + fis.getVariable("gpuSize").getMembership("verySmall"));
-//        System.out.println("GPU size: " + fis.getVariable("gpuSize").getMembership("small"));
-//        System.out.println("GPU size: " + fis.getVariable("gpuSize").getMembership("medium"));
-//        System.out.println("GPU size: " + fis.getVariable("gpuSize").getMembership("large"));
-//        System.out.println("GPU size: " + fis.getVariable("gpuSize").getMembership("veryLarge"));
+//        System.out.println("Home PC: " + fis.getVariable("home").getValue());
+//        System.out.println("Work PC: " + fis.getVariable("work").getValue());
+//        System.out.println("Gaming PC: " + fis.getVariable("gaming").getValue());
+//        System.out.println("Crypto PC: " + fis.getVariable("crypto").getValue());
+//        System.out.println("Hosting PC: " + fis.getVariable("hosting").getValue());
+//        System.out.println("Development PC: " + fis.getVariable("development").getValue());
 
-        System.out.println("***********************");
+        ArrayList<Double> retList = new ArrayList<>();
+        retList.add(fis.getVariable("development").getValue());
+        retList.add(fis.getVariable("gaming").getValue());
+        retList.add(fis.getVariable("crypto").getValue());
+        retList.add(fis.getVariable("home").getValue());
+        retList.add(fis.getVariable("work").getValue());
+        retList.add(fis.getVariable("hosting").getValue());
 
-        System.out.println("Home PC: " + fis.getVariable("home").getValue());
-        System.out.println("Work PC: " + fis.getVariable("work").getValue());
-        System.out.println("Gaming PC: " + fis.getVariable("gaming").getValue());
-        System.out.println("Crypto PC: " + fis.getVariable("crypto").getValue());
-        System.out.println("Hosting PC: " + fis.getVariable("hosting").getValue());
-        System.out.println("Development PC: " + fis.getVariable("development").getValue());
-
+        return retList;
     }
 
 }

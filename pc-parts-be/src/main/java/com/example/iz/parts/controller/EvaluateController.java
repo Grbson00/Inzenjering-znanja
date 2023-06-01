@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+
 @RestController
 @CrossOrigin(origins = "*")
 @RequiredArgsConstructor
@@ -18,9 +20,8 @@ public class EvaluateController {
     private EvaluationService service;
 
     @PostMapping("/")
-    public ResponseEntity<String> EvaluatePC(@Validated @RequestBody EvaluateDTO dto) {
-        System.out.println(dto);
-        service.Evaluate(dto);
-        return ResponseEntity.status(HttpStatus.OK).body("Test");
+    public ResponseEntity<ArrayList<Double>> EvaluatePC(@Validated @RequestBody EvaluateDTO dto) {
+        ArrayList<Double> percentages= service.Evaluate(dto);
+        return ResponseEntity.status(HttpStatus.OK).body(percentages);
     }
 }

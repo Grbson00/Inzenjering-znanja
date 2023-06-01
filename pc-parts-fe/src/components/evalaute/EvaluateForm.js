@@ -51,41 +51,8 @@ const EvaluateForm = () => {
                         required
                         margin="normal"
                         name="storageSize"
-                        label="Storage size"
+                        label="Storage size (GB)"
 
-                    />
-                </Grid>
-                <Grid item xs={2} />
-                <Grid item xs={6}>
-                    <Radios
-                        label="Type of Storage"
-                        name="storageType"
-                        required={true}
-                        data={[
-                            { label: 'HDD', value: true },
-                            { label: 'SSD', value: false }
-                        ]}
-                    />
-                </Grid>
-                <Grid item xs={4}>
-                    <TextField
-                        fullWidth
-                        required
-                        margin="normal"
-                        name="gpuMemory"
-                        label="GPU Dedicated memory size"
-                    />
-                </Grid>
-                <Grid item xs={2} />
-                <Grid item xs={6}>
-                    <Radios
-                        label="Type of GPU"
-                        name="gpuType"
-                        required={true}
-                        data={[
-                            { label: 'Integrated', value: true },
-                            { label: 'Dedicated', value: false }
-                        ]}
                     />
                 </Grid>
                 <Grid item xs={12} sm={3}>
@@ -94,9 +61,21 @@ const EvaluateForm = () => {
                         required
                         margin="normal"
                         name="ramSize"
-                        label="RAM memory size"
+                        label="RAM memory size (GB)"
                     />
                 </Grid>
+                <Grid item xs={2} />
+                <Grid item xs={4}>
+                    <TextField
+                        fullWidth
+                        required
+                        margin="normal"
+                        name="gpuMemory"
+                        label="GPU Dedicated memory size (GB)"
+                    />
+                </Grid>
+                <Grid item xs={2} />
+
             </Grid>
         </>
     );
