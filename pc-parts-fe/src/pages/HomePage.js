@@ -23,8 +23,8 @@ const HomePage = () => {
                     </Button>
                 </Grid>
                 <Grid item xs={12} md={6} sx={{display: 'grid', placeItems: 'center'}}>
-                    <Button variant="contained" fullWidth color="primary" sx={{height: '6rem', fontSize: '1rem'}}>
-                        Coming soon...
+                    <Button element={'a'} href='/cause' variant="contained" fullWidth color="primary" sx={{height: '6rem', fontSize: '1rem'}}>
+                        Why is my PC not working?
                     </Button>
                 </Grid>
             </Grid>
