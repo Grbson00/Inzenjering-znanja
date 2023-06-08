@@ -22,6 +22,7 @@ public class BayesController {
 
     @PostMapping("/")
     public ResponseEntity<ArrayList<BayesReturnDTO>> GetErrorCause(@RequestBody BayesDTO dto) {
+        System.out.println(dto);
         try {
             ArrayList<BayesReturnDTO> retList = bayesService.GetErrorCause(dto);
             return ResponseEntity.status(HttpStatus.OK).body(retList);
