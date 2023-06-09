@@ -1,0 +1,944 @@
+net
+{
+     node_size = (0 0);
+     name = "New BN";
+     tree = "(C2,C3,C4,C5,C6)";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node lagging_problem
+{
+     label = "C2";
+     position = (1986 243);
+     states = ("yes" "no");
+}
+
+node virus_problem
+{
+     label = "C4";
+     position = (2141 413);
+     states = ("yes" "no");
+}
+
+node no_internet_connection_problem
+{
+     label = "C5";
+     position = (0 289);
+     states = ("yes" "no");
+}
+
+node slow_computer_problem
+{
+     label = "C6";
+     position = (1725 25);
+     states = ("yes" "no");
+}
+
+node system_not_turning_on_problem
+{
+     label = "C1";
+     position = (412 462);
+     states = ("yes" "no");
+}
+
+node blue_screen_problem
+{
+     label = "C2";
+     position = (556 666);
+     states = ("yes" "no");
+}
+
+node fan_noise_problem
+{
+     label = "C3";
+     position = (1367 402);
+     states = ("yes" "no");
+}
+
+node system_restarting_problem
+{
+     label = "C4";
+     position = (711 618);
+     states = ("yes" "no");
+}
+
+node freeze_problem
+{
+     label = "C5";
+     position = (1146 85);
+     states = ("yes" "no");
+}
+
+node pointer_not_moving_problem
+{
+     label = "C6";
+     position = (1312 1004);
+     states = ("yes" "no");
+}
+
+node no_sound_problem
+{
+     label = "C7";
+     position = (1266 730);
+     states = ("yes" "no");
+}
+
+node program_not_loading_problem
+{
+     label = "C8";
+     position = (336 678);
+     states = ("yes" "no");
+}
+
+node high_temperature_problem
+{
+     label = "C9";
+     position = (1014 194);
+     states = ("yes" "no");
+}
+
+node full_memory_problem
+{
+     label = "C10";
+     position = (1851 834);
+     states = ("yes" "no");
+}
+
+node slow_internet_problem
+{
+     label = "C11";
+     position = (498 139);
+     states = ("yes" "no");
+}
+
+node external_device_not_found_problem
+{
+     label = "C12";
+     position = (1108 801);
+     states = ("yes" "no");
+}
+
+node os_loading_problem
+{
+     label = "C13";
+     position = (275 486);
+     states = ("yes" "no");
+}
+
+node not_charging_problem
+{
+     label = "C14";
+     position = (911 687);
+     states = ("yes" "no");
+}
+
+node installation_problem
+{
+     label = "C15";
+     position = (126 548);
+     states = ("yes" "no");
+}
+
+node data_loss_problem
+{
+     label = "C16";
+     position = (1769 466);
+     states = ("yes" "no");
+}
+
+node cpu_error
+{
+     label = "C21";
+     position = (1777 234);
+     states = ("yes" "no");
+}
+
+node gpu_error
+{
+     label = "C22";
+     position = (158 680);
+     states = ("yes" "no");
+}
+
+node ram_error
+{
+     label = "C23";
+     position = (2184 129);
+     states = ("yes" "no");
+}
+
+node hdd_error
+{
+     label = "C24";
+     position = (1726 705);
+     states = ("yes" "no");
+}
+
+node ssd_error
+{
+     label = "C25";
+     position = (2065 728);
+     states = ("yes" "no");
+}
+
+node cooler_error
+{
+     label = "C26";
+     position = (1172 249);
+     states = ("yes" "no");
+}
+
+node motherboard_error
+{
+     label = "C27";
+     position = (707 770);
+     states = ("yes" "no");
+}
+
+node power_supply_error
+{
+     label = "C28";
+     position = (851 269);
+     states = ("yes" "no");
+}
+
+node sound_card_error
+{
+     label = "C29";
+     position = (1252 660);
+     states = ("yes" "no");
+}
+
+node software_error
+{
+     label = "C30";
+     position = (46 759);
+     states = ("yes" "no");
+}
+
+node ram_slot_error
+{
+     label = "C31";
+     position = (2341 896);
+     states = ("yes" "no");
+}
+
+node cpu_socket_error
+{
+     label = "C32";
+     position = (1961 133);
+     states = ("yes" "no");
+}
+
+node connector_error
+{
+     label = "C33";
+     position = (1100 675);
+     states = ("yes" "no");
+}
+
+node chipset_error
+{
+     label = "C34";
+     position = (2341 794);
+     states = ("yes" "no");
+}
+
+node cpu_high_temperature_problem
+{
+     label = "C35";
+     position = (1469 238);
+     states = ("yes" "no");
+}
+
+node os_error
+{
+     label = "C36";
+     position = (290 607);
+     states = ("yes" "no");
+}
+
+node security_error
+{
+     label = "C37";
+     position = (1921 381);
+     states = ("yes" "no");
+}
+
+node driver_error
+{
+     label = "C38";
+     position = (1924 917);
+     states = ("yes" "State 1");
+}
+
+node mouse_error
+{
+     label = "C39";
+     position = (1215 899);
+     states = ("yes" "no");
+}
+
+node keyboard_error
+{
+     label = "C40";
+     position = (1056 892);
+     states = ("yes" "no");
+}
+
+node loud_hdd_problem
+{
+     label = "C41";
+     position = (1619 818);
+     states = ("yes" "no");
+}
+
+node lost_pictures_problem
+{
+     label = "C42";
+     position = (1950 485);
+     states = ("yes" "no");
+}
+
+node fragmentation_problem
+{
+     label = "C43";
+     position = (1849 717);
+     states = ("yes" "no");
+}
+
+node slow_startup_problem
+{
+     label = "C44";
+     position = (2085 830);
+     states = ("yes" "no");
+}
+
+node dust_error
+{
+     label = "C45";
+     position = (1345 173);
+     states = ("yes" "no");
+}
+
+node bad_electricity_error
+{
+     label = "C46";
+     position = (1189 545);
+     states = ("yes" "no");
+}
+
+node condezator_error
+{
+     label = "C47";
+     position = (566 534);
+     states = ("yes" "no");
+}
+
+node no_drivers_error
+{
+     label = "C48";
+     position = (416 777);
+     states = ("yes" "no");
+}
+
+node no_power_problem
+{
+     label = "C49";
+     position = (775 191);
+     states = ("yes" "no");
+}
+
+node old_software_error
+{
+     label = "C50";
+     position = (850 85);
+     states = ("yes" "no");
+}
+
+node display_error
+{
+     label = "C51";
+     position = (1548 905);
+     states = ("yes" "no");
+}
+
+node app_crashing_problem
+{
+     label = "C52";
+     position = (193 808);
+     states = ("yes" "no");
+}
+
+node speakers_error
+{
+     label = "C53";
+     position = (1421 824);
+     states = ("yes" "no");
+}
+
+node cable_error
+{
+     label = "C54";
+     position = (963 842);
+     states = ("yes" "no");
+}
+
+node dim_screen_problem
+{
+     label = "C55";
+     position = (1476 736);
+     states = ("yes" "no");
+}
+
+node dns_error
+{
+     label = "C56";
+     position = (265 318);
+     states = ("yes" "no");
+}
+
+node router_error
+{
+     label = "C57";
+     position = (271 216);
+     states = ("yes" "no");
+}
+
+node net_provider_error
+{
+     label = "C58";
+     position = (189 124);
+     states = ("yes" "no");
+}
+
+node change_termal_paste_error
+{
+     label = "C59";
+     position = (1632 371);
+     states = ("yes" "no");
+}
+
+node batery_error
+{
+     label = "C61";
+     position = (1029 568);
+     states = ("yes" "no");
+}
+
+potential (lagging_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (virus_problem | lagging_problem)
+{
+ data = (( 0.1 0.9 )
+( 0.1 0.9 ));
+}
+
+potential (no_internet_connection_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (slow_computer_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (system_not_turning_on_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (blue_screen_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (fan_noise_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (system_restarting_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (freeze_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (pointer_not_moving_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (no_sound_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (program_not_loading_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (high_temperature_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (full_memory_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (slow_internet_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (external_device_not_found_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (os_loading_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (not_charging_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (installation_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (data_loss_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (cpu_error | fan_noise_problem cpu_high_temperature_problem lagging_problem slow_computer_problem)
+{
+ data = ((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 )))));
+}
+
+potential (gpu_error | installation_problem program_not_loading_problem)
+{
+ data = ((( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )));
+}
+
+potential (ram_error | lagging_problem slow_computer_problem)
+{
+ data = ((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.8 0.2 )
+( 0.1 0.9 )));
+}
+
+potential (hdd_error | data_loss_problem lost_pictures_problem fragmentation_problem full_memory_problem loud_hdd_problem)
+{
+ data = (((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 )))))
+((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))));
+}
+
+potential (ssd_error | slow_startup_problem data_loss_problem lost_pictures_problem fragmentation_problem full_memory_problem)
+{
+ data = (((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 1.0 0.0 )))))
+((((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.5 0.5 )
+( 0.9 0.1 )))
+((( 0.8 0.2 )
+( 0.2 0.8 ))
+(( 0.0 1.0 )
+( 1.0 0.0 ))))
+(((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.5 0.5 )
+( 0.9 0.1 )))
+((( 0.8 0.2 )
+( 0.2 0.8 ))
+(( 0.0 1.0 )
+( 1.0 0.0 ))))));
+}
+
+potential (cooler_error | cpu_high_temperature_problem fan_noise_problem high_temperature_problem)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (motherboard_error | system_restarting_problem not_charging_problem)
+{
+ data = ((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.7 0.3 )
+( 0.0 1.0 )));
+}
+
+potential (power_supply_error | no_power_problem high_temperature_problem)
+{
+ data = ((( 0.9 0.1 )
+( 0.9 0.1 ))
+(( 0.3 0.7 )
+( 0.1 0.9 )));
+}
+
+potential (sound_card_error | no_sound_problem)
+{
+ data = (( 1.0 0.0 )
+( 1.0 0.0 ));
+}
+
+potential (software_error | no_internet_connection_problem program_not_loading_problem app_crashing_problem installation_problem)
+{
+ data = ((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 )))));
+}
+
+potential (ram_slot_error | slow_startup_problem)
+{
+ data = (( 0.2 0.8 )
+( 0.0 1.0 ));
+}
+
+potential (cpu_socket_error | slow_computer_problem lagging_problem)
+{
+ data = ((( 0.2 0.8 )
+( 0.1 0.9 ))
+(( 0.1 0.9 )
+( 0.0 1.0 )));
+}
+
+potential (connector_error | not_charging_problem no_sound_problem external_device_not_found_problem)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (chipset_error | slow_startup_problem)
+{
+ data = (( 0.2 0.8 )
+( 0.0 1.0 ));
+}
+
+potential (cpu_high_temperature_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (os_error | os_loading_problem system_not_turning_on_problem installation_problem)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (security_error | lost_pictures_problem data_loss_problem virus_problem)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (driver_error | slow_startup_problem)
+{
+ data = (( 1.0 0.0 )
+( 1.0 0.0 ));
+}
+
+potential (mouse_error | external_device_not_found_problem pointer_not_moving_problem)
+{
+ data = ((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.7 0.3 )
+( 0.0 1.0 )));
+}
+
+potential (keyboard_error | external_device_not_found_problem)
+{
+ data = (( 1.0 0.0 )
+( 1.0 0.0 ));
+}
+
+potential (loud_hdd_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (lost_pictures_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (fragmentation_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (slow_startup_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (dust_error | cpu_high_temperature_problem slow_computer_problem freeze_problem high_temperature_problem)
+{
+ data = ((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 )))));
+}
+
+potential (bad_electricity_error | dim_screen_problem not_charging_problem)
+{
+ data = ((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.7 0.3 )
+( 0.0 1.0 )));
+}
+
+potential (condezator_error | no_power_problem blue_screen_problem system_restarting_problem system_not_turning_on_problem)
+{
+ data = ((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 )))));
+}
+
+potential (no_drivers_error | blue_screen_problem app_crashing_problem program_not_loading_problem)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (no_power_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (old_software_error | slow_internet_problem freeze_problem)
+{
+ data = ((( 0.4 0.6 )
+( 0.3 0.7 ))
+(( 0.4 0.6 )
+( 0.0 1.0 )));
+}
+
+potential (display_error | dim_screen_problem pointer_not_moving_problem)
+{
+ data = ((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )));
+}
+
+potential (app_crashing_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (speakers_error | external_device_not_found_problem no_sound_problem)
+{
+ data = ((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )));
+}
+
+potential (cable_error | keyboard_error not_charging_problem external_device_not_found_problem)
+{
+ data = (((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (dim_screen_problem)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (dns_error | slow_internet_problem no_internet_connection_problem)
+{
+ data = ((( 0.4 0.6 )
+( 0.3 0.7 ))
+(( 0.3 0.7 )
+( 0.0 1.0 )));
+}
+
+potential (router_error | slow_internet_problem no_internet_connection_problem)
+{
+ data = ((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.7 0.3 )
+( 0.0 1.0 )));
+}
+
+potential (net_provider_error | slow_internet_problem no_internet_connection_problem)
+{
+ data = ((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 0.8 0.2 )
+( 0.0 1.0 )));
+}
+
+potential (change_termal_paste_error | lagging_problem cpu_high_temperature_problem)
+{
+ data = ((( 1.0 0.0 )
+( 0.3 0.7 ))
+(( 0.5 0.5 )
+( 0.5 0.5 )));
+}
+
+potential (batery_error | not_charging_problem system_restarting_problem)
+{
+ data = ((( 0.1 0.9 )
+( 0.1 0.9 ))
+(( 0.1 0.9 )
+( 0.1 0.9 )));
+}
+
