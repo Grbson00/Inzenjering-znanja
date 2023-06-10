@@ -8,4 +8,5 @@ import java.util.ArrayList;
 
 public interface BayesService {
     ArrayList<BayesReturnDTO> GetErrorCause(BayesDTO dto) throws IOException;
+    ArrayList<String> GetProblemCause() throws IOException;
 }

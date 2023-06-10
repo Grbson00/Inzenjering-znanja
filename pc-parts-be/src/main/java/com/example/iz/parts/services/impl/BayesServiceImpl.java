@@ -15,7 +15,10 @@ import unbbayes.util.extension.bn.inference.IInferenceAlgorithm;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class BayesServiceImpl implements BayesService {
@@ -25,7 +28,7 @@ public class BayesServiceImpl implements BayesService {
 
          ProbabilisticNetwork net;
          BaseIO io = new NetIO();
-         net = (ProbabilisticNetwork)io.load(new File("data/bayes.net"));
+         net = (ProbabilisticNetwork) io.load(new File("data/bayes.net"));
 
         IInferenceAlgorithm algorithm = new JunctionTreeAlgorithm();
         algorithm.setNetwork(net);
@@ -33,8 +36,8 @@ public class BayesServiceImpl implements BayesService {
 
         //koliko sam ja razumeo ovde fecujemo sve simptome koji su poslati i stavljamo ih na 1, moguce da ne treba ovaj for loop
         for(String symptom : dto.getSymptomList()) {
-            ProbabilisticNode factNode = (ProbabilisticNode)net.getNode(symptom);
-            int stateIndex = 1;
+            ProbabilisticNode factNode = (ProbabilisticNode)net.getNode(symptom.replace(" ", "_"));
+            int stateIndex = 0;
             factNode.addFinding(stateIndex);
         }
 
@@ -50,10 +53,44 @@ public class BayesServiceImpl implements BayesService {
         for (Node node : nodeList) {
             System.out.println(node.getName());
             for (int i = 0; i < node.getStatesSize(); i++) {
-                retList.add(new BayesReturnDTO(node.getStateAt(i), ((ProbabilisticNode)node).getMarginalAt(i)));
-                System.out.println(node.getStateAt(i) + ": " + ((ProbabilisticNode)node).getMarginalAt(i));
+                //retList.add(new BayesReturnDTO(node.getStateAt(i), ((ProbabilisticNode)node).getMarginalAt(i)));
+                System.out.println(node.getStateAt(i) + " : " + ((ProbabilisticNode)node).getMarginalAt(i));
+                if(node.getStateAt(i).equals("yes") && node.getName().endsWith("error")) {
+                    retList.add(new BayesReturnDTO(node.getName().replace("_", " ") ,((ProbabilisticNode) node).getMarginalAt(i)*100));
+                }
             }
         }
+
+
+
+        List<BayesReturnDTO> topFiveObjects = retList.stream()
+                .sorted(Comparator.comparingDouble(BayesReturnDTO::getPercentage).reversed())
+                .limit(5)
+                .collect(Collectors.toList());
+
+        System.out.println(topFiveObjects);
+        ArrayList<BayesReturnDTO> arrayList = new ArrayList<>(topFiveObjects);
+        return arrayList;
+    }
+
+    @Override
+    public ArrayList<String> GetProblemCause() throws IOException {
+
+        ProbabilisticNetwork net;
+        BaseIO io = new NetIO();
+        net = (ProbabilisticNetwork) io.load(new File("data/bayes.net"));
+
+
+        List<Node> nodeList = net.getNodes();
+        ArrayList<String> retList = new ArrayList<>();
+
+        for (Node node : nodeList) {
+            System.out.println(node.getName());
+            if (node.getName().endsWith("problem")){
+                retList.add(node.getName().replace("_", " "));
+            }
+        }
+
 
         System.out.println(retList);
 

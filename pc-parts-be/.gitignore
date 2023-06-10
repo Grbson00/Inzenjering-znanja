@@ -4,6 +4,12 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+!unbbayes-4.22.18.jar
+!jpf-1.5.jar
+!commons-logging-1.0.4.jar
+!jFuzzyLogic.jar
+!jFuzzyLogic_core.jar
+
 ### STS ###
 .apt_generated
 .classpath

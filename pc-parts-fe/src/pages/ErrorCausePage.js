@@ -1,13 +1,24 @@
 import { Button, FormControl, InputLabel, MenuItem, Select, Stack } from "@mui/material";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ErrorCausePage = () => {
     const [selectedValues, setSelectedValues] = useState([]);
-    const [causes, setCauses] = useState();
-    const symptoms = [
+    const [causes, setCauses] = useState([]);
+    const [symptoms, setSymptoms] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:8080/api/bayes/').catch(e => {
+            console.error(e)
+        })
+        .then((response) => {
+            console.log(response)
+            setSymptoms(response.data)
+        })
+    }, []);
+    /*const symptoms = [
         "Blue Screen", "PC not starting", "No internet connection", "Headphones not detected"
-    ]
+    ]*/
 
     const handleSelectionChange = (event) => {
         setSelectedValues(event.target.value);
@@ -46,9 +57,11 @@ const ErrorCausePage = () => {
                 <Button variant="contained" color="primary" onClick={handleButtonClick}>
                     What's causing my problems?
                 </Button>
-                {
-                    causes && causes
-                }
+                {causes.map((value) => (
+                            <MenuItem key={value} value={value}>
+                                {value.name} : {value.percentage}
+                            </MenuItem>
+                        ))}
             </Stack >
             <img src="blue_screen.webp" alt="blue_screen" width={600} height={400} />
         </Stack>
