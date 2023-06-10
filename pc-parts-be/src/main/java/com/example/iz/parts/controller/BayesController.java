@@ -30,4 +30,12 @@ public class BayesController {
             throw new RuntimeException(e);
         }
     }
+
+    @GetMapping("/")
+    public ResponseEntity<ArrayList<String>> GetProblemCause() throws IOException {
+
+            ArrayList<String> retList = bayesService.GetProblemCause();
+            return ResponseEntity.status(HttpStatus.OK).body(retList);
+
+    }
 }

@@ -14,4 +14,13 @@ public class BayesReturnDTO {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Float getPercentage() {
+        return percentage;
+    }
+
+    public void setPercentage(Float name) {
+        this.percentage = percentage;
+    }
+
 }

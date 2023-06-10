@@ -550,10 +550,10 @@ potential (cpu_error | fan_noise_problem cpu_high_temperature_problem lagging_pr
 
 potential (gpu_error | installation_problem program_not_loading_problem)
 {
- data = ((( 1.0 0.0 )
-( 1.0 0.0 ))
-(( 1.0 0.0 )
-( 1.0 0.0 )));
+ data = ((( 0.9 0.1 )
+( 0.9 0.1 ))
+(( 0.3 0.7 )
+( 0.1 0.9 )));
 }
 
 potential (ram_error | lagging_problem slow_computer_problem)
@@ -633,7 +633,7 @@ potential (ssd_error | slow_startup_problem data_loss_problem lost_pictures_prob
 ((( 0.8 0.2 )
 ( 0.2 0.8 ))
 (( 0.0 1.0 )
-( 1.0 0.0 ))))));
+( 0.0 1.0 ))))));
 }
 
 potential (cooler_error | cpu_high_temperature_problem fan_noise_problem high_temperature_problem)
@@ -666,8 +666,8 @@ potential (power_supply_error | no_power_problem high_temperature_problem)
 
 potential (sound_card_error | no_sound_problem)
 {
- data = (( 1.0 0.0 )
-( 1.0 0.0 ));
+ data = (( 0.8 0.2 )
+( 0.0 1.0 ));
 }
 
 potential (software_error | no_internet_connection_problem program_not_loading_problem app_crashing_problem installation_problem)
@@ -753,8 +753,8 @@ potential (security_error | lost_pictures_problem data_loss_problem virus_proble
 
 potential (driver_error | slow_startup_problem)
 {
- data = (( 1.0 0.0 )
-( 1.0 0.0 ));
+ data = (( 0.5 0.5 )
+( 0.0 1.0 ));
 }
 
 potential (mouse_error | external_device_not_found_problem pointer_not_moving_problem)
@@ -767,8 +767,8 @@ potential (mouse_error | external_device_not_found_problem pointer_not_moving_pr
 
 potential (keyboard_error | external_device_not_found_problem)
 {
- data = (( 1.0 0.0 )
-( 1.0 0.0 ));
+ data = (( 0.5 0.5 )
+( 0.0 1.0 ));
 }
 
 potential (loud_hdd_problem)
@@ -931,14 +931,14 @@ potential (change_termal_paste_error | lagging_problem cpu_high_temperature_prob
  data = ((( 1.0 0.0 )
 ( 0.3 0.7 ))
 (( 0.5 0.5 )
-( 0.5 0.5 )));
+( 0.3 0.7 )));
 }
 
 potential (batery_error | not_charging_problem system_restarting_problem)
 {
- data = ((( 0.1 0.9 )
-( 0.1 0.9 ))
-(( 0.1 0.9 )
+ data = ((( 0.9 0.1 )
+( 0.9 0.1 ))
+(( 0.5 0.5 )
 ( 0.1 0.9 )));
 }
 
