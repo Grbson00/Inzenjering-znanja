@@ -59,7 +59,7 @@ node fan_noise_problem
 node system_restarting_problem
 {
      label = "C4";
-     position = (728 618);
+     position = (728 617);
      states = ("yes" "no");
 }
 
@@ -290,7 +290,7 @@ node keyboard_error
 node loud_hdd_problem
 {
      label = "C41";
-     position = (1634 819);
+     position = (1652 808);
      states = ("yes" "no");
 }
 
@@ -444,7 +444,7 @@ node unexpected_shutdown_problem
 node flickering_problem
 {
      label = "C4";
-     position = (1718 892);
+     position = (1736 881);
      states = ("yes" "no");
 }
 
@@ -479,7 +479,7 @@ node buffer_overflow_error
 node program_not_responding_problem
 {
      label = "C9";
-     position = (36 930);
+     position = (0 938);
      states = ("yes" "no");
 }
 
@@ -624,34 +624,34 @@ potential (hdd_error | data_loss_problem lost_pictures_problem fragmentation_pro
 {
  data = (((((( 1.0 0.0 )
 ( 0.9 0.1 ))
-(( 0.4 0.6 )
+(( 0.55 0.45 )
 ( 0.5 0.5 )))
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.2 0.8 )
-( 0.0 1.0 ))))
-(((( 1.0 0.0 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
 ( 0.9 0.1 ))
 (( 0.4 0.6 )
 ( 0.5 0.5 )))
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.2 0.8 )
-( 0.0 1.0 )))))
-((((( 1.0 0.0 )
+( 0.5 0.5 ))))
+(((( 0.3 0.7 )
 ( 0.9 0.1 ))
 (( 0.4 0.6 )
 ( 0.5 0.5 )))
-((( 0.9 0.1 )
-( 0.8 0.2 ))
-(( 0.2 0.8 )
-( 0.0 1.0 ))))
-(((( 1.0 0.0 )
-( 0.9 0.1 ))
-(( 0.4 0.6 )
-( 0.5 0.5 )))
-((( 0.9 0.1 )
-( 0.8 0.2 ))
+((( 0.8 0.2 )
+( 0.3 0.7 ))
 (( 0.2 0.8 )
 ( 0.0 1.0 ))))));
 }
@@ -1031,7 +1031,7 @@ potential (change_termal_paste_error | lagging_problem cpu_high_temperature_prob
  data = ((( 1.0 0.0 )
 ( 0.3 0.7 ))
 (( 0.5 0.5 )
-( 0.3 0.7 )));
+( 0.2 0.8 )));
 }
 
 potential (batery_error | unexpected_shutdown_problem not_charging_problem system_restarting_problem)

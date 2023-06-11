@@ -59,7 +59,7 @@ const ErrorCausePage = () => {
                 </Button>
                 {causes.map((value) => (
                             <MenuItem key={value} value={value}>
-                                {value.name} : {value.percentage}
+                                {value.name} : {Math.round(value.percentage)}%
                             </MenuItem>
                         ))}
             </Stack >
