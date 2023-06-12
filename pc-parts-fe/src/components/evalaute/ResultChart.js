@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -51,29 +51,31 @@ const ResultChart = ({ chartData }) => {
     const findMaxProperties = (data) => {
         let maxProperties = [];
         let maxValue = Number.NEGATIVE_INFINITY;
-      
+
         for (const property in data) {
-          if (data.hasOwnProperty(property)) {
-            const value = data[property];
-            if (value > maxValue) {
-              maxValue = value;
-              maxProperties = [property];
-            } else if (value >= maxValue - 3 && value <= maxValue + 3) {
-              maxProperties.push(property);
+            if (data.hasOwnProperty(property)) {
+                const value = data[property];
+                if (value > maxValue) {
+                    maxValue = value;
+                    maxProperties = [property];
+                } else if (value >= maxValue - 3 && value <= maxValue + 3) {
+                    maxProperties.push(property);
+                }
             }
-          }
         }
-      
+
         return maxProperties;
-      };
+    };
 
     return (
         <Stack direction={"row"} spacing={4} sx={{ width: '100%' }}>
             <Box sx={{ width: '50%' }}>
                 <Bar options={options} data={data} />
             </Box>
-            <Box sx={{ width: '50%' }}>
-                This PC would be best to be used for: {findMaxProperties(chartData).join(', ')}
+            <Box sx={{ width: '50%', display: 'grid', placeItems: 'center' }}>
+                <Typography variant="h4" >
+                    This PC would be best to be used for: {findMaxProperties(chartData).join(', ')}
+                </Typography>
             </Box>
         </Stack>
     );

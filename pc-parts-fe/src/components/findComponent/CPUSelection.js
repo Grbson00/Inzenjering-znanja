@@ -70,6 +70,10 @@ const CPUSelection = () => {
         return returnObject
     }
 
+    const replaceUnderscoresWithSpaces = (str) => {
+        return str.replace(/_/g, ' ');
+    };
+
     return (
         <>
             <Form
@@ -93,7 +97,7 @@ const CPUSelection = () => {
                 {
                     cpuArr && cpuArr.map((cpu) => {
                         return (<Grid item xs={4}>
-                            <SimpleCard key={cpu} content={cpu} />
+                            <SimpleCard key={cpu} content={replaceUnderscoresWithSpaces(cpu)} />
                         </Grid>)
                     })
                 }
