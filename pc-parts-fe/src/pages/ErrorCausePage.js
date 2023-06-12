@@ -1,6 +1,7 @@
-import { Button, FormControl, InputLabel, MenuItem, Select, Stack } from "@mui/material";
+import { Box, Button, FormControl, InputLabel, MenuItem, Select, Stack, useTheme, Typography } from "@mui/material";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const ErrorCausePage = () => {
     const [selectedValues, setSelectedValues] = useState([]);
@@ -11,10 +12,10 @@ const ErrorCausePage = () => {
         axios.get('http://localhost:8080/api/bayes/').catch(e => {
             console.error(e)
         })
-        .then((response) => {
-            console.log(response)
-            setSymptoms(response.data)
-        })
+            .then((response) => {
+                console.log(response)
+                setSymptoms(response.data)
+            })
     }, []);
     /*const symptoms = [
         "Blue Screen", "PC not starting", "No internet connection", "Headphones not detected"
@@ -36,11 +37,20 @@ const ErrorCausePage = () => {
         console.log(selectedValues);
     };
 
+    const capitalizeFirstLetters = (str) => {
+        return str
+            .split(' ')
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+    };
+
+    const theme = useTheme()
+
     return (
         <Stack direction={"row"} spacing={4}>
             <Stack direction={"column"} spacing={4} width={"70%"} mt={15}>
                 <FormControl>
-                    <InputLabel id="multi-select-label">Select Values</InputLabel>
+                    <InputLabel id="multi-select-label">Select the Problems you are having!</InputLabel>
                     <Select
                         labelId="multi-select-label"
                         multiple
@@ -57,11 +67,14 @@ const ErrorCausePage = () => {
                 <Button variant="contained" color="primary" onClick={handleButtonClick}>
                     What's causing my problems?
                 </Button>
-                {causes.map((value) => (
-                            <MenuItem key={value} value={value}>
-                                {value.name} : {Math.round(value.percentage)}%
-                            </MenuItem>
-                        ))}
+                {causes.map((value, index) => (
+                    <Stack direction={"row"} spacing={2} key={index} value={value}>
+                        <FiberManualRecordIcon sx={{ color: theme.palette.primary.main }} />
+                        <Typography variant="subtitle2" >
+                            {capitalizeFirstLetters(value.name)} : {value.percentage}%
+                        </Typography>
+                    </Stack>
+                ))}
             </Stack >
             <img src="blue_screen.webp" alt="blue_screen" width={600} height={400} />
         </Stack>

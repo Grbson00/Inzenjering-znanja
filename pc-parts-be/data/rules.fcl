@@ -369,6 +369,14 @@ RULEBLOCK No1
     RULE 179: IF gpuSize IS veryLarge THEN work is veryLow;
     RULE 180: IF gpuSize IS veryLarge THEN hosting is veryLow;
 
+//full conf
+    RULE 181: IF cpuSpeed IS medium AND threadNum IS high AND coreNum IS medium AND ramSize IS medium AND storageSize is large AND gpuSize is small THEN development is veryHigh;
+    RULE 182: IF cpuSpeed IS fast AND threadNum IS high AND coreNum IS medium AND ramSize IS large AND storageSize is veryLarge AND gpuSize is medium THEN gaming is veryHigh;
+    RULE 183: IF cpuSpeed IS medium AND threadNum IS medium AND coreNum IS low AND ramSize IS medium AND storageSize is small AND gpuSize is large THEN crypto is veryHigh;
+    RULE 184: IF cpuSpeed IS verySlow AND threadNum IS low AND coreNum IS veryLow AND ramSize IS verySmall AND storageSize is medium AND gpuSize is verySmall THEN home is veryHigh;
+    RULE 185: IF cpuSpeed IS slow AND threadNum IS medium AND coreNum IS medium AND ramSize IS medium AND storageSize is small AND gpuSize is small THEN work is veryHigh;
+    RULE 186: IF cpuSpeed IS fast AND threadNum IS veryHigh AND coreNum IS high AND ramSize IS large AND storageSize is medium AND gpuSize is small THEN hosting is veryHigh;
+
 END_RULEBLOCK
 
 END_FUNCTION_BLOCK

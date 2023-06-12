@@ -1,6 +1,5 @@
 html {
-    /* background-image: url(../public/bg1.jpg);
-    background-size:contain;
-    background-repeat: repeat; */
-    background-color: #f1f1f1;
+    background-image: url(../public/bg3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
