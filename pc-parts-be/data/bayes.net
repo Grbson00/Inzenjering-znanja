@@ -2,7 +2,7 @@ net
 {
      node_size = (0 0);
      name = "New BN";
-     tree = "(C2,C3,C4,C5,C6)";
+     tree = "(C2,C3,C4,C5,C6,C1,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C21,C22,C23,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47,C48,C49,C50,C51,C52,C53,C54,C55,C56,C57,C58,C59,C61)";
      UnBBayes_Color_Probabilistic_Description = "-256";
      UnBBayes_Color_Probabilistic_Explanation = "-16711936";
 }
@@ -24,7 +24,7 @@ node virus_problem
 node no_internet_connection_problem
 {
      label = "C5";
-     position = (0 289);
+     position = (11 292);
      states = ("yes" "no");
 }
 
@@ -45,7 +45,7 @@ node system_not_turning_on_problem
 node blue_screen_problem
 {
      label = "C2";
-     position = (556 666);
+     position = (557 666);
      states = ("yes" "no");
 }
 
@@ -59,7 +59,7 @@ node fan_noise_problem
 node system_restarting_problem
 {
      label = "C4";
-     position = (711 618);
+     position = (728 617);
      states = ("yes" "no");
 }
 
@@ -73,14 +73,14 @@ node freeze_problem
 node pointer_not_moving_problem
 {
      label = "C6";
-     position = (1312 1004);
+     position = (1288 984);
      states = ("yes" "no");
 }
 
 node no_sound_problem
 {
      label = "C7";
-     position = (1266 730);
+     position = (1267 736);
      states = ("yes" "no");
 }
 
@@ -108,21 +108,21 @@ node full_memory_problem
 node slow_internet_problem
 {
      label = "C11";
-     position = (498 139);
+     position = (498 140);
      states = ("yes" "no");
 }
 
 node external_device_not_found_problem
 {
      label = "C12";
-     position = (1108 801);
+     position = (1117 833);
      states = ("yes" "no");
 }
 
 node os_loading_problem
 {
      label = "C13";
-     position = (275 486);
+     position = (234 485);
      states = ("yes" "no");
 }
 
@@ -136,14 +136,14 @@ node not_charging_problem
 node installation_problem
 {
      label = "C15";
-     position = (126 548);
+     position = (125 588);
      states = ("yes" "no");
 }
 
 node data_loss_problem
 {
      label = "C16";
-     position = (1769 466);
+     position = (1743 505);
      states = ("yes" "no");
 }
 
@@ -178,7 +178,7 @@ node hdd_error
 node ssd_error
 {
      label = "C25";
-     position = (2065 728);
+     position = (2090 716);
      states = ("yes" "no");
 }
 
@@ -248,7 +248,7 @@ node chipset_error
 node cpu_high_temperature_problem
 {
      label = "C35";
-     position = (1469 238);
+     position = (1444 244);
      states = ("yes" "no");
 }
 
@@ -270,48 +270,48 @@ node driver_error
 {
      label = "C38";
      position = (1924 917);
-     states = ("yes" "State 1");
+     states = ("yes" "no");
 }
 
 node mouse_error
 {
      label = "C39";
-     position = (1215 899);
+     position = (1235 908);
      states = ("yes" "no");
 }
 
 node keyboard_error
 {
      label = "C40";
-     position = (1056 892);
+     position = (1027 977);
      states = ("yes" "no");
 }
 
 node loud_hdd_problem
 {
      label = "C41";
-     position = (1619 818);
+     position = (1652 808);
      states = ("yes" "no");
 }
 
 node lost_pictures_problem
 {
      label = "C42";
-     position = (1950 485);
+     position = (1969 511);
      states = ("yes" "no");
 }
 
 node fragmentation_problem
 {
      label = "C43";
-     position = (1849 717);
+     position = (1859 717);
      states = ("yes" "no");
 }
 
 node slow_startup_problem
 {
      label = "C44";
-     position = (2085 830);
+     position = (2085 828);
      states = ("yes" "no");
 }
 
@@ -339,7 +339,7 @@ node condezator_error
 node no_drivers_error
 {
      label = "C48";
-     position = (416 777);
+     position = (432 771);
      states = ("yes" "no");
 }
 
@@ -360,14 +360,14 @@ node old_software_error
 node display_error
 {
      label = "C51";
-     position = (1548 905);
+     position = (1528 894);
      states = ("yes" "no");
 }
 
 node app_crashing_problem
 {
      label = "C52";
-     position = (193 808);
+     position = (209 769);
      states = ("yes" "no");
 }
 
@@ -381,21 +381,21 @@ node speakers_error
 node cable_error
 {
      label = "C54";
-     position = (963 842);
+     position = (939 800);
      states = ("yes" "no");
 }
 
 node dim_screen_problem
 {
      label = "C55";
-     position = (1476 736);
+     position = (1510 769);
      states = ("yes" "no");
 }
 
 node dns_error
 {
      label = "C56";
-     position = (265 318);
+     position = (325 302);
      states = ("yes" "no");
 }
 
@@ -416,14 +416,70 @@ node net_provider_error
 node change_termal_paste_error
 {
      label = "C59";
-     position = (1632 371);
+     position = (1632 350);
      states = ("yes" "no");
 }
 
 node batery_error
 {
      label = "C61";
-     position = (1029 568);
+     position = (1028 528);
+     states = ("yes" "no");
+}
+
+node registry_error
+{
+     label = "C1";
+     position = (1320 70);
+     states = ("yes" "no");
+}
+
+node unexpected_shutdown_problem
+{
+     label = "C2";
+     position = (792 491);
+     states = ("yes" "no");
+}
+
+node flickering_problem
+{
+     label = "C4";
+     position = (1736 881);
+     states = ("yes" "no");
+}
+
+node horizontal_or_vertical_lines_problem
+{
+     label = "C5";
+     position = (1578 1020);
+     states = ("yes" "no");
+}
+
+node color_problem
+{
+     label = "C6";
+     position = (1712 947);
+     states = ("yes" "no");
+}
+
+node cache_memory_error
+{
+     label = "C7";
+     position = (312 865);
+     states = ("yes" "no");
+}
+
+node buffer_overflow_error
+{
+     label = "C8";
+     position = (117 847);
+     states = ("yes" "no");
+}
+
+node program_not_responding_problem
+{
+     label = "C9";
+     position = (0 938);
      states = ("yes" "no");
 }
 
@@ -568,34 +624,34 @@ potential (hdd_error | data_loss_problem lost_pictures_problem fragmentation_pro
 {
  data = (((((( 1.0 0.0 )
 ( 0.9 0.1 ))
-(( 0.4 0.6 )
+(( 0.55 0.45 )
 ( 0.5 0.5 )))
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.2 0.8 )
-( 0.0 1.0 ))))
-(((( 1.0 0.0 )
+( 0.5 0.5 ))))
+(((( 0.5 0.5 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.5 0.5 )))))
+((((( 0.5 0.5 )
 ( 0.9 0.1 ))
 (( 0.4 0.6 )
 ( 0.5 0.5 )))
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.2 0.8 )
-( 0.0 1.0 )))))
-((((( 1.0 0.0 )
+( 0.5 0.5 ))))
+(((( 0.3 0.7 )
 ( 0.9 0.1 ))
 (( 0.4 0.6 )
 ( 0.5 0.5 )))
-((( 0.9 0.1 )
-( 0.8 0.2 ))
-(( 0.2 0.8 )
-( 0.0 1.0 ))))
-(((( 1.0 0.0 )
-( 0.9 0.1 ))
-(( 0.4 0.6 )
-( 0.5 0.5 )))
-((( 0.9 0.1 )
-( 0.8 0.2 ))
+((( 0.8 0.2 )
+( 0.3 0.7 ))
 (( 0.2 0.8 )
 ( 0.0 1.0 ))))));
 }
@@ -670,9 +726,9 @@ potential (sound_card_error | no_sound_problem)
 ( 0.0 1.0 ));
 }
 
-potential (software_error | no_internet_connection_problem program_not_loading_problem app_crashing_problem installation_problem)
+potential (software_error | program_not_responding_problem no_internet_connection_problem program_not_loading_problem app_crashing_problem installation_problem)
 {
- data = ((((( 1.0 0.0 )
+ data = (((((( 1.0 0.0 )
 ( 0.9 0.1 ))
 (( 0.4 0.6 )
 ( 0.5 0.5 )))
@@ -687,7 +743,23 @@ potential (software_error | no_internet_connection_problem program_not_loading_p
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.2 0.8 )
-( 0.0 1.0 )))));
+( 0.0 1.0 )))))
+((((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.9 0.1 ))
+(( 0.4 0.6 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))))));
 }
 
 potential (ram_slot_error | slow_startup_problem)
@@ -864,12 +936,40 @@ potential (old_software_error | slow_internet_problem freeze_problem)
 ( 0.0 1.0 )));
 }
 
-potential (display_error | dim_screen_problem pointer_not_moving_problem)
+potential (display_error | color_problem horizontal_or_vertical_lines_problem flickering_problem dim_screen_problem pointer_not_moving_problem)
 {
- data = ((( 1.0 0.0 )
+ data = (((((( 1.0 0.0 )
 ( 0.4 0.6 ))
 (( 1.0 0.0 )
-( 0.0 1.0 )));
+( 0.0 1.0 )))
+((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )))
+((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )))))
+((((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )))
+((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 ))))
+(((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )))
+((( 1.0 0.0 )
+( 0.4 0.6 ))
+(( 1.0 0.0 )
+( 0.0 1.0 ))))));
 }
 
 potential (app_crashing_problem)
@@ -931,14 +1031,63 @@ potential (change_termal_paste_error | lagging_problem cpu_high_temperature_prob
  data = ((( 1.0 0.0 )
 ( 0.3 0.7 ))
 (( 0.5 0.5 )
-( 0.3 0.7 )));
+( 0.2 0.8 )));
 }
 
-potential (batery_error | not_charging_problem system_restarting_problem)
+potential (batery_error | unexpected_shutdown_problem not_charging_problem system_restarting_problem)
 {
- data = ((( 0.9 0.1 )
+ data = (((( 0.9 0.1 )
 ( 0.9 0.1 ))
 (( 0.5 0.5 )
-( 0.1 0.9 )));
+( 0.1 0.9 )))
+((( 0.9 0.1 )
+( 0.9 0.1 ))
+(( 0.5 0.5 )
+( 0.1 0.9 ))));
+}
+
+potential (registry_error | freeze_problem)
+{
+ data = (( 0.3 0.7 )
+( 0.0 1.0 ));
+}
+
+potential (unexpected_shutdown_problem)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (flickering_problem)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (horizontal_or_vertical_lines_problem)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (color_problem)
+{
+ data = ( 0.3 0.7 );
+}
+
+potential (cache_memory_error | program_not_loading_problem app_crashing_problem)
+{
+ data = ((( 0.15 0.85 )
+( 0.05 0.95 ))
+(( 0.05 0.95 )
+( 0.0 1.0 )));
+}
+
+potential (buffer_overflow_error | app_crashing_problem)
+{
+ data = (( 0.1 0.9 )
+( 0.0 1.0 ));
+}
+
+potential (program_not_responding_problem)
+{
+ data = ( 0.2 0.8 );
 }
 
