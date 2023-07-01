@@ -16,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -53,68 +54,135 @@ public class SearchController {
         return ResponseEntity.status(HttpStatus.OK).body(null);
     }
     @GetMapping("/motherboard/all")
-    public ResponseEntity<String> GetAllMotherboards() {
+    public ResponseEntity<List<String>> GetAllMotherboards() {
         OWLClass motherboardClass = service.manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#Motherboard");
         Set<OWLNamedIndividual> instances = service.reasoner.getInstances(motherboardClass, false).getFlattened();
+        List<String> returnInstances = new ArrayList<>();
+
         if (instances.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No instances of Motherboard found");
+            List<String> errorList = new ArrayList<>();
+            errorList.add("No instances of MOTHERBOARD found");
+            System.out.println("-----------------------------");
+            System.out.println("No instances of MOTHERBOARD found");
+            System.out.println("-----------------------------");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorList);
         }
+        System.out.println("--------------MTB---------------");
         for (OWLNamedIndividual instance : instances) {
             System.out.println(instance.getIRI().getFragment());
+            returnInstances.add(instance.getIRI().getFragment());
         }
-        System.out.println("-----------------------------");
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        System.out.println("--------------MTB---------------");
+        return ResponseEntity.status(HttpStatus.OK).body(returnInstances);
     }
     @GetMapping("/gpu/all")
-    public ResponseEntity<String> GetAllGPU() {
+    public ResponseEntity<List<String>> GetAllGPU() {
         OWLClass motherboardClass = service.manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#GraphicsProcessingUnit");
         Set<OWLNamedIndividual> instances = service.reasoner.getInstances(motherboardClass, false).getFlattened();
+        List<String> returnInstances = new ArrayList<>();
+
         if (instances.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No instances of GPU found");
+            List<String> errorList = new ArrayList<>();
+            errorList.add("No instances of GPU found");
+            System.out.println("-----------------------------");
+            System.out.println("No instances of GPU found");
+            System.out.println("-----------------------------");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorList);
         }
+        System.out.println("--------------GPU---------------");
         for (OWLNamedIndividual instance : instances) {
             System.out.println(instance.getIRI().getFragment());
+            returnInstances.add(instance.getIRI().getFragment());
         }
-        System.out.println("-----------------------------");
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        System.out.println("--------------GPU---------------");
+        return ResponseEntity.status(HttpStatus.OK).body(returnInstances);
     }
     @GetMapping("/cpu/all")
-    public ResponseEntity<String> GetAllCPU() {
+    public ResponseEntity<List<String>> GetAllCPU() {
         OWLClass motherboardClass = service.manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#CentralProcessingUnit");
         Set<OWLNamedIndividual> instances = service.reasoner.getInstances(motherboardClass, false).getFlattened();
+        List<String> returnInstances = new ArrayList<>();
+
         if (instances.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No instances of CPU found");
+            List<String> errorList = new ArrayList<>();
+            errorList.add("No instances of CPU found");
+            System.out.println("-----------------------------");
+            System.out.println("No instances of CPU found");
+            System.out.println("-----------------------------");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorList);
         }
+        System.out.println("--------------CPU---------------");
         for (OWLNamedIndividual instance : instances) {
             System.out.println(instance.getIRI().getFragment());
+            returnInstances.add(instance.getIRI().getFragment());
         }
-        System.out.println("-----------------------------");
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        System.out.println("--------------CPU---------------");
+        return ResponseEntity.status(HttpStatus.OK).body(returnInstances);
     }
     @GetMapping("/ram/all")
-    public ResponseEntity<String> GetAllRAM() {
+    public ResponseEntity<List<String>> GetAllRAM() {
         OWLClass motherboardClass = service.manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#RandomAccessMemory");
         Set<OWLNamedIndividual> instances = service.reasoner.getInstances(motherboardClass, false).getFlattened();
+        List<String> returnInstances = new ArrayList<>();
+
         if (instances.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No instances of RAM found");
+            List<String> errorList = new ArrayList<>();
+            errorList.add("No instances of RAM found");
+            System.out.println("-----------------------------");
+            System.out.println("No instances of RAM found");
+            System.out.println("-----------------------------");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorList);
         }
+        System.out.println("--------------RAM---------------");
         for (OWLNamedIndividual instance : instances) {
             System.out.println(instance.getIRI().getFragment());
+            returnInstances.add(instance.getIRI().getFragment());
         }
-        System.out.println("-----------------------------");
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        System.out.println("--------------RAM---------------");
+        return ResponseEntity.status(HttpStatus.OK).body(returnInstances);
     }
     @GetMapping("/power/all")
-    public ResponseEntity<String> GetAllPowersupply() {
+    public ResponseEntity<List<String>> GetAllPowersupply() {
         OWLClass motherboardClass = service.manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#PowerSupplyUnit");
         Set<OWLNamedIndividual> instances = service.reasoner.getInstances(motherboardClass, false).getFlattened();
+        List<String> returnInstances = new ArrayList<>();
+
         if (instances.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No instances of Power Supply found");
+            List<String> errorList = new ArrayList<>();
+            errorList.add("No instances of PSU found");
+            System.out.println("-----------------------------");
+            System.out.println("No instances of PSU found");
+            System.out.println("-----------------------------");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorList);
         }
+        System.out.println("--------------PSU---------------");
         for (OWLNamedIndividual instance : instances) {
             System.out.println(instance.getIRI().getFragment());
+            returnInstances.add(instance.getIRI().getFragment());
         }
-        System.out.println("-----------------------------");
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        System.out.println("--------------PSU---------------");
+        return ResponseEntity.status(HttpStatus.OK).body(returnInstances);
     }
+
+    @GetMapping("/upgrade/{toUpgrade}/{motherboard}/{cpu}/{gpu}/{ram}/{psu}")
+    public ResponseEntity<?> getUpgrade(
+            @PathVariable(value = "toUpgrade", required = true) String toUpgrade,
+            @PathVariable(value = "motherboard", required = true) String motherboard,
+            @PathVariable(value = "cpu") String cpu,
+            @PathVariable(value = "gpu") String gpu,
+            @PathVariable(value = "ram") String ram,
+            @PathVariable(value = "psu") String psu) {
+        if (toUpgrade.equals("CPU"))
+            return  ResponseEntity.status(HttpStatus.OK).body(service.UpgradeCPU(motherboard, cpu));
+        else if (toUpgrade.equals("GPU"))
+            return  ResponseEntity.status(HttpStatus.OK).body(service.UpgradeGPU(motherboard, gpu));
+        else if (toUpgrade.equals("RAM"))
+            return  ResponseEntity.status(HttpStatus.OK).body(service.UpgradeRAM(motherboard, ram));
+        else if (toUpgrade.equals("PSU"))
+            return  ResponseEntity.status(HttpStatus.OK).body(service.UpgradePSU(motherboard, psu));
+        else
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Ne valja");
+    }
+
+
 }

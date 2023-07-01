@@ -7,6 +7,7 @@ import org.semanticweb.owlapi.model.*;
 import com.example.iz.parts.services.OntologyService;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 import org.springframework.stereotype.Service;
 
@@ -80,6 +81,242 @@ public class OntologyServiceImpl implements OntologyService {
 
         Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
 
+        // Print the individuals
+        for (OWLNamedIndividual individual : individuals) {
+            System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
+        }
+
+        return retList;
+    }
+
+    public List<String> UpgradeCPU(String motherboard, String cpu) {
+        List<String> retList = new ArrayList<String>();
+
+        System.out.println("------------------------------------");
+        // Get motherboard
+        OWLNamedIndividual motherboardIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + motherboard));
+        System.out.println(motherboardIndividual.getIRI().getFragment());
+        // Get cpu
+        OWLNamedIndividual cpuIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + cpu));
+        System.out.println(cpuIndividual.getIRI().getFragment());
+        System.out.println("------------------------------------");
+
+        // Get the data properties to query
+        OWLDataProperty cpuCoreNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuCoreNumber"));
+        OWLDataProperty cpuThreadNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuThreadNumber"));
+        OWLDataProperty cpuCache = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuCache"));
+        OWLObjectProperty cpuSocket = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasCPUSocket"));
+        OWLObjectProperty cpuSocketCPU = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasCPUSocketCPU"));
+
+        OWLClass cpuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#CentralProcessingUnit");
+
+        OWLLiteral cpuCoreNumberValue = reasoner.getDataPropertyValues(cpuIndividual, cpuCoreNumber).stream().findFirst().orElse(null);
+        OWLLiteral cpuThreadNumberValue = reasoner.getDataPropertyValues(cpuIndividual, cpuThreadNumber).stream().findFirst().orElse(null);
+        OWLLiteral cpuCacheValue = reasoner.getDataPropertyValues(cpuIndividual, cpuCache).stream().findFirst().orElse(null);
+
+        // Get the object property values for the individual
+        Set<OWLNamedIndividual> propertyValues = reasoner.getObjectPropertyValues(motherboardIndividual, cpuSocket).getFlattened();
+        OWLNamedIndividual firstValue = null;
+        if (!propertyValues.isEmpty()) {
+            OWLNamedIndividual[] array = propertyValues.toArray(new OWLNamedIndividual[0]);
+            if (array.length > 0) {
+                firstValue = array[0];
+                System.out.println("First value: ");
+            } else {
+                System.out.println("Set is empty.");
+            }
+        }
+
+        OWLDataRange coresRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral((Integer.parseInt(cpuCoreNumberValue.getLiteral())))));
+        OWLDataRange threadsRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(Integer.parseInt(cpuThreadNumberValue.getLiteral()))));
+        OWLDataRange cpuCacheRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(Integer.parseInt(cpuCacheValue.getLiteral()))));
+
+        //TODO: match manufacturer string and return speed
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                cpuClass,
+                dataFactory.getOWLDataSomeValuesFrom(cpuCoreNumber, coresRange),
+                dataFactory.getOWLDataSomeValuesFrom(cpuThreadNumber, threadsRange),
+                dataFactory.getOWLDataSomeValuesFrom(cpuCache, cpuCacheRange),
+                dataFactory.getOWLObjectHasValue(cpuSocketCPU, firstValue)
+        );
+
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+        System.out.println("Individuals: " + individuals.size());
+        // Print the individuals
+        for (OWLNamedIndividual individual : individuals) {
+            System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
+        }
+
+        return retList;
+    }
+
+    public List<String> UpgradeGPU(String motherboard, String gpu) {
+        List<String> retList = new ArrayList<String>();
+
+        System.out.println("------------------------------------");
+        // Get motherboard
+        OWLNamedIndividual motherboardIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + motherboard));
+        System.out.println(motherboardIndividual.getIRI().getFragment());
+        // Get cpu
+        OWLNamedIndividual gpuIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + gpu));
+        System.out.println(gpuIndividual.getIRI().getFragment());
+        System.out.println("------------------------------------");
+
+        // Get the data properties to query
+        OWLDataProperty gpuMemoryNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuMemory"));
+        OWLDataProperty gpuClockSpeedNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuClockSpeed"));
+        OWLObjectProperty PCIeConnector = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasPCIeConnector"));
+        OWLObjectProperty PCIeConnectorGPU = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasPCIeConnectorGPU"));
+
+        OWLClass gpuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#GraphicsProcessingUnit");
+
+        OWLLiteral gpuMemoryNumberValue = reasoner.getDataPropertyValues(gpuIndividual, gpuMemoryNumber).stream().findFirst().orElse(null);
+        OWLLiteral gpuClockSpeedNumberValue = reasoner.getDataPropertyValues(gpuIndividual, gpuClockSpeedNumber).stream().findFirst().orElse(null);
+
+        // Get the object property values for the individual
+        Set<OWLNamedIndividual> propertyValues = reasoner.getObjectPropertyValues(motherboardIndividual, PCIeConnector).getFlattened();
+        OWLNamedIndividual firstValue = null;
+        if (!propertyValues.isEmpty()) {
+            OWLNamedIndividual[] array = propertyValues.toArray(new OWLNamedIndividual[0]);
+            if (array.length > 0) {
+                firstValue = array[0];
+                System.out.println("First value: ");
+            } else {
+                System.out.println("Set is empty.");
+            }
+        }
+
+        OWLDataRange gpuMemoryRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral((Integer.parseInt(gpuMemoryNumberValue.getLiteral())))));
+        OWLDataRange gpuClockSpeedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getOWLDatatype(OWL2Datatype.XSD_DECIMAL) ,
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(Double.toString(Double.parseDouble(gpuClockSpeedNumberValue.getLiteral())), OWL2Datatype.XSD_DECIMAL)));
+
+
+        //TODO: match manufacturer string and return speed
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                gpuClass,
+                dataFactory.getOWLDataSomeValuesFrom(gpuMemoryNumber, gpuMemoryRange),
+                dataFactory.getOWLDataSomeValuesFrom(gpuClockSpeedNumber, gpuClockSpeedRange),
+                dataFactory.getOWLObjectHasValue(PCIeConnectorGPU, firstValue)
+        );
+
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+        System.out.println("Individuals: " + individuals.size());
+        // Print the individuals
+        for (OWLNamedIndividual individual : individuals) {
+            System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
+        }
+
+        return retList;
+    }
+
+    public List<String> UpgradeRAM(String motherboard, String ram) {
+        List<String> retList = new ArrayList<String>();
+
+        System.out.println("------------------------------------");
+        // Get motherboard
+        OWLNamedIndividual motherboardIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + motherboard));
+        System.out.println(motherboardIndividual.getIRI().getFragment());
+        // Get cpu
+        OWLNamedIndividual ramIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + ram));
+        System.out.println(ramIndividual.getIRI().getFragment());
+        System.out.println("------------------------------------");
+
+        // Get the data properties to query
+        OWLDataProperty ramMemoryNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramMemory"));
+        OWLObjectProperty ramSlot = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasRamSlot"));
+        OWLObjectProperty ramSlotRAM = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasRamSlotRAM"));
+
+        OWLClass ramClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#RandomAccessMemory");
+
+        OWLLiteral ramMemoryNumberValue = reasoner.getDataPropertyValues(ramIndividual, ramMemoryNumber).stream().findFirst().orElse(null);
+
+        // Get the object property values for the individual
+        Set<OWLNamedIndividual> propertyValues = reasoner.getObjectPropertyValues(motherboardIndividual, ramSlot).getFlattened();
+        OWLNamedIndividual firstValue = null;
+        if (!propertyValues.isEmpty()) {
+            OWLNamedIndividual[] array = propertyValues.toArray(new OWLNamedIndividual[0]);
+            if (array.length > 0) {
+                firstValue = array[0];
+                System.out.println("First value: ");
+            } else {
+                System.out.println("Set is empty.");
+            }
+        }
+
+        OWLDataRange ramMemoryRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral((Integer.parseInt(ramMemoryNumberValue.getLiteral())))));
+
+        //TODO: match manufacturer string and return speed
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                ramClass,
+                dataFactory.getOWLDataSomeValuesFrom(ramMemoryNumber, ramMemoryRange),
+                dataFactory.getOWLObjectHasValue(ramSlotRAM, firstValue)
+        );
+
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+        System.out.println("Individuals: " + individuals.size());
+        // Print the individuals
+        for (OWLNamedIndividual individual : individuals) {
+            System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
+        }
+
+        return retList;
+    }
+
+    public List<String> UpgradePSU(String motherboard, String psu) {
+        List<String> retList = new ArrayList<String>();
+
+        System.out.println("------------------------------------");
+        // Get motherboard
+        OWLNamedIndividual motherboardIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + motherboard));
+        System.out.println(motherboardIndividual.getIRI().getFragment());
+        // Get cpu
+        OWLNamedIndividual psuIndividual = dataFactory.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#" + psu));
+        System.out.println(psuIndividual.getIRI().getFragment());
+        System.out.println("------------------------------------");
+
+        // Get the data properties to query
+        OWLDataProperty wattageNumber = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#wattage"));
+        OWLObjectProperty has24PinConnector = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#has24PinConnector"));
+        OWLObjectProperty has24PinConnectorPSU = manager.getOWLDataFactory().getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#has24PinConnectorPSU"));
+
+        OWLClass psuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#PowerSupplyUnit");
+
+        OWLLiteral wattageNumberValue = reasoner.getDataPropertyValues(psuIndividual, wattageNumber).stream().findFirst().orElse(null);
+
+        // Get the object property values for the individual
+        Set<OWLNamedIndividual> propertyValues = reasoner.getObjectPropertyValues(motherboardIndividual, has24PinConnector).getFlattened();
+        OWLNamedIndividual firstValue = null;
+        if (!propertyValues.isEmpty()) {
+            OWLNamedIndividual[] array = propertyValues.toArray(new OWLNamedIndividual[0]);
+            if (array.length > 0) {
+                firstValue = array[0];
+                System.out.println("First value: ");
+            } else {
+                System.out.println("Set is empty.");
+            }
+        }
+
+        OWLDataRange wattageRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral((Integer.parseInt(wattageNumberValue.getLiteral())))));
+
+        //TODO: match manufacturer string and return speed
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                psuClass,
+                dataFactory.getOWLDataSomeValuesFrom(wattageNumber, wattageRange),
+                dataFactory.getOWLObjectHasValue(has24PinConnectorPSU, firstValue)
+        );
+
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+        System.out.println("Individuals: " + individuals.size());
         // Print the individuals
         for (OWLNamedIndividual individual : individuals) {
             System.out.println(individual.getIRI().getFragment());

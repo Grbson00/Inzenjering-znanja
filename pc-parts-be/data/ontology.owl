@@ -16,6 +16,9 @@
         <Class IRI="#AGP"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AMD"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AMDCPUSocket"/>
     </Declaration>
     <Declaration>
@@ -74,6 +77,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Headphones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intel"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IntelCPUSocket"/>
@@ -172,6 +178,9 @@
         <Class IRI="#Windows_64bit"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#24Pin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#connectionAUX"/>
     </Declaration>
     <Declaration>
@@ -193,10 +202,19 @@
         <ObjectProperty IRI="#connectionVGA"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#has24PinConnector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCPU"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCPUSocket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasChipset"/>
@@ -229,6 +247,12 @@
         <ObjectProperty IRI="#hasMotherboard"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPCIeConnector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPowerSupply"/>
     </Declaration>
     <Declaration>
@@ -236,6 +260,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasRAMType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRamSlot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSDD"/>
@@ -373,6 +403,9 @@
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
     </Declaration>
     <Declaration>
@@ -391,6 +424,9 @@
         <NamedIndividual IRI="#Acer_Monitor_CV24YT"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CHIEFTEC_Napajanje_Compact_Series_CSN-650C_650W"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </Declaration>
     <Declaration>
@@ -406,6 +442,9 @@
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#FSP_napajanje_HYDRO_PRO_Series_600W"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
     </Declaration>
     <Declaration>
@@ -413,6 +452,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INTER-TECH_HIPOWER_SP-550_550W"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INTER-TECH_napajanje_SL-700_PLUS"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -430,7 +475,37 @@
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Intel_chipset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_socket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LG_UltraFine_27EP950"/>
@@ -448,6 +523,12 @@
         <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M500_80_Plus_PLATINUM_PRO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M600_80_Plus_PLATINUM"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MacOS_Monterey"/>
     </Declaration>
     <Declaration>
@@ -457,7 +538,19 @@
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PCIe4.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Windows10_32bit"/>
@@ -474,9 +567,22 @@
     <Declaration>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#24Pin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DIMM-DDR$_RAM_slot"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#AGP"/>
         <Class IRI="#Connector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AMD"/>
+        <Class IRI="#CentralProcessingUnit"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AMDCPUSocket"/>
@@ -553,6 +659,10 @@
     <SubClassOf>
         <Class IRI="#Headphones"/>
         <Class IRI="#External"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intel"/>
+        <Class IRI="#CentralProcessingUnit"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IntelCPUSocket"/>
@@ -670,12 +780,28 @@
         <Class IRI="#Windows_64bit"/>
         <Class IRI="#OperatingSystem"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#24Pin"/>
+        <Class IRI="#Connector"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AGP"/>
         <Class IRI="#M.2"/>
         <Class IRI="#PCI"/>
         <Class IRI="#PCIe"/>
         <Class IRI="#SATA"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AGP"/>
+        <Class IRI="#M.2"/>
+        <Class IRI="#PCI"/>
+        <Class IRI="#PCIe"/>
+        <Class IRI="#SATA"/>
+        <Class IRI="#24Pin"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AMD"/>
+        <Class IRI="#Intel"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#AMDCPUSocket"/>
@@ -751,6 +877,10 @@
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
     </ClassAssertion>
@@ -775,11 +905,15 @@
         <NamedIndividual IRI="#Acer_Monitor_CV24YT"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#CHIEFTEC_Napajanje_Compact_Series_CSN-650C_650W"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Cooler"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#DIMM"/>
+        <Class IRI="#RAMSlotType"/>
         <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -795,6 +929,10 @@
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#FSP_napajanje_HYDRO_PRO_Series_600W"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
     </ClassAssertion>
@@ -805,6 +943,14 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#INTER-TECH_HIPOWER_SP-550_550W"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#INTER-TECH_napajanje_SL-700_PLUS"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CentralProcessingUnit"/>
@@ -827,8 +973,48 @@
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#IntelChipset"/>
+        <NamedIndividual IRI="#Intel_chipset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IntelCPUSocket"/>
+        <NamedIndividual IRI="#Intel_socket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SolidStateDrive"/>
         <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Monitor"/>
@@ -851,6 +1037,14 @@
         <NamedIndividual IRI="#Linux_Ubuntu_64bit"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M500_80_Plus_PLATINUM_PRO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M600_80_Plus_PLATINUM"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#MacOS"/>
         <NamedIndividual IRI="#MacOS_Monterey"/>
     </ClassAssertion>
@@ -864,7 +1058,23 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#PCIe"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PCIe"/>
         <NamedIndividual IRI="#PCIe4.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAMSlotType"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RandomAccessMemory"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Windows_32bit"/>
@@ -886,6 +1096,129 @@
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerSupplyUnit"/>
+        <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#24Pin"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <NamedIndividual IRI="#AM4_CPU_Socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnector"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocket"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#Intel_socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChipset"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#Intel_chipset"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnector"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormFactor"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#ATX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnector"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlot"/>
+        <NamedIndividual IRI="#ASUS_A666_PRO_MAX"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#CHIEFTEC_Napajanje_Compact_Series_CSN-650C_650W"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#FSP_napajanje_HYDRO_PRO_Series_600W"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnector"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPUSocket"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
@@ -897,24 +1230,139 @@
         <NamedIndividual IRI="#AMD_B550_chipset"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasConnector"/>
-        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
-        <NamedIndividual IRI="#PCIe4.0"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFormFactor"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
         <NamedIndividual IRI="#ATX"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRAMType"/>
+        <ObjectProperty IRI="#hasPCIeConnector"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
-        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+        <NamedIndividual IRI="#PCIe2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlot"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#INTER-TECH_HIPOWER_SP-550_550W"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#INTER-TECH_napajanje_SL-700_PLUS"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <NamedIndividual IRI="#Intel_socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <NamedIndividual IRI="#Intel_socket"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCooler"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <NamedIndividual IRI="#Intel_socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <NamedIndividual IRI="#Intel_socket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+        <NamedIndividual IRI="#DIMM-DDR4_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M500_80_Plus_PLATINUM_PRO"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M600_80_Plus_PLATINUM"/>
+        <NamedIndividual IRI="#24Pin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
+        <NamedIndividual IRI="#24Pin"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuSocketName"/>
@@ -957,9 +1405,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
         <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -967,9 +1425,19 @@
         <Literal>integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
         <Literal>AMD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -1022,14 +1490,29 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
         <Literal>AMD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
@@ -1037,14 +1520,29 @@
         <Literal>Nvidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
         <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ASUS_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -1052,9 +1550,19 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
         <Literal>NVidia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
@@ -1082,6 +1590,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#CHIEFTEC_Napajanje_Compact_Series_CSN-650C_650W"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">650</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#resolution"/>
         <NamedIndividual IRI="#Dell_Monitor_25S32D"/>
         <Literal>1920x1080</Literal>
@@ -1102,14 +1615,34 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
         <Literal>NVidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#FSP_napajanje_HYDRO_PRO_Series_600W"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
@@ -1117,9 +1650,19 @@
         <Literal>NVidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#GeForce_GTX_1650_Pegasus"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
@@ -1127,9 +1670,24 @@
         <Literal>NVidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#INTER-TECH_HIPOWER_SP-550_550W"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">550</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#INTER-TECH_napajanje_SL-700_PLUS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">700</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCache"/>
@@ -1192,14 +1750,74 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>Intel</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Intel_UHD_Graphics"/>
         <Literal>integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chipsetName"/>
+        <NamedIndividual IRI="#Intel_chipset"/>
+        <Literal>I456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuSocketName"/>
+        <NamedIndividual IRI="#Intel_socket"/>
+        <Literal>I726</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#resolution"/>
@@ -1222,9 +1840,44 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M500_80_Plus_PLATINUM_PRO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#MS_Napajanje_CORE_M600_80_Plus_PLATINUM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemory"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gpuClockSpeed"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
@@ -1232,9 +1885,19 @@
         <Literal>NVidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#gpuMemory"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#gpuType"/>
         <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
         <Literal>not integrated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wattage"/>
+        <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#connectionAUX"/>
@@ -1306,6 +1969,14 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMotherboard"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPCIeConnector"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1401,12 +2072,24 @@
         <Class IRI="#Monitor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has24PinConnector"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <Class IRI="#PowerSupplyUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCPU"/>
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCPUSocket"/>
         <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
+        <Class IRI="#CentralProcessingUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasChipset"/>
@@ -1461,6 +2144,14 @@
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPCIeConnector"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <Class IRI="#GraphicsProcessingUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPowerSupply"/>
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
@@ -1471,6 +2162,14 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRAMType"/>
         <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRamSlot"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <Class IRI="#RandomAccessMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSDD"/>
@@ -1493,11 +2192,23 @@
         <Class IRI="#Monitor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#has24PinConnector"/>
+        <Class IRI="#24Pin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <Class IRI="#24Pin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCPU"/>
         <Class IRI="#CentralProcessingUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCPUSocket"/>
+        <Class IRI="#CPUSocket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPUSocketCPU"/>
         <Class IRI="#CPUSocket"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1557,6 +2268,14 @@
         <Class IRI="#Microphone"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPCIeConnector"/>
+        <Class IRI="#PCIe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <Class IRI="#PCIe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPowerSupply"/>
         <Class IRI="#PowerSupplyUnit"/>
     </ObjectPropertyRange>
@@ -1566,6 +2285,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRAMType"/>
+        <Class IRI="#RAMSlotType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRamSlot"/>
+        <Class IRI="#DIMM"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
         <Class IRI="#RAMSlotType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
