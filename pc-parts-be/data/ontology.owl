@@ -268,7 +268,7 @@
         <ObjectProperty IRI="#hasRamSlotRAM"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSDD"/>
+        <ObjectProperty IRI="#hasSSD"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSpeakers"/>
@@ -427,6 +427,9 @@
         <NamedIndividual IRI="#CHIEFTEC_Napajanje_Compact_Series_CSN-650C_650W"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </Declaration>
     <Declaration>
@@ -539,6 +542,126 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PCIe2.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC34"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC35"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC36"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC37"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC39"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC40"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC9"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PCIe4.0"/>
@@ -909,6 +1032,10 @@
         <NamedIndividual IRI="#CHIEFTEC_Napajanje_Compact_Series_CSN-650C_650W"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#FullTower"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Cooler"/>
         <NamedIndividual IRI="#Cosmo_Cool_LC-CC-124"/>
     </ClassAssertion>
@@ -1055,6 +1182,166 @@
     <ClassAssertion>
         <Class IRI="#GraphicsProcessingUnit"/>
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC34"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC36"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC37"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC39"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC40"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#PC5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#PC9"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#PCIe"/>
@@ -1364,6 +1651,736 @@
         <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
         <NamedIndividual IRI="#24Pin"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC1"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC1"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC1"/>
+        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC1"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#PC1"/>
+        <NamedIndividual IRI="#KINGSTON_SSD_500GB_M.2_2280_PCIe_NVMe_NV1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC10"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC10"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC10"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC11"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC11"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC11"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC11"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC12"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC12"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC12"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC12"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC13"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC13"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC13"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC13"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC14"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC14"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC14"/>
+        <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC14"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC15"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC15"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC15"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC15"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC16"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC16"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC16"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC17"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC17"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC17"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC18"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC18"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC18"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC19"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC19"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC19"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC2"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC2"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC2"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC2"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC20"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC20"/>
+        <NamedIndividual IRI="#Intel_UHD_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC20"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC21"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC21"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC21"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC21"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC22"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC22"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC22"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC22"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC23"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC23"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC23"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC23"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC24"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC24"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC24"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC24"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC25"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC25"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC25"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC25"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC26"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC26"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC26"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC26"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC27"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC27"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC27"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC27"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC28"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC28"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC28"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC28"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC29"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC29"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC29"/>
+        <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC29"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC3"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC3"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC3"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC3"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC30"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC30"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC30"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC30"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC31"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC31"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC31"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC32"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC32"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC32"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC33"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC33"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC33"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC34"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC34"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC34"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC35"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC35"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC35"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC36"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC36"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC36"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC36"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC37"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC37"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC37"/>
+        <NamedIndividual IRI="#Gigabyte_GTX_1650"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC37"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC38"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC38"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC38"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC38"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC39"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC39"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC39"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC39"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC4"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC4"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC4"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC4"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC40"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC40"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC40"/>
+        <NamedIndividual IRI="#ASUS_TUF_Gaming_GeForce_GTX_1650"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC40"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC5"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComputerCase"/>
+        <NamedIndividual IRI="#PC5"/>
+        <NamedIndividual IRI="#ComputerCase1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC5"/>
+        <NamedIndividual IRI="#ASRock_AMD_Radeon_RX_6600_Challenger_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC5"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC6"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC6"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC6"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC7"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC7"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC7"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC8"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC8"/>
+        <NamedIndividual IRI="#AMD_Radeon_R2_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC8"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#PC9"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGPU"/>
+        <NamedIndividual IRI="#PC9"/>
+        <NamedIndividual IRI="#AMD_Radeon_Vega_8_Graphics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#PC9"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuSocketName"/>
         <NamedIndividual IRI="#AM4_CPU_Socket"/>
@@ -1517,7 +2534,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuManufacturer"/>
         <NamedIndividual IRI="#ASUS_CERBERUS_GTX_1050Ti"/>
-        <Literal>Nvidia</Literal>
+        <Literal>NVidia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuMemory"/>
@@ -1992,7 +3009,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasSDD"/>
+        <ObjectProperty IRI="#hasSSD"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
@@ -2172,7 +3189,7 @@
         <Class IRI="#RandomAccessMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSDD"/>
+        <ObjectProperty IRI="#hasSSD"/>
         <Class IRI="#PC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2276,6 +3293,10 @@
         <Class IRI="#PCIe"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPowerSupply"/>
         <Class IRI="#PowerSupplyUnit"/>
     </ObjectPropertyRange>
@@ -2296,7 +3317,7 @@
         <Class IRI="#RAMSlotType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSDD"/>
+        <ObjectProperty IRI="#hasSSD"/>
         <Class IRI="#SolidStateDrive"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
