@@ -541,9 +541,6 @@
         <NamedIndividual IRI="#PALIT_GeForce_1050_Ti_StormX"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PCIe2.0"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#PC1"/>
     </Declaration>
     <Declaration>
@@ -662,6 +659,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PC9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCIe2.0"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PCIe4.0"/>
@@ -1527,6 +1527,11 @@
         <NamedIndividual IRI="#PCIe2.0"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRamSlot"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
         <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
@@ -1632,26 +1637,6 @@
         <NamedIndividual IRI="#PCIe4.0"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRamSlotRAM"/>
-        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
-        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRamSlotRAM"/>
-        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
-        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
-        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
-        <NamedIndividual IRI="#PCIe4.0"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has24PinConnectorPSU"/>
-        <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
-        <NamedIndividual IRI="#24Pin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC1"/>
         <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
@@ -1670,6 +1655,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC1"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC1"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSSD"/>
@@ -1692,6 +1682,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC10"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC11"/>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -1710,6 +1705,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC11"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC11"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1732,6 +1732,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC12"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC13"/>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -1750,6 +1755,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC13"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC13"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1772,6 +1782,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC14"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC15"/>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -1792,6 +1807,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC15"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC16"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
@@ -1805,6 +1825,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC16"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC16"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1822,6 +1847,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC17"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC18"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
@@ -1837,6 +1867,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC18"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC19"/>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
@@ -1850,6 +1885,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC19"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC19"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1872,6 +1912,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC2"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC20"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
@@ -1887,6 +1932,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC20"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC21"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -1905,6 +1955,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC21"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC21"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1927,6 +1982,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC22"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC23"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -1945,6 +2005,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC23"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC23"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1967,6 +2032,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC24"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC25"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -1985,6 +2055,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC25"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC25"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2007,6 +2082,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC26"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC27"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -2025,6 +2105,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC27"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC27"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2047,6 +2132,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC28"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC29"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -2067,6 +2157,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC29"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC3"/>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -2085,6 +2180,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC3"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC3"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2107,6 +2207,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC30"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC31"/>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -2122,6 +2227,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC31"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC32"/>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -2137,6 +2247,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC32"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC33"/>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -2150,6 +2265,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC33"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC33"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2167,6 +2287,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC34"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC35"/>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
@@ -2180,6 +2305,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC35"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC35"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2202,6 +2332,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC36"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC37"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -2222,6 +2357,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC37"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC38"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
@@ -2242,6 +2382,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC38"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC39"/>
         <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
@@ -2260,6 +2405,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC39"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC39"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2282,6 +2432,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC4"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC40"/>
         <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
@@ -2300,6 +2455,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC40"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC40"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2322,6 +2482,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC5"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC6"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
@@ -2335,6 +2500,11 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC6"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC6"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
@@ -2352,6 +2522,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC7"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC8"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
@@ -2367,6 +2542,11 @@
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC8"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#PC9"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
@@ -2380,6 +2560,31 @@
         <ObjectProperty IRI="#hasMotherboard"/>
         <NamedIndividual IRI="#PC9"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#PC9"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRamSlotRAM"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+        <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
+        <NamedIndividual IRI="#Zotac_GeForce_GTX_1650"/>
+        <NamedIndividual IRI="#PCIe4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has24PinConnectorPSU"/>
+        <NamedIndividual IRI="#nJOY_napajanje_LEGION_300_300W"/>
+        <NamedIndividual IRI="#24Pin"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuSocketName"/>
@@ -3285,16 +3490,16 @@
         <Class IRI="#Microphone"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPCIeConnector"/>
         <Class IRI="#PCIe"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
         <Class IRI="#PCIe"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasMotherboard"/>
-        <Class IRI="#Motherboard"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPowerSupply"/>
