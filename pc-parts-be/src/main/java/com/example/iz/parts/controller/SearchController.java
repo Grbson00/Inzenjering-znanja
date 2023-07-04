@@ -29,9 +29,9 @@ public class SearchController {
     OntologyServiceImpl service;
 
     @PostMapping("/gpu")
-    public ResponseEntity<List<GPU>> FindGPU(@NonNull @RequestBody final GPUSearchDTO dto) {
+    public ResponseEntity<List<String>> FindGPU(@NonNull @RequestBody final GPUSearchDTO dto) {
         System.out.println(dto);
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindGpu(dto));
     }
     @PostMapping("/cpu")
     public ResponseEntity<List<String>> FindCPU(@NonNull @RequestBody final CPUSearchDTO dto) {

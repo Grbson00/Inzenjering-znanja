@@ -1,6 +1,7 @@
 package com.example.iz.parts.services;
 
 import com.example.iz.parts.dto.search.CPUSearchDTO;
+import com.example.iz.parts.dto.search.GPUSearchDTO;
 
 import java.io.File;
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 public interface OntologyService {
     void LoadOntology(File file);
     List<String> FindCpu(CPUSearchDTO dto);
+    List<String> FindGpu(GPUSearchDTO dto);
 
     List<String> UpgradeCPU(String motherboard, String cpu);
     List<String> UpgradeGPU(String motherboard, String gpu);
