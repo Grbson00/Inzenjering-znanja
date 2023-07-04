@@ -29,9 +29,9 @@ public class SearchController {
     OntologyServiceImpl service;
 
     @PostMapping("/gpu")
-    public ResponseEntity<List<GPU>> FindGPU(@NonNull @RequestBody final GPUSearchDTO dto) {
+    public ResponseEntity<List<String>> FindGPU(@NonNull @RequestBody final GPUSearchDTO dto) {
         System.out.println(dto);
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindGpu(dto));
     }
     @PostMapping("/cpu")
     public ResponseEntity<List<String>> FindCPU(@NonNull @RequestBody final CPUSearchDTO dto) {
@@ -44,14 +44,14 @@ public class SearchController {
         return ResponseEntity.status(HttpStatus.OK).body(null);
     }
     @PostMapping("/ram")
-    public ResponseEntity<List<RAM>> FindRAM(@NonNull @RequestBody final RAMSearchDTO dto) {
+    public ResponseEntity<List<String>> FindRAM(@NonNull @RequestBody final RAMSearchDTO dto) {
         System.out.println(dto);
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindRam(dto));
     }
     @PostMapping("/power")
-    public ResponseEntity<List<PowerSupply>> FindPowerSupply(@NonNull @RequestBody final PSUSearchDTO dto) {
+    public ResponseEntity<List<String>> FindPowerSupply(@NonNull @RequestBody final PSUSearchDTO dto) {
         System.out.println(dto);
-        return ResponseEntity.status(HttpStatus.OK).body(null);
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindPsu(dto));
     }
     @GetMapping("/motherboard/all")
     public ResponseEntity<List<String>> GetAllMotherboards() {

@@ -4,14 +4,22 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class PSUSearchDTO {
-    private String manufacturer;
-    private Integer wattage;
+    private Integer fromWattage;
+    private Integer toWattage;
+
+    public Integer getFromWattage() {
+        return fromWattage;
+    }
+
+    public Integer getToWattage() {
+        return toWattage;
+    }
 
     @Override
     public String toString() {
         return "PSUSearchDTO{" +
-                "manufacturer='" + manufacturer + '\'' +
-                ", wattage=" + wattage +
+                "fromWattage=" + fromWattage +
+                ", toWattage=" + toWattage +
                 '}';
     }
 }

@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class CPUSearchDTO {
     private String manufacturer;
-    private Integer fromSpeed;
-    private Integer toSpeed;
+    private Double fromSpeed;
+    private Double toSpeed;
     private Integer cacheMemoryFrom;
     private Integer cacheMemoryTo;
     private Integer coreNumberFrom;
@@ -18,11 +18,11 @@ public class CPUSearchDTO {
         return manufacturer;
     }
 
-    public Integer getFromSpeed() {
+    public Double getFromSpeed() {
         return fromSpeed;
     }
 
-    public Integer getToSpeed() {
+    public Double getToSpeed() {
         return toSpeed;
     }
 

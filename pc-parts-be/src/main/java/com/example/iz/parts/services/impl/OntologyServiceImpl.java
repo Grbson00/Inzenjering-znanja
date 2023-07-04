@@ -1,14 +1,19 @@
 package com.example.iz.parts.services.impl;
 
 import com.example.iz.parts.dto.search.CPUSearchDTO;
+import com.example.iz.parts.dto.search.GPUSearchDTO;
+import com.example.iz.parts.dto.search.PSUSearchDTO;
+import com.example.iz.parts.dto.search.RAMSearchDTO;
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import com.example.iz.parts.services.OntologyService;
+import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import org.semanticweb.owlapi.vocab.OWLFacet;
+import org.semanticweb.owlapi.vocab.XSDVocabulary;
 import org.springframework.stereotype.Service;
 
 import javax.management.Query;
@@ -16,6 +21,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.ResultSet;
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -66,17 +72,113 @@ public class OntologyServiceImpl implements OntologyService {
                 dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCacheMemoryFrom())),
                 dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCacheMemoryTo())));
 
-        OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getFromSpeed())),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getToSpeed())));
+        OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getFromSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getToSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))));
 
-        //TODO: match manufacturer string and return speed
         OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
                 cpuClass,
                 dataFactory.getOWLDataSomeValuesFrom(cpuCoreNumber, coresRange),
                 dataFactory.getOWLDataSomeValuesFrom(cpuThreadNumber, threadsRange),
-                dataFactory.getOWLDataSomeValuesFrom(cpuCache, cacheRange)
-//                dataFactory.getOWLDataSomeValuesFrom(cpuSpeed, speedRange)
+                dataFactory.getOWLDataSomeValuesFrom(cpuCache, cacheRange),
+                dataFactory.getOWLDataSomeValuesFrom(cpuSpeed, speedRange)
+        );
+
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+
+        // Print the individuals
+        for (OWLNamedIndividual individual : individuals) {
+            System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
+        }
+
+        return retList;
+    }
+
+    @Override
+    public List<String> FindGpu(GPUSearchDTO dto) {
+        List<String> retList = new ArrayList<String>();
+
+        OWLDataProperty gpuManufacturer = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuManufacturer"));
+        OWLDataProperty gpuMemory = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuMemory"));
+        OWLDataProperty gpuClockSpeed = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuClockSpeed"));
+        OWLDataProperty gpuType = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuType"));
+
+        OWLClass gpuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#GraphicsProcessingUnit");
+
+        OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getFromSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getToSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))));
+        OWLDataRange memoryRange = dataFactory.getOWLDatatypeRestriction(
+                dataFactory.getOWLDatatype(XSDVocabulary.INTEGER.getIRI()),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getGpuMemory())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getGpuMemory()))
+        );
+
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                gpuClass,
+                dataFactory.getOWLDataSomeValuesFrom(gpuClockSpeed, speedRange),
+                dataFactory.getOWLDataSomeValuesFrom(gpuMemory, memoryRange)
+        );
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+
+        for(OWLNamedIndividual individual : individuals) {
+            Optional<OWLLiteral> manufacturerValue = reasoner.getDataPropertyValues(individual, gpuManufacturer).stream().findFirst();
+            Optional<OWLLiteral> typeValue = reasoner.getDataPropertyValues(individual, gpuType).stream().findFirst();
+            if(manufacturerValue.get().getLiteral().equals(dto.getManufacturer()) && typeValue.get().getLiteral().equals(dto.getIntegrated())) {
+                retList.add(individual.getIRI().getFragment());
+            }
+        }
+
+        return retList;
+    }
+
+    @Override
+    public List<String> FindRam(RAMSearchDTO dto) {
+        List<String> retList = new ArrayList<String>();
+
+        OWLDataProperty ramMemory = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramMemory"));
+        OWLDataProperty ramDDR = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramDDR"));
+        OWLDataProperty ramMemoryTechnology = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramMemoryTechnology"));
+        OWLDataProperty ramManufacturer = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramManufacturer"));
+
+        OWLClass ramClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#RandomAccessMemory");
+
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(ramClass);
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+
+        for(OWLNamedIndividual individual : individuals) {
+            Optional<OWLLiteral> memoryValue = reasoner.getDataPropertyValues(individual, ramMemory).stream().findFirst();
+            Optional<OWLLiteral> ddrValue = reasoner.getDataPropertyValues(individual, ramDDR).stream().findFirst();
+            Optional<OWLLiteral> technologyValue = reasoner.getDataPropertyValues(individual, ramMemoryTechnology).stream().findFirst();
+            Optional<OWLLiteral> manufacturerValue = reasoner.getDataPropertyValues(individual, ramManufacturer).stream().findFirst();
+            if(manufacturerValue.get().getLiteral().equals(dto.getManufacturer())
+                    && memoryValue.get().getLiteral().equals(dto.getMemory().toString())
+                    && ddrValue.get().getLiteral().equals(dto.getDdr())
+                    && technologyValue.get().getLiteral().equals(dto.getSize())
+                ) {
+                retList.add(individual.getIRI().getFragment());
+            }
+        }
+
+        return retList;
+    }
+
+    @Override
+    public List<String> FindPsu(PSUSearchDTO dto) {
+        List<String> retList = new ArrayList<String>();
+
+        OWLDataProperty wattage = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#wattage"));
+
+        OWLClass psuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#PowerSupplyUnit");
+
+        OWLDataRange wattageRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getFromWattage())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getToWattage())));
+
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                psuClass,
+                dataFactory.getOWLDataSomeValuesFrom(wattage, wattageRange)
         );
 
         Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
