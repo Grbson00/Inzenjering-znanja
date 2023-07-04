@@ -23,17 +23,14 @@ const CPUSelection = () => {
     }
     const validate = (values) => {
         let returnObject = {}
-        // if (!values.manufacturer) {
-        //     returnObject.manufacturer = 'This field is required!'
-        // }
         if (parseInt(values.fromSpeed) > parseInt(values.toSpeed)) {
             returnObject.fromSpeed = "Invalid value!"
             returnObject.toSpeed = "Invalid value!"
         }
-        if (!numberRegex.test(values.fromSpeed)) {
+        if (!values.fromSpeed) {
             returnObject.fromSpeed = 'Numerical characters only!'
         }
-        if (!numberRegex.test(values.toSpeed)) {
+        if (!values.toSpeed) {
             returnObject.toSpeed = 'Numerical characters only!'
         }
         if (parseInt(values.coreNumberFrom) > parseInt(values.coreNumberTo)) {
@@ -96,8 +93,8 @@ const CPUSelection = () => {
             <Grid container spacing={2} mt={4}>
                 {
                     cpuArr && cpuArr.map((cpu) => {
-                        return (<Grid item xs={4}>
-                            <SimpleCard key={cpu} content={replaceUnderscoresWithSpaces(cpu)} />
+                        return (<Grid item xs={4} key={cpu}>
+                            <SimpleCard content={replaceUnderscoresWithSpaces(cpu)} />
                         </Grid>)
                     })
                 }

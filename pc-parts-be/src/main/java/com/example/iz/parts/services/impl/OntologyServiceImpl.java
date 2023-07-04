@@ -104,7 +104,7 @@ public class OntologyServiceImpl implements OntologyService {
         OWLDataProperty gpuClockSpeed = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuClockSpeed"));
         OWLDataProperty gpuType = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuType"));
 
-        OWLClass gpuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#GraphicsProcessingUnit");
+            OWLClass gpuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#GraphicsProcessingUnit");
 
         OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()),
                 dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getFromSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))),

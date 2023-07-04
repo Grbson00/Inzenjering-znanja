@@ -114,7 +114,6 @@ const CPUForm = () => {
                         label="Cache memory to (GB)"
                     />
                 </Grid>
-                <Grid item xs={0} sm={6} />
             </Grid>
         </>
     );

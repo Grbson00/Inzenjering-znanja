@@ -26,10 +26,9 @@ const RAMForm = () => {
                         required
                         fullWidth
                     >
-                        <MenuItem value={2}>Intel</MenuItem>
-                        <MenuItem value={4}>AMD</MenuItem>
-                        <MenuItem value={8}>Apple</MenuItem>
-                        <MenuItem value={16}>Fujitsu</MenuItem>
+                        <MenuItem value={'Kingston'}>Kingston</MenuItem>
+                        <MenuItem value={'Transcend'}>Transcend</MenuItem>
+                        <MenuItem value={'Siliconpower'}>Siliconpower</MenuItem>
                     </Select>
                 </Grid>
                 <Grid item xs={0} sm={9} />
@@ -41,9 +40,9 @@ const RAMForm = () => {
                         required
                         fullWidth
                     >
-                        <MenuItem value={3}>DDR3</MenuItem>
-                        <MenuItem value={4}>DDR4</MenuItem>
-                        <MenuItem value={5}>DDR5</MenuItem>
+                        <MenuItem value={'DDR3'}>DDR3</MenuItem>
+                        <MenuItem value={'DDR4'}>DDR4</MenuItem>
+                        <MenuItem value={'DDR5'}>DDR5</MenuItem>
                     </Select>
                 </Grid>
                 <Grid item xs={12} sm={3}>
@@ -65,20 +64,8 @@ const RAMForm = () => {
                         required
                         fullWidth
                     >
-                        <MenuItem value={'small'}>SO-DIMM (small)</MenuItem>
-                        <MenuItem value={'large'}>DIMM (large)</MenuItem>
-                    </Select>
-                </Grid>
-                <Grid item xs={12} sm={3} sx={{ marginTop: '1rem' }}>
-                    <Select
-                        formControlProps={{ margin: 'none' }}
-                        name='mode'
-                        label='Operating mode'
-                        required
-                        fullWidth
-                    >
-                        <MenuItem value={'dual'}>Dual</MenuItem>
-                        <MenuItem value={'quad'}>Quad</MenuItem>
+                        <MenuItem value={'SO-DIMM'}>SO-DIMM (small)</MenuItem>
+                        <MenuItem value={'DIMM'}>DIMM (large)</MenuItem>
                     </Select>
                 </Grid>
             </Grid>

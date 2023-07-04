@@ -61,7 +61,6 @@ const FindComponentPage = () => {
                     >
                         <MenuItem value={'GPU'}>GPU</MenuItem>
                         <MenuItem value={'CPU'}>CPU</MenuItem>
-                        <MenuItem value={'Motherboard'}>MotherBoard</MenuItem>
                         <MenuItem value={'RAM'}>RAM</MenuItem>
                         <MenuItem value={'PowerSupply'}>Power Supply</MenuItem>
                     </Select>

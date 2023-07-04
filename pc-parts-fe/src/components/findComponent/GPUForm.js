@@ -3,13 +3,6 @@ import { TextField, Select } from 'mui-rff';
 
 const GPUForm = () => {
 
-    /*
-        clock speed
-        DDR tip
-        GPU memory
-        manufacturer
-    */
-
     return (
         <>
             <Grid container spacing={1}>
@@ -25,13 +18,24 @@ const GPUForm = () => {
                         required
                         fullWidth
                     >
-                        <MenuItem value={2}>Intel</MenuItem>
-                        <MenuItem value={4}>AMD</MenuItem>
-                        <MenuItem value={8}>Apple</MenuItem>
-                        <MenuItem value={16}>Fujitsu</MenuItem>
+                        <MenuItem value={"Intel"}>Intel</MenuItem>
+                        <MenuItem value={"AMD"}>AMD</MenuItem>
+                        <MenuItem value={"NVidia"}>NVidia</MenuItem>
                     </Select>
-                </Grid> 
-                <Grid item xs={0} sm={9} />
+                </Grid>
+                <Grid item xs={12} sm={3} sx={{ marginTop: '1rem' }}>
+                    <Select
+                        formControlProps={{ margin: 'none' }}
+                        name='integrated'
+                        label='Integrated'
+                        required
+                        fullWidth
+                    >
+                        <MenuItem value={'integrated'}>Integrated</MenuItem>
+                        <MenuItem value={'not integrated'}>Not integrated</MenuItem>
+                    </Select>
+                </Grid>
+                <Grid item xs={0} sm={6} />
                 <Grid item xs={12} sm={3}>
                     <TextField
                         autoComplete='off'
@@ -61,6 +65,7 @@ const GPUForm = () => {
                         required
                         fullWidth
                     >
+                        <MenuItem value={1}>1</MenuItem>
                         <MenuItem value={2}>2</MenuItem>
                         <MenuItem value={4}>4</MenuItem>
                         <MenuItem value={4}>6</MenuItem>
@@ -69,6 +74,7 @@ const GPUForm = () => {
                         <MenuItem value={16}>16</MenuItem>
                     </Select>
                 </Grid>
+
             </Grid>
         </>
     );

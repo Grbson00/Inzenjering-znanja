@@ -1,30 +1,22 @@
-import { Button, Container } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import { Form } from 'react-final-form';
-import REGEX from "../../regex";
 import GPUForm from "./GPUForm";
 import axios from "axios";
+import { useState } from "react";
+import SimpleCard from "../common/SimpleCard";
 
-const numberRegex = new RegExp(REGEX.NUMBER)
 
 const GPUSelection = () => {
-
-    /*
-        clock speed
-        DDR tip
-        GPU memory
-        manufacturer
-    */
-
+    const [gpu, setGpu] = useState()
     const onSubmit = (data) => {
         axios.post('http://localhost:8080/api/search/gpu', data)
-        .catch(e => {
-            console.error(e)
-        })
-        .then((response) => {
-            console.log(response);
-        })
-    console.log(data);
-        console.log(data);
+            .catch(e => {
+                console.error(e)
+            })
+            .then((response) => {
+                console.log(response);
+                setGpu(response.data)
+            })
     }
     const validate = (values) => {
         let returnObject = {}
@@ -35,18 +27,24 @@ const GPUSelection = () => {
             returnObject.fromSpeed = "From speed can't be faster than to speed"
             returnObject.toSpeed = "From speed can't be faster than to speed"
         }
-        if (!numberRegex.test(values.fromSpeed)) {
+        if (!values.fromSpeed) {
             returnObject.fromSpeed = 'Numerical characters only!'
         }
-        if (!numberRegex.test(values.toSpeed)) {
+        if (!values.toSpeed) {
             returnObject.toSpeed = 'Numerical characters only!'
         }
-        if (!numberRegex.test(values.gpuMemory)) {
+        if (!values.gpuMemory) {
             returnObject.gpuMemory = 'Numerical characters only!'
+        }
+        if (!values.integrated) {
+            returnObject.integrated = "This field is required!"
         }
 
         return returnObject
     }
+    const replaceUnderscoresWithSpaces = (str) => {
+        return str.replace(/_/g, ' ');
+    };
 
     return (
         <>
@@ -64,7 +62,18 @@ const GPUSelection = () => {
                     </form>)}
             >
             </Form>
-
+            {
+                gpu && <Typography mt={6} variant="h5" color="initial">Your results:</Typography>
+            }
+            <Grid container spacing={2} mt={4}>
+                {
+                    gpu && gpu.map((gpu) => {
+                        return (<Grid item xs={4} key={gpu}>
+                            <SimpleCard content={replaceUnderscoresWithSpaces(gpu)} />
+                        </Grid>)
+                    })
+                }
+            </Grid>
         </>
     );
 }
