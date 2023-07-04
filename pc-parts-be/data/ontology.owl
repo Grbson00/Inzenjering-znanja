@@ -1813,11 +1813,6 @@
         <NamedIndividual IRI="#PCIe2.0"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRAM"/>
-        <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
-        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRamSlot"/>
         <NamedIndividual IRI="#Gigabyte_B550_AORUS_ELITE_V2"/>
         <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
@@ -1861,11 +1856,6 @@
         <ObjectProperty IRI="#hasCPUSocketCPU"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
         <NamedIndividual IRI="#Intel_socket"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGPU"/>
-        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
-        <NamedIndividual IRI="#Dual_GeForce_GTX_1650_OC_Edition"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPCIeConnectorGPU"/>
@@ -3586,11 +3576,6 @@
         <ObjectProperty IRI="#hasRamSlotRAM"/>
         <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
         <NamedIndividual IRI="#SO_DIMM-DDR3_RAM_slot"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRAM"/>
-        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
-        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRamSlotRAM"/>

@@ -7,7 +7,12 @@ public class BayesReturnDTO {
     private String name;
     private Float percentage;
 
-    public String getName() {
+    public BayesReturnDTO(String replace, float f) {
+		name = replace;
+		percentage = f;
+	}
+
+	public String getName() {
         return name;
     }
 

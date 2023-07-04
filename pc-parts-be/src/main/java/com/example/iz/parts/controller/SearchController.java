@@ -28,6 +28,11 @@ public class SearchController {
     @Autowired
     OntologyServiceImpl service;
 
+    @PostMapping("/similarPCs")
+    public ResponseEntity<List<String>> FindSimilarPCs() {
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindSimilarPCs());
+    }
+    
     @PostMapping("/gpu")
     public ResponseEntity<List<String>> FindGPU(@NonNull @RequestBody final GPUSearchDTO dto) {
         System.out.println(dto);

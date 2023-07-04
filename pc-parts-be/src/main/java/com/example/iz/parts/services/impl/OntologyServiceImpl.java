@@ -4,6 +4,8 @@ import com.example.iz.parts.dto.search.CPUSearchDTO;
 import com.example.iz.parts.dto.search.GPUSearchDTO;
 import com.example.iz.parts.dto.search.PSUSearchDTO;
 import com.example.iz.parts.dto.search.RAMSearchDTO;
+import com.example.iz.parts.model.PC;
+
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
@@ -425,6 +427,64 @@ public class OntologyServiceImpl implements OntologyService {
             retList.add(individual.getIRI().getFragment());
         }
 
+        return retList;
+    }
+    
+    @Override
+    public List<String> FindSimilarPCs() {
+        List<String> retList = new ArrayList<String>();
+
+        OWLObjectProperty cpu = dataFactory.getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasCPU"));
+        OWLDataProperty cpuClockSpeed = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#cpuClockSpeed"));
+        
+        OWLObjectProperty gpu = dataFactory.getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasGPU"));
+        OWLDataProperty gpuClockSpeed = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#gpuClockSpeed"));
+        
+        OWLObjectProperty ram = dataFactory.getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasRAM"));
+        OWLDataProperty ramMemory = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramMemory"));
+
+        OWLClass pcClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#PC");
+
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                pcClass
+        );
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+
+    	Double cpuSpeedMax = 0.0, gpuSpeedMax = 0.0, ramMemoryMax = 0.0;
+        List<PC> pcs = new ArrayList<PC>();
+
+        for(OWLNamedIndividual individual : individuals) {
+        	
+        	Set<OWLNamedIndividual> cpuProp = reasoner.getObjectPropertyValues(individual, cpu).getFlattened();
+        	OWLNamedIndividual[] array = cpuProp.toArray(new OWLNamedIndividual[0]);
+        	OWLNamedIndividual cpuTemp = array[0];
+        	
+        	Set<OWLNamedIndividual> gpuProp = reasoner.getObjectPropertyValues(individual, gpu).getFlattened();
+        	array = gpuProp.toArray(new OWLNamedIndividual[0]);
+        	OWLNamedIndividual gpuTemp = array[0];
+        	
+        	Set<OWLNamedIndividual> ramProp = reasoner.getObjectPropertyValues(individual, ram).getFlattened();
+        	array = ramProp.toArray(new OWLNamedIndividual[0]);
+        	OWLNamedIndividual ramTemp = array[0];
+        	
+        	OWLLiteral cpuSpeed = reasoner.getDataPropertyValues(cpuTemp, cpuClockSpeed).stream().findFirst().orElse(null);
+        	OWLLiteral gpuSpeed = reasoner.getDataPropertyValues(gpuTemp, gpuClockSpeed).stream().findFirst().orElse(null);
+        	OWLLiteral ramMemoryy = reasoner.getDataPropertyValues(ramTemp, ramMemory).stream().findFirst().orElse(null);
+        	
+            if(Double.parseDouble(cpuSpeed.getLiteral()) > cpuSpeedMax) { cpuSpeedMax = Double.parseDouble(cpuSpeed.getLiteral()); }
+            if(Double.parseDouble(gpuSpeed.getLiteral()) > gpuSpeedMax) { gpuSpeedMax = Double.parseDouble(gpuSpeed.getLiteral()); }
+            if(Double.parseDouble(ramMemoryy.getLiteral()) > ramMemoryMax) { ramMemoryMax = Double.parseDouble(ramMemoryy.getLiteral()); }
+        	
+        	pcs.add(new PC(cpuSpeed.parseDouble(), gpuSpeed.parseDouble(), ramMemoryy.parseInteger()));
+            retList.add(individual.getIRI().getFragment() + ": " + cpuTemp.getIRI().getFragment() + ", " + gpuTemp.getIRI().getFragment() + ", " + ramTemp.getIRI().getFragment());
+            
+        }
+        
+        System.out.println("cpuSpeedMax: " + cpuSpeedMax + ", gpuSpeedMax: " + gpuSpeedMax + ", ramMemoryMax: " + ramMemoryMax);
+        
+        for (PC p : pcs) {
+        }
+        
         return retList;
     }
 }

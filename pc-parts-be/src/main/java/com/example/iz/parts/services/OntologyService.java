@@ -19,4 +19,5 @@ public interface OntologyService {
     List<String> UpgradeGPU(String motherboard, String gpu);
     List<String> UpgradeRAM(String motherboard, String ram);
     List<String> UpgradePSU(String motherboard, String psu);
+	List<String> FindSimilarPCs();
 }
