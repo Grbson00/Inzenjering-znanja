@@ -346,6 +346,12 @@
         <DataProperty IRI="#numberOfFans"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#ramDDR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ramManufacturer"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#ramMemory"/>
     </Declaration>
     <Declaration>
@@ -4062,9 +4068,34 @@
         <Literal>I726</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+        <Literal>DDR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+        <Literal>Kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_16GB_DDR4_3200MHz_CL22"/>
+        <Literal>DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+        <Literal>DDR3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+        <Literal>Kingston</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
@@ -4072,9 +4103,39 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_1GB_DDR3L_ValueRAM_1600MHz"/>
+        <Literal>DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+        <Literal>DDR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+        <Literal>Kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_4GB"/>
+        <Literal>SO-DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+        <Literal>DDR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+        <Literal>Kingston</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
@@ -4082,9 +4143,39 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_SO-DIMM_ValueRAM_8GB"/>
+        <Literal>SO-DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+        <Literal>DDR5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+        <Literal>Kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_16GB_DDR5_4800MHz"/>
+        <Literal>DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+        <Literal>DDR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+        <Literal>Kingston</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
@@ -4092,14 +4183,49 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_32GB_DDR4_32GB_3200MHz"/>
+        <Literal>DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+        <Literal>DDR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+        <Literal>Kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_4GB_DDR4_2666MHz"/>
+        <Literal>DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+        <Literal>DDR5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+        <Literal>Kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#KINGSTON_ValueRAM_8GB_DDR5_4800MHz"/>
+        <Literal>DIMM</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#resolution"/>
@@ -4147,14 +4273,44 @@
         <Literal>not integrated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+        <Literal>DDR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+        <Literal>DIMM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
+        <Literal>Siliconpower</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#SILICONPOWER_32GB_DDR4_3200MHz"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ramDDR"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+        <Literal>DDR3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramManufacturer"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+        <Literal>Transcend</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ramMemory"/>
         <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ramMemoryTechnology"/>
+        <NamedIndividual IRI="#TRANSCEND_JetRam_2GB"/>
+        <Literal>SO-DIMM</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#gpuClockSpeed"/>
@@ -4686,6 +4842,14 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#ramDDR"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ramManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#ramMemory"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -4812,6 +4976,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#numberOfFans"/>
         <Class IRI="#ComputerCase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ramDDR"/>
+        <Class IRI="#RandomAccessMemory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ramManufacturer"/>
+        <Class IRI="#RandomAccessMemory"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ramMemory"/>
@@ -4952,6 +5124,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#numberOfFans"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ramDDR"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ramManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#ramMemory"/>

@@ -2,6 +2,8 @@ package com.example.iz.parts.services.impl;
 
 import com.example.iz.parts.dto.search.CPUSearchDTO;
 import com.example.iz.parts.dto.search.GPUSearchDTO;
+import com.example.iz.parts.dto.search.PSUSearchDTO;
+import com.example.iz.parts.dto.search.RAMSearchDTO;
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
@@ -126,6 +128,65 @@ public class OntologyServiceImpl implements OntologyService {
             if(manufacturerValue.get().getLiteral().equals(dto.getManufacturer()) && typeValue.get().getLiteral().equals(dto.getIntegrated())) {
                 retList.add(individual.getIRI().getFragment());
             }
+        }
+
+        return retList;
+    }
+
+    @Override
+    public List<String> FindRam(RAMSearchDTO dto) {
+        List<String> retList = new ArrayList<String>();
+
+        OWLDataProperty ramMemory = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramMemory"));
+        OWLDataProperty ramDDR = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramDDR"));
+        OWLDataProperty ramMemoryTechnology = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramMemoryTechnology"));
+        OWLDataProperty ramManufacturer = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#ramManufacturer"));
+
+        OWLClass ramClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#RandomAccessMemory");
+
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(ramClass);
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+
+        for(OWLNamedIndividual individual : individuals) {
+            Optional<OWLLiteral> memoryValue = reasoner.getDataPropertyValues(individual, ramMemory).stream().findFirst();
+            Optional<OWLLiteral> ddrValue = reasoner.getDataPropertyValues(individual, ramDDR).stream().findFirst();
+            Optional<OWLLiteral> technologyValue = reasoner.getDataPropertyValues(individual, ramMemoryTechnology).stream().findFirst();
+            Optional<OWLLiteral> manufacturerValue = reasoner.getDataPropertyValues(individual, ramManufacturer).stream().findFirst();
+            if(manufacturerValue.get().getLiteral().equals(dto.getManufacturer())
+                    && memoryValue.get().getLiteral().equals(dto.getMemory().toString())
+                    && ddrValue.get().getLiteral().equals(dto.getDdr())
+                    && technologyValue.get().getLiteral().equals(dto.getSize())
+                ) {
+                retList.add(individual.getIRI().getFragment());
+            }
+        }
+
+        return retList;
+    }
+
+    @Override
+    public List<String> FindPsu(PSUSearchDTO dto) {
+        List<String> retList = new ArrayList<String>();
+
+        OWLDataProperty wattage = manager.getOWLDataFactory().getOWLDataProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#wattage"));
+
+        OWLClass psuClass = manager.getOWLDataFactory().getOWLClass("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#PowerSupplyUnit");
+
+        OWLDataRange wattageRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getFromWattage())),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getToWattage())));
+
+        OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
+                psuClass,
+                dataFactory.getOWLDataSomeValuesFrom(wattage, wattageRange)
+        );
+
+        Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
+
+        // Print the individuals
+        for (OWLNamedIndividual individual : individuals) {
+            System.out.println(individual.getIRI().getFragment());
+            retList.add(individual.getIRI().getFragment());
         }
 
         return retList;
