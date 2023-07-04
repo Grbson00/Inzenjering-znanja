@@ -3612,6 +3612,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
         <NamedIndividual IRI="#AMD_4700S_Octa_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
@@ -3630,6 +3635,11 @@
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Beema_E1-6010_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
@@ -3687,6 +3697,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_3200G_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
@@ -3700,6 +3715,11 @@
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_3_4100_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
@@ -3715,6 +3735,11 @@
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#AMD_Ryzen_5_4500_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
@@ -3932,6 +3957,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
         <NamedIndividual IRI="#Intel_Core_i3-10100F_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
@@ -3945,6 +3975,11 @@
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i3-10105F_Quad_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
@@ -3960,6 +3995,11 @@
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i3-1115G4_Dual_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>
@@ -3975,6 +4015,11 @@
         <DataProperty IRI="#cpuCache"/>
         <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpuClockSpeed"/>
+        <NamedIndividual IRI="#Intel_Core_i5-10400F_Hexa_Core_Processor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cpuCoreNumber"/>

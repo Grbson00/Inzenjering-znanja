@@ -9,6 +9,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import org.semanticweb.owlapi.vocab.OWLFacet;
+import org.semanticweb.owlapi.vocab.XSDVocabulary;
 import org.springframework.stereotype.Service;
 
 import javax.management.Query;
@@ -66,17 +67,18 @@ public class OntologyServiceImpl implements OntologyService {
                 dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCacheMemoryFrom())),
                 dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getCacheMemoryTo())));
 
-        OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getIntegerOWLDatatype(),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(dto.getFromSpeed())),
-                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(dto.getToSpeed())));
-
+        OWLDataRange speedRange = dataFactory.getOWLDatatypeRestriction(dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MIN_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getFromSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))),
+                dataFactory.getOWLFacetRestriction(OWLFacet.MAX_INCLUSIVE, dataFactory.getOWLLiteral(String.valueOf(dto.getToSpeed()), dataFactory.getOWLDatatype(XSDVocabulary.DECIMAL.getIRI()))));
+        System.out.println(speedRange);
+        System.out.println(cacheRange);
         //TODO: match manufacturer string and return speed
         OWLClassExpression queryExpression = dataFactory.getOWLObjectIntersectionOf(
                 cpuClass,
                 dataFactory.getOWLDataSomeValuesFrom(cpuCoreNumber, coresRange),
                 dataFactory.getOWLDataSomeValuesFrom(cpuThreadNumber, threadsRange),
-                dataFactory.getOWLDataSomeValuesFrom(cpuCache, cacheRange)
-//                dataFactory.getOWLDataSomeValuesFrom(cpuSpeed, speedRange)
+                dataFactory.getOWLDataSomeValuesFrom(cpuCache, cacheRange),
+                dataFactory.getOWLDataSomeValuesFrom(cpuSpeed, speedRange)
         );
 
         Set<OWLNamedIndividual> individuals = reasoner.getInstances(queryExpression, false).getFlattened();
