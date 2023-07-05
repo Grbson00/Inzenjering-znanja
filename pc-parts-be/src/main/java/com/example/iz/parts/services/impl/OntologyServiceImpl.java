@@ -1,5 +1,6 @@
 package com.example.iz.parts.services.impl;
 
+import com.example.iz.parts.dto.SimilarPCDTO;
 import com.example.iz.parts.dto.search.CPUSearchDTO;
 import com.example.iz.parts.dto.search.GPUSearchDTO;
 import com.example.iz.parts.dto.search.PSUSearchDTO;
@@ -433,8 +434,8 @@ public class OntologyServiceImpl implements OntologyService {
     }
     
     @Override
-    public List<String> FindSimilarPCs() {
-    	PC wanted = new PC("", 3.0, "", 2.0, "", 16);//hardcoded for test
+    public List<String> FindSimilarPCs(SimilarPCDTO dto) {
+    	PC wanted = new PC("", dto.getCpuSpeed(), "", dto.getGpuSpeed(), "", dto.getRamSize());//hardcoded for test
     	
         List<String> retList = new ArrayList<String>();
 

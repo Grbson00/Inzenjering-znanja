@@ -38,9 +38,12 @@ public class PC {
 									Math.abs(wanted.ramMemory/max.ramMemory - this.ramMemory/max.ramMemory);
 	}
 
+	//cpu name cpu speed
+	//gpu name gpu speed
+	//ram name ram speed
 	@Override
 	public String toString() {
-		return "PC [cpuName=" + cpuName + ", gpuName=" + gpuName + ", ramName=" + ramName + "]";
+		return cpuName + "|" + cpuSpeed + "|" + gpuName + "|" + gpuSpeed + "|" + ramName + "|" + ramMemory + "|" + matchingCoefficient;
 	}
 
 	

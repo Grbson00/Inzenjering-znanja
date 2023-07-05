@@ -1,5 +1,6 @@
 package com.example.iz.parts.services;
 
+import com.example.iz.parts.dto.SimilarPCDTO;
 import com.example.iz.parts.dto.search.CPUSearchDTO;
 import com.example.iz.parts.dto.search.GPUSearchDTO;
 import com.example.iz.parts.dto.search.PSUSearchDTO;
@@ -20,5 +21,5 @@ public interface OntologyService {
     List<String> UpgradeGPU(String motherboard, String gpu);
     List<String> UpgradeRAM(String motherboard, String ram);
     List<String> UpgradePSU(String motherboard, String psu);
-	List<String> FindSimilarPCs();
+	List<String> FindSimilarPCs(SimilarPCDTO dto);
 }

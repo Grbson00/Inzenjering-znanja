@@ -9,6 +9,7 @@ import Layout from "./components/common/Layout";
 import theme from "./theme";
 import EvaluatePCPage from "./pages/EvaluatePCPage";
 import ErrorCausePage from "./pages/ErrorCausePage";
+import SimilarPC from "./pages/SimilarPC";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                   <Route path={'/upgrade'} element={<RecommendUpgradePage />} />
                   <Route path={'/evaluate'} element={<EvaluatePCPage />} />
                   <Route path={'/cause'} element={<ErrorCausePage />} />
+                  <Route path={'/similar'} element={<SimilarPC />} />
             </Routes>
           </Layout>
         </BrowserRouter>

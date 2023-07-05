@@ -1,5 +1,6 @@
 package com.example.iz.parts.controller;
 
+import com.example.iz.parts.dto.SimilarPCDTO;
 import com.example.iz.parts.dto.search.*;
 import com.example.iz.parts.model.*;
 import com.example.iz.parts.services.impl.OntologyServiceImpl;
@@ -29,8 +30,8 @@ public class SearchController {
     OntologyServiceImpl service;
 
     @PostMapping("/similarPCs")
-    public ResponseEntity<List<String>> FindSimilarPCs() {
-        return ResponseEntity.status(HttpStatus.OK).body(service.FindSimilarPCs());
+    public ResponseEntity<List<String>> FindSimilarPCs(@NonNull @RequestBody final SimilarPCDTO dto) {
+        return ResponseEntity.status(HttpStatus.OK).body(service.FindSimilarPCs(dto));
     }
     
     @PostMapping("/gpu")
