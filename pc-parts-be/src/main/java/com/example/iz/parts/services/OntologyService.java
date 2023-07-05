@@ -4,6 +4,7 @@ import com.example.iz.parts.dto.search.CPUSearchDTO;
 import com.example.iz.parts.dto.search.GPUSearchDTO;
 import com.example.iz.parts.dto.search.PSUSearchDTO;
 import com.example.iz.parts.dto.search.RAMSearchDTO;
+import com.example.iz.parts.model.PC;
 
 import java.io.File;
 import java.util.List;

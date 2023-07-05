@@ -21,6 +21,8 @@ import org.springframework.stereotype.Service;
 import javax.management.Query;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.sql.ResultSet;
 import java.util.Optional;
@@ -432,6 +434,8 @@ public class OntologyServiceImpl implements OntologyService {
     
     @Override
     public List<String> FindSimilarPCs() {
+    	PC wanted = new PC("", 3.0, "", 2.0, "", 16);//hardcoded for test
+    	
         List<String> retList = new ArrayList<String>();
 
         OWLObjectProperty cpu = dataFactory.getOWLObjectProperty(IRI.create("http://www.semanticweb.org/grbson/ontologies/2023/4/untitled-ontology-5#hasCPU"));
@@ -475,14 +479,21 @@ public class OntologyServiceImpl implements OntologyService {
             if(Double.parseDouble(gpuSpeed.getLiteral()) > gpuSpeedMax) { gpuSpeedMax = Double.parseDouble(gpuSpeed.getLiteral()); }
             if(Double.parseDouble(ramMemoryy.getLiteral()) > ramMemoryMax) { ramMemoryMax = Double.parseDouble(ramMemoryy.getLiteral()); }
         	
-        	pcs.add(new PC(cpuSpeed.parseDouble(), gpuSpeed.parseDouble(), ramMemoryy.parseInteger()));
-            retList.add(individual.getIRI().getFragment() + ": " + cpuTemp.getIRI().getFragment() + ", " + gpuTemp.getIRI().getFragment() + ", " + ramTemp.getIRI().getFragment());
+        	pcs.add(new PC(cpuTemp.getIRI().getFragment(), cpuSpeed.parseDouble(), gpuTemp.getIRI().getFragment(), gpuSpeed.parseDouble(), ramTemp.getIRI().getFragment(), ramMemoryy.parseInteger()));
+            //retList.add(individual.getIRI().getFragment() + ": " + cpuTemp.getIRI().getFragment() + ", " + gpuTemp.getIRI().getFragment() + ", " + ramTemp.getIRI().getFragment());
             
         }
         
         System.out.println("cpuSpeedMax: " + cpuSpeedMax + ", gpuSpeedMax: " + gpuSpeedMax + ", ramMemoryMax: " + ramMemoryMax);
         
         for (PC p : pcs) {
+        	p.calculateCoefficient(wanted, new PC("", cpuSpeedMax, "", gpuSpeedMax, "", ramMemoryMax.intValue()));
+        }
+        
+        Collections.sort(pcs, Comparator.comparing(p -> p.getMatchingCoefficient()));
+        
+        for (int i = 0; i < 5; i++) {
+        	retList.add(pcs.get(i).toString());
         }
         
         return retList;
